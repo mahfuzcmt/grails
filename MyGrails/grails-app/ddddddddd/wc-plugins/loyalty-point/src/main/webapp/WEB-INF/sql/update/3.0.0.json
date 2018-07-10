@@ -1,0 +1,31 @@
+{
+  "fromVersion": "2.2.0.1",
+  "releaseVersion": "3.0.0",
+  "developers":[
+
+    {
+      "name": "Tanvirul",
+      "sql" : [
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'loyalty_point_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('loyalty_point_label', 'my_entitlements', 'My Loyalty Points')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'loyalty_point_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('loyalty_point_active', 'my_entitlements', 'true')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'loyalty_point_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('loyalty_point_default_label', 'my_entitlements', 'My Loyalty Points')"
+        }
+
+      ]
+    }
+  ]
+}

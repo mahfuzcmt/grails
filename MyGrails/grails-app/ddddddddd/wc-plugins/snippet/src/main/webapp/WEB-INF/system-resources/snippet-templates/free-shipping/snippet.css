@@ -1,0 +1,61 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-free-shipping .col-sm-4 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.snippet-free-shipping .col-xs-4:hover .icon-cell {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.snippet-free-shipping .icon-cell {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    height: 70px;
+    margin: 0 auto 20px auto;
+    position: relative;
+    vertical-align: middle;
+    width: 70px;
+}
+.snippet-free-shipping .icon-cell i {
+    color: #555;
+    font-size: 32px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.snippet-free-shipping h4 {
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-free-shipping p {
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

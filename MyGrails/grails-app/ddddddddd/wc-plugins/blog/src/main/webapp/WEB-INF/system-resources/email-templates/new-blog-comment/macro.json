@@ -1,0 +1,9 @@
+{
+    "post_title": "post.title",
+    "writer_name": "writer.name",
+    "writer_email": "writer.email",
+    "comment_time": "comment.time",
+    "comment_content": "comment.content",
+    "comment_status": "comment.status"
+
+}

@@ -1,0 +1,44 @@
+.galleriffic-gallery-wrap .pagination {
+    clear: both;
+}
+.galleriffic-gallery-wrap .thumbs-container div.top {
+    margin-bottom: 12px;
+}
+.galleriffic-gallery-wrap .thumbs-container div.bottom {
+    margin-top: 12px;
+}
+.galleriffic-gallery-wrap .pagination a, .galleriffic-gallery-wrap .pagination span.current, .galleriffic-gallery-wrap .pagination span.ellipsis {
+    display: block;
+    float: left;
+    margin-right: 2px;
+    padding: 4px 7px 2px 7px;
+    border: 1px solid #ccc;
+}
+.galleriffic-gallery-wrap .pagination a:hover {
+    background-color: #eee;
+    text-decoration: none;
+}
+.galleriffic-gallery-wrap .pagination span.current {
+    font-weight: bold;
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.galleriffic-gallery-wrap .pagination span.ellipsis {
+    border: none;
+    padding: 5px 0 3px 2px;
+}
+.galleriffic-gallery-wrap .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 550px;
+    height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+.galleriffic-gallery-wrap .slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+    text-decoration: none;
+}

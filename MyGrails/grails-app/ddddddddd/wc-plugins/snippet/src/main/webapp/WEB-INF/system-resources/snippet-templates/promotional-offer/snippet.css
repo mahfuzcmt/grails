@@ -1,0 +1,18 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-promotional-offer .col-sm-4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.snippet-promotional-offer .col-sm-4:nth-child(3n+1) {
+    clear: left;
+}
+.snippet-promotional-offer img {
+    border: 1px solid #dddddd;
+    max-height: 269px;
+    max-width: 100%;
+}
+.snippet-promotional-offer a {
+    display: block;
+}

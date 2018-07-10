@@ -1,0 +1,11 @@
+.tool-group .toolbar-item.edit-label,
+.tool-group .toolbar-item.create-custom-field {
+    background-image : url("../../images/admin/order-custom-field-toolbar-icon.png");
+    background-repeat: no-repeat;
+}
+.tool-group .toolbar-item.edit-label {
+     background-position : 0 0;
+}
+.tool-group .toolbar-item.create-custom-field {
+    background-position : -18px 0;
+}

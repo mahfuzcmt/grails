@@ -1,0 +1,32 @@
+/*theam_sb*/
+.menu-item.duplicate .icon,
+.tab-header.ebay-listing .icon,
+.menu-item.ebay-listing-profile .icon {
+    background-image : url("../../images/admin/16-ebay-listing.png");
+}
+
+
+.dashlet-ribbon.ebay-listing-profile .icon {
+    background-image    : url("../../images/admin/ebay-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end*/
+.dashlet-ribbon.ebay-listing-profile .icon {
+    background-position: 0 0;
+}
+
+.tab-header.ebay-listing .icon,
+.menu-item.ebay-listing-profile .icon {
+    background-position: 0 0;
+}
+.menu-item.duplicate .icon {
+    background-position: -16px 0;
+}
+#bmui-tab-ebay .double-input-row .form-row .suggestion {
+    max-width: 244px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}

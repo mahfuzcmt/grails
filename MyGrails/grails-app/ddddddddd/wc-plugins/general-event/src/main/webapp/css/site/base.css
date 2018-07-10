@@ -1,0 +1,385 @@
+.paginated-view .header {
+    background-color : #F6F6F6;
+    border-bottom    : 2px solid #CCCCCC;
+    margin-bottom    : 5px;
+    overflow         : hidden;
+    padding          : 10px;
+}
+.paginated-view .footer {
+    background-color : #F6F6F6;
+    border           : 1px solid #CCCCCC;
+    margin-top       : 10px;
+    padding          : 10px;
+}
+.event-downloadable-spec > a {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.section-seat-view .seat-row span {
+    display        : inline-block;
+    height         : 30px;
+    width          : 30px;
+    border         : 1px #CCCCCC solid;
+    vertical-align : top;
+    margin         : -1px;
+}
+.section-seat-view .seat-row span.pathway {
+    background-color : #E6E6E6;
+    text-align       : center;
+    margin           : 0;
+    border           : 0;
+    padding-top      : 8px;
+    height           : 22px;
+}
+.section-seat-view {
+    max-height: 400px;
+    overflow: auto;
+    text-align: center;
+}
+.section-seat-view .seat-row {
+    white-space: nowrap;
+}
+.section-seat-view .seat-row span.seat {
+    background : url("../../images/site/seat-icon.png") no-repeat left top;
+}
+.section-seat-view .seat-row span.selected {
+    background : url("../../images/site/seat-icon_hover.png") no-repeat left top;
+}
+.section-seat-view .seat-row span.booked {
+    opacity: 0.15;
+    filter:alpha(opacity=15);
+}
+.section-view {
+    padding-bottom : 20px;
+}
+.event-session {
+    max-height : 100px;
+    max-width  : 500px;
+    border     : 1px outset #3A87AD;
+}
+.upper-container .left-container {
+    float : left;
+}
+.upper-container .right-container {
+    float : left;
+}
+.image-thumb-container .thumb-image {
+    display        : inline-block;
+    vertical-align : top;
+}
+.image-thumb-container {
+    white-space : nowrap;
+}
+.event-image-container img {
+    vertical-align : middle;
+}
+/*calender view design*/
+.widget-event .fc-header td {
+    background : url("../../../../images/site/btn_bg.png") repeat-x scroll left top;
+    padding    : 7px;
+}
+.widget-event .fc-header-title h2 {
+    color : #CCCCCC;
+}
+.widget-event .fc-content {
+    margin-top : 10px;
+}
+.widget-event .fc-content th {
+    padding          : 5px 0;
+    background-color : #F4F4F4;
+}
+.scrollable-event-popup {
+    background-color:#FFFFFF;
+    width: 450px;
+    height: 400px;
+    overflow: scroll;
+}
+.event-summary-wrap .start-time {
+    color     : #555555;
+    float     : left;
+    font-size : 15px;
+}
+/*event popup  design*/
+.popup.event-summary-wrap .header .title {
+    font-size   : 18px;
+    font-weight : bold;
+}
+
+.popup.event-summary-wrap .column-left {
+    display        : inline-block;
+    padding        : 5px 17px 0 0;
+    vertical-align : top;
+}
+.popup.event-summary-wrap .column-right {
+    display        : inline-block;
+    vertical-align : top;
+    width          : 500px;
+}
+.popup.event-summary-wrap .info-row {
+    font-size      : 14px;
+    padding-bottom : 5px;
+}
+.popup.event-summary-wrap .info-row label {
+    color   : #FF9000;
+    display : inline-block;
+    width   : 83px;
+}
+.popup.event-summary-wrap .info-row span {
+    color     : #555555;
+    font-size : 13px;
+}
+.popup.event-summary-wrap .summary {
+    color       : #555555;
+    font-size   : 13px;
+    padding-top : 10px;
+}
+.popup.event-summary-wrap .footer .button {
+    height      : auto;
+    margin-left : 5px;
+}
+.popup.event-details-request-popup label {
+    width : 60px;
+}
+.popup.event-details-request-popup .body .form-row {
+    text-align : center;
+}
+.popup.event-details-request-popup input {
+    width : 250px;
+}
+.popup.event-details-request-popup .footer .button {
+    height : auto;
+}
+.popup.event-add-to-cart-popup .body h4.section-name {
+    font-size      : 18px;
+    padding-bottom : 10px;
+}
+.event-details .description {
+    padding-top : 20px;
+}
+/*List view design*/
+.event-list .thumb-image {
+    float   : left;
+    padding : 0 15px 7px 0;
+}
+.event-list .event-details {
+    overflow: hidden;
+}
+.event-list.show_all-view {
+    overflow: auto;
+}
+.event-list .event-wrap {
+    border-bottom : 1px solid #E6E6E6;
+    margin        : 7px 0;
+    overflow      : hidden;
+    padding       : 10px 0;
+}
+.event-list .title a {
+    color       : #FF9000;
+    font-size   : 16px;
+    line-height : 23px;
+}
+.event-list .title a:hover {
+    color : #FBBA65;
+}
+.event-list div {
+    padding-bottom : 10px;
+}
+.event-list .content {
+    color       : #555555;
+    font-size   : 13px;
+    line-height : 25px;
+}
+.event-list .start {
+    color       : #999999;
+    font-size   : 13px;
+    line-height : 19px;
+}
+.event-list .basic-info .price label {
+    font-size : 15px;
+}
+.event-list .basic-info .price span {
+    color     : #FF9000;
+    font-size : 22px;
+}
+.event-list .request-info {
+    display : inline-block;
+    padding : 0;
+}
+.event-list .book-now {
+    display : inline-block;
+    padding : 0;
+}
+.event-list .request-info .button {
+    height : auto;
+}
+.event-list .book-now .button {
+    height : auto;
+}
+/*Scrollable View*/
+.scrollable-view > .content {
+    padding-bottom: 0;
+}
+.event-list.scrollable-view .event-wrap {
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    width: 46%;
+}
+/*basic calendar view design*/
+.basic-calendar .sidebar {
+    border        : 1px solid #CCCCCC;
+    margin-bottom : 10px;
+    overflow      : hidden;
+    padding       : 10px;
+}
+.basic-calendar .sidebar .header .title {
+    border-bottom  : 1px solid #E6E6E6;
+    display        : block;
+    font-size      : 14px;
+    margin-bottom  : 10px;
+    padding-bottom : 5px;
+}
+.basic-calendar .sidebar .body .column-left {
+    float         : left;
+    padding-right : 10px;
+}
+.basic-calendar .sidebar .body .column-right {
+    overflow : hidden;
+}
+.basic-calendar .sidebar .column-right .info-row {
+    padding-bottom : 5px;
+}
+.basic-calendar .sidebar .column-right .info-row label {
+    color         : #FF9000;
+    padding-right : 5px;
+}
+.basic-calendar .sidebar .column-right .info-row span {
+    color : #999999;
+}
+
+/*event*/
+
+.title h2 {
+    border-bottom  : 1px solid #E6E6E6;
+    font-size      : 24px;
+    font-weight    : normal;
+    margin-bottom  : 24px;
+    padding-bottom : 10px;
+}
+.two-column-container {
+    overflow : hidden;
+}
+.image-preview {
+    float         : left;
+    padding-right : 20px;
+}
+.basic-info {
+    overflow : hidden;
+}
+.basic-info .info-row {
+    color          : #555555;
+    font-size      : 13px;
+    padding-bottom : 5px;
+}
+.basic-info .info-row label {
+    color     : #FF9000;
+    display   : inline-block;
+    font-size : 15px;
+    width     : 90px;
+}
+.basic-info .info-row .venue-address {
+    display : inline-block;
+}
+.basic-info .info-row .venue a {
+    color : #00CED1;
+}
+.basic-info .info-row .venue a:hover {
+    color : #3FEAEC;
+}
+.basic-info .section-view {
+    padding : 20px 0;
+}
+.basic-info .section-info-view {
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.basic-info .section-name {
+    font-size      : 15px;
+}
+.basic-info .section-view .price {
+    color          : #FF9000;
+    font-size      : 22px;
+}
+.basic-info .section-view span {
+    height         : auto;
+    vertical-align : middle;
+}
+.basic-info .section-view span.ticket-add-to-cart-button {
+    font-size: 15px;
+    margin-left: 3px;
+    padding: 6px 20px;
+}
+/*venu details page*/
+.venue-location-container .header-container h2 {
+    border-bottom  : 1px solid #E6E6E6;
+    font-size      : 24px;
+    font-weight    : normal;
+    margin-bottom  : 24px;
+    padding-bottom : 10px;
+}
+.venue-location-container .upper-container {
+    overflow       : hidden;
+    padding-bottom : 20px;
+}
+.venue-location-container .upper-left-container {
+    float         : left;
+    padding-right : 20px;
+}
+.venue-location-container .upper-right-container {
+    overflow : hidden;
+}
+.venue-location-container .googleMap {
+    border        : 1px solid #E6E6E6;
+    margin-bottom : 20px;
+    padding       : 10px;
+}
+.venue-location-container .googleMap iframe {
+    height : 300px;
+    width  : 100%;
+}
+.venue-location-container .venue-location-details .address {
+    font-size : 14px;
+}
+.venue-location-container .venue-location-details .venue-site-url a {
+    color      : #FF9000;
+    display    : inline-block;
+    font-size  : 16px;
+    margin-top : 10px;
+}
+.venue-location-container .venue-location-details .venue-site-url a:hover {
+    color : #FBBA65;
+}
+.event-add-to-cart-popup {
+    white-space : nowrap;
+}
+.event-add-to-cart-popup .header {
+    cursor : move;
+}
+.event-image-preview-box {
+    height     : 300px;
+    text-align : center;
+}
+.event-image-container {
+    width : 300px;
+}
+.venue-location-container .description a {
+    text-decoration: underline;
+    color: #0000FF;
+}

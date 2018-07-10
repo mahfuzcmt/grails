@@ -1,0 +1,19 @@
+/*theam_sb*/
+.tab-header.xero .icon,
+.menu-item.xero .icon {
+    background-image : url("../../images/admin/16-xero.png");
+}
+.dashlet-ribbon.xero .icon {
+    background-image    : url("../../images/admin/xero-ribbion-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end */
+
+.dashlet-ribbon.xero .icon {
+    background-position: 0 0;
+}
+.tab-header.xero .icon,
+.menu-item.xero .icon {
+    background-position: 0 0;
+}

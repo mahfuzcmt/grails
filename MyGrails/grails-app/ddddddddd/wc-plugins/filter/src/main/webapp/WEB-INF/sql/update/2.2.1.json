@@ -1,0 +1,40 @@
+{
+  "fromVersion": "2.2.0.1",
+  "releaseVersion": "2.2.1",
+  "developers":[
+    {
+      "name":"Tariq Ahmed Khan",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from message_source where `message_key` = 'minimum.price' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Minimum Price', 'minimum.price', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from message_source where `message_key` = 'maximum.price' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Maximum Price', 'maximum.price', NOW())",
+          "isTrue": ""
+        }
+      ]
+    },
+    {
+      "name":"Sharif Ul Islam",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from filter_group where name = 'Brand'",
+          "isFalse": "INSERT INTO filter_group(created, is_active, name, description, updated) VALUES (NOW(), 1, 'Brand', 'Brand', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from filter_group where name = 'Manufacturer'",
+          "isFalse": "INSERT INTO filter_group(created, is_active, name, description, updated) VALUES (NOW(), 1, 'Manufacturer', 'Manufacturer', NOW())",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

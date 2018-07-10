@@ -1,0 +1,1136 @@
+[
+  {
+    "code": "GST_AUS",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Australia",
+    "zones": [
+      "Australia"
+    ]
+  },
+  {
+    "code": "FREE_AUS",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Free Australia",
+    "zones": [
+      "Australia"
+    ]
+  },
+  {
+    "code": "GST_NZ",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST New Zealand",
+    "zones": [
+      "New Zealand"
+    ]
+  },
+  {
+    "code": "FREE_NZ",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Free New Zealand",
+    "zones": [
+      "New Zealand"
+    ]
+  },
+  {
+    "code": "VAT_UK",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "VAT UK",
+    "zones": [
+      "GB"
+    ]
+  },
+  {
+    "code": "VAT_UK_reduced",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Reduced VAT UK",
+    "zones": [
+      "GB"
+    ]
+  },
+  {
+    "code": "FREE_UK",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Free UK",
+    "zones": [
+      "GB"
+    ]
+  },
+  {
+    "code": "GST_CA_AB",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Alberta",
+    "zones": [
+      "Canada_Alberta"
+    ]
+  },
+  {
+    "code": "GST_CA_BC",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_British Columbia",
+    "zones": [
+      "Canada_British Columbia"
+    ]
+  },
+  {
+    "code": "GST_CA_MB",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Manitoba",
+    "zones": [
+      "Canada_Manitoba"
+    ]
+  },
+  {
+    "code": "GST_CA_NB",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_New Brunswick",
+    "zones": [
+      "Canada_New Brunswick"
+    ]
+  },
+  {
+    "code": "GST_CA_NL",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Newfoundland & Labrador",
+    "zones": [
+      "Canada_Newfoundland & Labrador"
+    ]
+  },
+  {
+    "code": "GST_CA_NS",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Nova Scotia",
+    "zones": [
+      "Canada_Nova Scotia"
+    ]
+  },
+  {
+    "code": "GST_CA_NT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Northwest Territories",
+    "zones": [
+      "Canada_Northwest Territories"
+    ]
+  },
+  {
+    "code": "GST_CA_NU",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Nunavut",
+    "zones": [
+      "Canada_Nunavut"
+    ]
+  },
+  {
+    "code": "GST_CA_ON",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Ontario",
+    "zones": [
+      "Canada_Ontario"
+    ]
+  },
+  {
+    "code": "GST_CA_PE",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Prince Edward Island",
+    "zones": [
+      "Canada_Prince Edward Island"
+    ]
+  },
+  {
+    "code": "GST_CA_QC",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Quebec",
+    "zones": [
+      "Canada_Quebec"
+    ]
+  },
+  {
+    "code": "GST_CA_SK",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Saskatchewan",
+    "zones": [
+      "Canada_Saskatchewan"
+    ]
+  },
+  {
+    "code": "GST_CA_YT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "GST Canada_Yukon",
+    "zones": [
+      "Canada_Yukon"
+    ]
+  },
+  {
+    "code": "FREE_CA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Free Canada",
+    "zones": [
+      "Canada"
+    ]
+  },
+  {
+    "code": "VAT_AT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Austria",
+    "zones": [
+      "Austria"
+    ]
+  },
+  {
+    "code": "VAT_BE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Belgium",
+    "zones": [
+      "Belgium"
+    ]
+  },
+  {
+    "code": "VAT_BG",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Bulgaria",
+    "zones": [
+      "Bulgaria"
+    ]
+  },
+  {
+    "code": "VAT_CY",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Cyprus",
+    "zones": [
+      "Cyprus"
+    ]
+  },
+  {
+    "code": "VAT_CZ",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Czech Republic",
+    "zones": [
+      "Czech Republic"
+    ]
+  },
+  {
+    "code": "VAT_HR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Croatia",
+    "zones": [
+      "Croatia"
+    ]
+  },
+  {
+    "code": "VAT_DK",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Denmark",
+    "zones": [
+      "Denmark"
+    ]
+  },
+  {
+    "code": "VAT_EE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Estonia",
+    "zones": [
+      "Estonia"
+    ]
+  },
+  {
+    "code": "VAT_FI",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Finland",
+    "zones": [
+      "Finland"
+    ]
+  },
+  {
+    "code": "VAT_FR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT France",
+    "zones": [
+      "France"
+    ]
+  },
+  {
+    "code": "VAT_DE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Germany",
+    "zones": [
+      "Germany"
+    ]
+  },
+  {
+    "code": "VAT_GR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Greece",
+    "zones": [
+      "Greece"
+    ]
+  },
+  {
+    "code": "VAT_HU",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Hungary",
+    "zones": [
+      "Hungary"
+    ]
+  },
+  {
+    "code": "VAT_IE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Ireland",
+    "zones": [
+      "Ireland"
+    ]
+  },
+  {
+    "code": "VAT_IT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Italy",
+    "zones": [
+      "Italy"
+    ]
+  },
+  {
+    "code": "VAT_LV",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Latvia",
+    "zones": [
+      "Latvia"
+    ]
+  },
+  {
+    "code": "VAT_LT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Lithuania",
+    "zones": [
+      "Lithuania"
+    ]
+  },
+  {
+    "code": "VAT_LU",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Luxembourg",
+    "zones": [
+      "Luxembourg"
+    ]
+  },
+  {
+    "code": "VAT_MT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Malta",
+    "zones": [
+      "Malta"
+    ]
+  },
+  {
+    "code": "VAT_NL",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Netherlands",
+    "zones": [
+      "Netherlands"
+    ]
+  },
+  {
+    "code": "VAT_PL",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Poland",
+    "zones": [
+      "Poland"
+    ]
+  },
+  {
+    "code": "VAT_PT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Portugal",
+    "zones": [
+      "Portugal"
+    ]
+  },
+  {
+    "code": "VAT_RO",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Romania",
+    "zones": [
+      "Romania"
+    ]
+  },
+  {
+    "code": "VAT_SK",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Slovakia",
+    "zones": [
+      "Slovakia"
+    ]
+  },
+  {
+    "code": "VAT_SI",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Slovenia",
+    "zones": [
+      "Slovenia"
+    ]
+  },
+  {
+    "code": "VAT_ES",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Spain",
+    "zones": [
+      "Spain"
+    ]
+  },
+  {
+    "code": "VAT_SE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "VAT Sweden",
+    "zones": [
+      "Sweden"
+    ]
+  },
+  {
+    "code": "FREE_AT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Austria",
+    "zones": [
+      "Austria"
+    ]
+  },
+  {
+    "code": "FREE_BE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Belgium",
+    "zones": [
+      "Belgium"
+    ]
+  },
+  {
+    "code": "FREE_BG",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Bulgaria",
+    "zones": [
+      "Bulgaria"
+    ]
+  },
+  {
+    "code": "FREE_CY",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Cyprus",
+    "zones": [
+      "Cyprus"
+    ]
+  },
+  {
+    "code": "FREE_CZ",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Czech Republic",
+    "zones": [
+      "Czech Republic"
+    ]
+  },
+  {
+    "code": "FREE_HR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Croatia",
+    "zones": [
+      "Croatia"
+    ]
+  },
+  {
+    "code": "FREE_DK",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Denmark",
+    "zones": [
+      "Denmark"
+    ]
+  },
+  {
+    "code": "FREE_EE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Estonia",
+    "zones": [
+      "Estonia"
+    ]
+  },
+  {
+    "code": "FREE_FI",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Finland",
+    "zones": [
+      "Finland"
+    ]
+  },
+  {
+    "code": "FREE_FR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free France",
+    "zones": [
+      "France"
+    ]
+  },
+  {
+    "code": "FREE_DE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Germany",
+    "zones": [
+      "Germany"
+    ]
+  },
+  {
+    "code": "FREE_GR",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Greece",
+    "zones": [
+      "Greece"
+    ]
+  },
+  {
+    "code": "FREE_HU",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Hungary",
+    "zones": [
+      "Hungary"
+    ]
+  },
+  {
+    "code": "FREE_IE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Ireland",
+    "zones": [
+      "Ireland"
+    ]
+  },
+  {
+    "code": "FREE_IT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Italy",
+    "zones": [
+      "Italy"
+    ]
+  },
+  {
+    "code": "FREE_LV",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Latvia",
+    "zones": [
+      "Latvia"
+    ]
+  },
+  {
+    "code": "FREE_LT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Lithuania",
+    "zones": [
+      "Lithuania"
+    ]
+  },
+  {
+    "code": "FREE_LU",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Luxembourg",
+    "zones": [
+      "Luxembourg"
+    ]
+  },
+  {
+    "code": "FREE_MT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Malta",
+    "zones": [
+      "Malta"
+    ]
+  },
+  {
+    "code": "FREE_NL",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Netherlands",
+    "zones": [
+      "Netherlands"
+    ]
+  },
+  {
+    "code": "FREE_PL",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Poland",
+    "zones": [
+      "Poland"
+    ]
+  },
+  {
+    "code": "FREE_PT",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Portugal",
+    "zones": [
+      "Portugal"
+    ]
+  },
+  {
+    "code": "FREE_RO",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Romania",
+    "zones": [
+      "Romania"
+    ]
+  },
+  {
+    "code": "FREE_SK",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Slovakia",
+    "zones": [
+      "Slovakia"
+    ]
+  },
+  {
+    "code": "FREE_SI",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Slovenia",
+    "zones": [
+      "Slovenia"
+    ]
+  },
+  {
+    "code": "FREE_ES",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Spain",
+    "zones": [
+      "Spain"
+    ]
+  },
+  {
+    "code": "FREE_SE",
+    "roundingType": "",
+    "decimalPoint": 0,
+    "name": "Free Sweden",
+    "zones": [
+      "Sweden"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_AK",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Alaska",
+    "zones": [
+      "USA_Alaska"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_AL",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Alabama",
+    "zones": [
+      "USA_Alabama"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_AR",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Arkansas",
+    "zones": [
+      "USA_Arkansas"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_AZ",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Arizona",
+    "zones": [
+      "USA_Arizona"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_CA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_California",
+    "zones": [
+      "USA_California"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_CO",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Colorado",
+    "zones": [
+      "USA_Colorado"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_CT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Connecticut",
+    "zones": [
+      "USA_Connecticut"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_DC",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Washington DC",
+    "zones": [
+      "USA_Washington DC"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_DE",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Delaware",
+    "zones": [
+      "USA_Delaware"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_FL",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Florida",
+    "zones": [
+      "USA_Florida"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_GA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Georgia",
+    "zones": [
+      "USA_Georgia"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_IA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Iowa",
+    "zones": [
+      "USA_Iowa"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_ID",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Idaho",
+    "zones": [
+      "USA_Idaho"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_IL",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Illinois",
+    "zones": [
+      "USA_Illinois"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_IN",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Indiana",
+    "zones": [
+      "USA_Indiana"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_KS",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Kansas",
+    "zones": [
+      "USA_Kansas"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_KY",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Kentucky",
+    "zones": [
+      "USA_Kentucky"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_LA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Louisiana",
+    "zones": [
+      "USA_Louisiana"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Massachusetts",
+    "zones": [
+      "USA_Massachusetts"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MD",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Maryland",
+    "zones": [
+      "USA_Maryland"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_ME",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Maine",
+    "zones": [
+      "USA_Maine"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MI",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Michigan",
+    "zones": [
+      "USA_Michigan"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MN",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Minnesota",
+    "zones": [
+      "USA_Minnesota"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MO",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Missouri",
+    "zones": [
+      "USA_Missouri"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MS",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Mississippi",
+    "zones": [
+      "USA_Mississippi"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_MT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Montana",
+    "zones": [
+      "USA_Montana"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NC",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_North Carolina",
+    "zones": [
+      "USA_North Carolina"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_ND",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_North Dakota",
+    "zones": [
+      "USA_North Dakota"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NE",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Nebraska",
+    "zones": [
+      "USA_Nebraska"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NH",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_New Hampshire",
+    "zones": [
+      "USA_New Hampshire"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NJ",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_New Jersey",
+    "zones": [
+      "USA_New Jersey"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NM",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_New Mexico",
+    "zones": [
+      "USA_New Mexico"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NV",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Nevada",
+    "zones": [
+      "USA_Nevada"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_NY",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_New York",
+    "zones": [
+      "USA_New York"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_OH",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Ohio",
+    "zones": [
+      "USA_Ohio"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_OK",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Oklahoma",
+    "zones": [
+      "USA_Oklahoma"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_OR",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Oregon",
+    "zones": [
+      "USA_Oregon"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_PA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Pennsylvania",
+    "zones": [
+      "USA_Pennsylvania"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_PR",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Puerto Rico",
+    "zones": [
+      "USA_Puerto Rico"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_RI",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Rhode Island",
+    "zones": [
+      "USA_Rhode Island"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_SD",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_South Carolina",
+    "zones": [
+      "USA_South Carolina"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_TN",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Tennessee",
+    "zones": [
+      "USA_Tennessee"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_TX",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Texas",
+    "zones": [
+      "USA_Texas"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_UT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Utah",
+    "zones": [
+      "USA_Utah"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_VA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Virginia",
+    "zones": [
+      "USA_Virginia"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_VT",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Vermont",
+    "zones": [
+      "USA_Vermont"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_WA",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Washington",
+    "zones": [
+      "USA_Washington"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_WI",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Wisconsin",
+    "zones": [
+      "USA_Wisconsin"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_WV",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_West Virginia",
+    "zones": [
+      "USA_West Virginia"
+    ]
+  },
+  {
+    "code": "SALES_TAX_US_WY",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Sales Tax USA_Wyoming",
+    "zones": [
+      "USA_Wyoming"
+    ]
+  },
+  {
+    "code": "FREE_US",
+    "roundingType": "nearest",
+    "decimalPoint": 0,
+    "name": "Free USA",
+    "zones": [
+      "USA"
+    ]
+  }
+]

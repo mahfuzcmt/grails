@@ -1,0 +1,17 @@
+%store_logo%
+%store_url%
+
+%customer_message%
+
+Your friend recommends you: %recommended_url%
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

@@ -1,0 +1,30 @@
+.googleMap .widget-logo {
+    background-image    : url("../../images/admin/google-map.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}
+.map-widget-preview {
+    background-color: #FFFFFF;
+    border: 5px solid #CCCCCC;
+    height: 255px;
+    margin: 10px;
+    width: 360px;
+}
+.config-btns span{
+    display: inline-block;
+    vertical-align: top;
+}
+.config-btns .advance-config-btn{
+    width: calc(100% - 50px);
+}
+.config-btns .reset-pin {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    height: 34px;
+    width: 40px;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}

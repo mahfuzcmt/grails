@@ -1,0 +1,109 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-price-offer {
+    padding: 50px 0;
+}
+.snippet-price-offer .col-md-4.col-sm-6 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.snippet-price-offer .col-md-4:nth-child(3n+1) {
+    clear: left;
+}
+.snippet-price-offer .heading-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.snippet-price-offer .heading-title .small {
+    color: #626262;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+.snippet-price-offer .heading-title .main-title {
+    color: #2d2d2d;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 8px 0 15px;
+    padding: 0;
+}
+.snippet-price-offer .heading-title .bottom-line {
+    background-color: #31a2e1;
+    height: 1px;
+    margin: 0 auto;
+    width: 70px;
+}
+.snippet-price-offer figure {
+    height: 235px;
+    overflow: hidden;
+}
+.snippet-price-offer img {
+    max-width: 100%;
+}
+.snippet-price-offer .content {
+    background-color: #fff;
+    border: 1px solid #ced5dc;
+    overflow: hidden;
+    padding: 25px;
+}
+.snippet-price-offer .content h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-price-offer .content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0;
+    padding: 0;
+}
+.snippet-price-offer .content .location-price {
+    border-top: 1px solid #eee;
+    margin: 20px -25px 0;
+    overflow: hidden;
+    padding: 20px 25px 0;
+}
+.snippet-price-offer .content .location {
+    color: #878787;
+    display: inline-block;
+    font-size: 15px;
+    line-height: normal;
+    max-width: 224px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-price-offer .location-price i {
+    color: #999;
+    font-size: 20px;
+    margin: 0 5px 0 0;
+}
+.snippet-price-offer .content .price {
+    color: #31a2e1;
+    float: right;
+    font-size: 18px;
+    max-width: 80px;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media screen and (max-width: 767px){
+    .snippet-price-offer figure {
+        height: auto;
+    }
+    .snippet-price-offer img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 479px){
+    .snippet-price-offer .content {
+        padding: 15px;
+    }
+}

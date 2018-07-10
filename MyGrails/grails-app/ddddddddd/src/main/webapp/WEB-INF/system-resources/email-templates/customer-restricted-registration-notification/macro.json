@@ -1,0 +1,7 @@
+{
+    "store_admin_name": "store.admin.name",
+    "customer_name": "customer.name",
+    "customer_email": "customer.email",
+    "customer_address": "customer.address",
+    "customer_mobile": "customer.mobile"
+}

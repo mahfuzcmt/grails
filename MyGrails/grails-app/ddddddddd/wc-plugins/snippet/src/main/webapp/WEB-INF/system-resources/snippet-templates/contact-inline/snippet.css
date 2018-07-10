@@ -1,0 +1,39 @@
+body.widget-snippet {
+    padding: 40px;
+}
+body.widget-snippet .snippet-contact-inline > div {
+    padding: 7px;
+}
+.snippet-contact-inline > div {
+    display: inline-block;
+    margin: 10px 40px 10px 0;
+    vertical-align: top;
+}
+.snippet-contact-inline > div:last-child {
+    margin-right: 0;
+}
+.snippet-contact-inline .icon {
+    float: left;
+    font-size: 36px;
+    line-height: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+}
+.snippet-contact-inline .icon * {
+    color: #666;
+}
+.snippet-contact-inline .desc {
+    float: left;
+}
+.snippet-contact-inline h4,
+.snippet-contact-inline p {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.snippet-contact-inline h4{
+    font-weight: 600;
+}
+.snippet-contact-inline p{
+    font-weight: 400;
+}

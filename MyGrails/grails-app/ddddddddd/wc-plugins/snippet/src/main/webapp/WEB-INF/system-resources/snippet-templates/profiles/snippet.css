@@ -1,0 +1,81 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-profiles h3.title-med {
+    color: #555;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+.snippet-profiles .separator-line {
+    background-color: #e6af2a;
+    height: 2px;
+    margin: 15px auto;
+    width: 30px;
+}
+.snippet-profiles .text-large {
+    color: #626262;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+body.widget-snippet .snippet-profiles .investors-box {
+    padding: 7px;
+}
+.snippet-profiles .investors-box {
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.snippet-profiles .investor-raper-content {
+    border: 1px solid #333333;
+    text-align: center;
+}
+.snippet-profiles .investor-raper-content .investor-title {
+    background-color: #333333;
+    padding: 10px;
+}
+.snippet-profiles .bold-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.snippet-profiles .think-text {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.snippet-profiles .investor-raper-content .bold-text,
+.snippet-profiles .investor-raper-content .think-text {
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-profiles .inveistor-img {
+    max-height: 261px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+@media screen and (max-width: 767px) {
+    .snippet-profiles .inveistor-img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px){
+    .snippet-profiles .col-md-3:nth-child(4n+1) {
+        clear: left;
+    }
+}
+@media (max-width: 991px){
+    .snippet-profiles .col-sm-6:nth-child(2n+1) {
+        clear: left;
+    }
+}

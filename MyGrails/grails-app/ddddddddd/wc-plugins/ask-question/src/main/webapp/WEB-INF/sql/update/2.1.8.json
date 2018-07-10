@@ -1,0 +1,17 @@
+{
+  "fromVersion": "2.1.7",
+  "releaseVersion": "2.1.8",
+  "developers":[
+    {
+      "name": "Sajedur Rahman",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from email_template  where identifier = \"product-question\" and is_active_readonly = 0 ",
+          "isTrue": "",
+          "isFalse": "update email_template  set is_active_readonly = 0 where identifier = \"product-question\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+%store_url%
+
+Dear Admin,
+
+A Customer has asked a question on product %product_name%.
+Following is the question details the customer has asked:
+
+%question%
+
+Yon can review and reply this question from the admin panel.
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

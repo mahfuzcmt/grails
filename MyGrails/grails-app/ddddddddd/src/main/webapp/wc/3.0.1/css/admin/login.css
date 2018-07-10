@@ -1,0 +1,291 @@
+@font-face {
+    font-family : 'source_sans_proregular';
+    src         : url('../../font/sourcesanspro-regular-webfont.eot');
+    src         : url('../../font/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../font/sourcesanspro-regular-webfont.woff2') format('woff2'),
+    url('../../font/sourcesanspro-regular-webfont.woff') format('woff'),
+    url('../../font/sourcesanspro-regular-webfont.ttf') format('truetype'),
+    url('../../font/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+}
+@font-face {
+    font-family : 'source_sans_prosemibold';
+    src         : url('../../font/sourcesanspro-semibold-webfont.eot');
+    src         : url('../../font/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../font/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+    url('../../font/sourcesanspro-semibold-webfont.woff') format('woff'),
+    url('../../font/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+    url('../../font/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+}
+@font-face {
+    font-family : 'source_sans_probold';
+    src         : url('../../font/sourcesanspro-bold-webfont.eot');
+    src         : url('../../font/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../font/sourcesanspro-bold-webfont.woff2') format('woff2'),
+    url('../../font/sourcesanspro-bold-webfont.woff') format('woff'),
+    url('../../font/sourcesanspro-bold-webfont.ttf') format('truetype'),
+    url('../../font/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+}
+html, body {
+    background-color : #253847;
+    color            : #545454;
+}
+html, body {
+    font-family : 'source_sans_proregular';
+    font-size   : 14px;
+    height      : 100%;
+    margin      : 0;
+}
+* {
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing    : border-box;
+    box-sizing         : border-box;
+}
+.source_sans_bold {
+    font-family : 'source_sans_prosemibold';
+}
+.login-panel {
+    left        : 50%;
+    margin-left : -330px;
+    margin-top  : -220px;
+    position    : fixed;
+    top         : 50%;
+    width       : 760px;
+    height      : 440px;
+}
+.login-panel-lt {
+    color      : #FFFFFF;
+    float      : left;
+    height     : 440px;
+    padding    : 90px 30px 0;
+    text-align : center;
+    width      : 281px;
+}
+.webcommander {
+    font-size : 22px;
+}
+ul {
+    margin     : 35px 0 0;
+    padding    : 0 0 0 8px;
+    text-align : left;
+}
+li:before {
+    border-radius : 8px;
+    content       : "";
+    display       : inline-block;
+    height        : 9px;
+    margin        : 0 10px 0 0;
+    width         : 9px;
+}
+ul li {
+    line-height : 28px;
+    list-style  : outside none none;
+}
+.login-panel-lt p:before {
+    background-color : #FFFFFF;
+    content          : "";
+    height           : 2px;
+    left             : 76px;
+    position         : absolute;
+    top              : -10px;
+    width            : 66px;
+}
+.login-panel-lt p {
+    margin   : 71px 0 0;
+    position : relative;
+}
+.login-panel-rt {
+    height     : 440px;
+    margin     : 0 0 0 282px;
+    padding    : 45px 60px 0;
+    text-align : center;
+    position: relative;
+}
+.admin-login {
+    font-size : 22px;
+}
+.admin-login:after {
+    bottom   : -3px;
+    content  : "";
+    height   : 2px;
+    left     : 147px;
+    position : absolute;
+    width    : 66px;
+}
+.admin-login {
+    font-size : 22px;
+    margin    : 0 0 42px;
+    position  : relative;
+}
+.form-row {
+    overflow : hidden;
+}
+.icon {
+    background-image  : url("../../images/admin/16-icon-sprit.png");
+    background-repeat : no-repeat;
+    display           : inline-block;
+    height            : 16px;
+    width             : 16px;
+}
+.icon:after {
+    background-color : #E5E5E5;
+    content          : "";
+    height           : 30px;
+    position         : absolute;
+    right            : 1px;
+    top              : 8px;
+    width            : 1px;
+}
+.icon.user-name {
+    background-position : 0 -32px;
+}
+.icon.password {
+    background-position : -16px 0;
+}
+.icon.user-email {
+    background-position : -64px 0;
+}
+.icon.retype-password {
+    background-position : -128px 0;
+}
+input[type=text],
+input[type=password] {
+    background-color : #FFFFFF;
+    background-image : none;
+    color            : #545454;
+    font-size        : 14px;
+    height           : 48px;
+    line-height      : 1.42857;
+    padding          : 6px 12px;
+    width            : 307px;
+    float            : left;
+    outline          : none;
+}
+input[type=text],
+input.new-password[type=password] {
+    font-family   : 'source_sans_proregular';
+    border-top    : 1px #C9C9C9 solid;
+    border-bottom : 1px #C9C9C9 solid;
+    border-right  : 1px #C9C9C9 solid;
+    border-left   : none;
+    border-radius : 0 5px 0 0;
+}
+input[type=password],
+input.match-password {
+    border-top    : none;
+    border-bottom : 1px #C9C9C9 solid;
+    border-right  : 1px #C9C9C9 solid;
+    border-left   : none;
+    border-radius : 0 0 5px 0;
+}
+#login-username .icon-wrap,
+#new-password .icon-wrap {
+    border-top    : 1px #C9C9C9 solid;
+    border-bottom : 1px #C9C9C9 solid;
+    border-left   : 1px #C9C9C9 solid;
+    border-right  : none;
+    border-radius : 5px 0 0 0;
+}
+#login-password .icon-wrap,
+#retype-password .icon-wrap {
+    border-top    : none;
+    border-bottom : 1px #C9C9C9 solid;
+    border-left   : 1px #C9C9C9 solid;
+    border-right  : none;
+    border-radius : 0 0 0 5px;
+}
+#login-email .icon-wrap {
+    border-top    : 1px #C9C9C9 solid;
+    border-bottom : 1px #C9C9C9 solid;
+    border-right  : none;
+    border-left   : 1px #C9C9C9 solid;
+    border-radius : 5px 0 0 5px;
+}
+.login-panel .form-row.validation-error {
+    background : none;
+    border     : none;
+}
+.login-panel .form-row input.validation-error {
+    border-top    : 1px #C9C9C9 solid;
+    border-bottom : 1px #C9C9C9 solid;
+    border-right  : 1px #C9C9C9 solid;
+    border-left   : none;
+    color         : #FF0000;
+    background    : none;
+}
+.login-panel .form-row input#password.validation-error,
+.login-panel .form-row input.match-password.validation-error {
+    border-radius : 0 0 5px;
+    border-top    : medium none;
+}
+.icon-wrap {
+    float    : left;
+    padding  : 13px 16px 12px;
+    position : relative;
+    height   : 48px;
+    width    : 50px;
+}
+.login-panel .wcui-checkbox {
+    background-image    : url("../../images/admin/16-icon-sprit.png");
+    background-repeat   : no-repeat;
+    background-position : -48px 0;
+    float               : left;
+    height              : 16px;
+    margin              : 0 6px 0 2px;
+    width               : 16px;
+}
+.form-row.remember-forget-pass {
+    padding : 12px 0;
+    text-align : left;
+}
+.login-panel .wcui-checkbox.unchecked {
+    background-position : -32px 0;
+}
+.login-panel .wcui-checkbox.checked {
+    background-position : -48px 0;
+}
+.remember-label {
+    margin-right : 2px;
+}
+.lost-password {
+    float : right;
+}
+#login-email.form-row {
+    margin : 40px 0 15px;
+}
+.admin-login.reset-pass {
+    margin : 50px 0 20px;
+}
+input#userEmail {
+    border-radius : 0 5px 5px 0;
+}
+#new-password {
+    margin-top : 40px;
+}
+#retype-password {
+    margin-bottom : 15px;
+}
+.login-panel-rt .message-block {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 13px;
+}
+.login-panel-rt .message-block.error {
+    color: #f00;
+}
+.login-panel-rt .message-block.error {
+    color: #EC9E2F;
+}

@@ -1,0 +1,60 @@
+body.widget-snippet {
+  padding: 40px;
+}
+.snippet-services-box .row > div {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.snippet-services-box .service-box {
+  overflow: hidden;
+}
+.snippet-services-box .icon-cell {
+  background-color: #444444;
+  border-radius: 5px;
+  display: table;
+  float: left;
+  height: 60px;
+  margin-right: 20px;
+  text-align: center;
+  width: 70px;
+}
+.snippet-services-box .table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.snippet-services-box i {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: normal;
+  margin: 0;
+}
+.snippet-services-box .left i {
+  font-size: 25px;
+  line-height: 55px;
+}
+.snippet-services-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.snippet-services-box p {
+  color: #555;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0 0;
+}
+.snippet-services-box .col-xs-6:nth-child(2n+1) {
+  clear: left;
+}
+.snippet-services-box .service-box > *:not(.icon-cell) {
+  overflow: hidden;
+}
+@media screen and (max-width: 639px) {
+  .snippet-services-box .row > div {
+    width: 100%;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "category": "feature",
+  "name": "Featured With Right Image",
+  "uuid": "featured-right-img",
+  "thumb": "thumb.jpg",
+  "isSystemDefault": true
+}

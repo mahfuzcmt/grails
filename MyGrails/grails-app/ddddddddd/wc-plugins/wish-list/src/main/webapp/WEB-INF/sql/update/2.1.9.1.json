@@ -1,0 +1,17 @@
+{
+  "fromVersion": "2.1.9",
+  "releaseVersion": "2.1.9.1",
+  "developers":[
+    {
+      "name":"Sajidur Rahman",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'label_for_call_for_price' and `type` = 'wish_list'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('label_for_call_for_price', 'wish_list', 's:call.for.price')",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

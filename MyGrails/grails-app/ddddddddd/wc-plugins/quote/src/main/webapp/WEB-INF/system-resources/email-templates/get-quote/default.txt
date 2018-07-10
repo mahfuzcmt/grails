@@ -1,0 +1,69 @@
+%store_url%
+
+Dear %customer_name%,
+Thank you for requesting a quotation
+
+Your Quote Details:
+-------------------------------------
+Quote: %quote_id%
+Quote date: %quote_date%
+
+%if:billing_address%
+Billing Address:
+-------------------------------------
+%billing_address>first_name%%if:billing_address>last_name% %billing_address>last_name% %if%
+%billing_address>address_line1%
+%if:billing_address>city%%billing_address>city%%if%%if:billing_address>state%, %billing_address>state%%if%%if:billing_address>post_code%, %billing_address>post_code%%if%
+%billing_address>country%
+Email: %billing_address>email%
+%if%
+
+%if:shipping_address%
+Shipping Address:
+--------------------------------------
+%shipping_address>first_name%%if:shipping_address>last_name% %shipping_address>last_name% %if%
+%shipping_address>address_line1%
+%if:shipping_address>city%%shipping_address>city%%if%%if:shipping_address>state%, %shipping_address>state%%if%%if:shipping_address>post_code%, %shipping_address>post_code%%if%
+%shipping_address>country%
+Email: %shipping_address>email%
+%if%
+
+Product Details:
+---------------------------------------
+%each:quote_details>items:item:index%
+Name: %item>product_name% %item>variations%
+Unit Price: %currency_symbol%%item>price%
+Quoted Quantity: %item>quantity%
+Discount: %currency_symbol%%item>discount%
+TaxPrice: %currency_symbol%%item>total_with_tax_with_discount%
+----------------------------------------
+%each%
+
+Sub Total: %currency_symbol%%quote_details>sub_total%
+Total Discount: %currency_symbol%%quote_details>total_discount%
+Tax: %currency_symbol%%quote_details>total_tax%
+Shipping Cost: %currency_symbol%%quote_details>total_shipping_cost%
+Shipping Tax: %currency_symbol%%quote_details>shipping_tax%
+Handling Cost: %currency_symbol%%quote_details>handling_cost%
+Total: %currency_symbol%%quote_details>total%
+
+%if:custom_message%
+%each:custom_message:message:index%
+%message%
+%each%
+%if%
+
+%if:quote_comment%
+Comment:
+%quote_comment%
+%if%
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

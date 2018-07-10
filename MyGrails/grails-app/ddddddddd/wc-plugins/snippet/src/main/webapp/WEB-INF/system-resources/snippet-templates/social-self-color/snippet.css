@@ -1,0 +1,51 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-social-self-color {
+    overflow: hidden;
+}
+.snippet-social-self-color a {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 35px;
+    margin: 3px;
+    position: relative;
+    text-align: center;
+    width: 35px;
+}
+.snippet-social-self-color a i {
+    color: #fff;
+    font-size: 18px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.snippet-social-self-color a.facebook {
+    background-color: #3c5b9b;
+}
+.snippet-social-self-color a.twitter {
+    background-color: #359bed;
+}
+.snippet-social-self-color a.google-plus {
+    background-color: #e33729;
+}
+.snippet-social-self-color a.rss {
+    background-color: #fd9f13;
+}
+.snippet-social-self-color a.pinterest {
+    background-color: #cb2027;
+}
+.snippet-social-self-color a.linkedin {
+    background-color: #027ba5;
+}
+.snippet-social-self-color a:hover {
+    background-color: #000 !important;
+}

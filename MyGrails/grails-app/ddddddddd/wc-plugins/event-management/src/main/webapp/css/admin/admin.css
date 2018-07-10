@@ -1,0 +1,206 @@
+/*theam_sb*/
+.menu-item.create-event-session-topic .icon,
+.menu-item.manage-topic .icon,
+.menu-item.reject .icon,
+.menu-item.approve .icon,
+.menu-item.manage-ticket .icon,
+.menu-item.manage-location .icon,
+.menu-item.book-equipment .icon,
+.menu-item.book-venue .icon,
+.menu-item.manage-session .icon,
+.menu-item.event .icon,
+.tab-header.event .icon,
+.menu-item.event .icon {
+    background-image : url("../../images/admin/16-event-management.png");
+}
+.tab-header.event .icon,
+.menu-item.event .icon {
+    background-position: 0 0;
+}
+.event .widget-logo {
+    background-image    : url("../../images/admin/event-management.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}
+.dashlet-ribbon.event .icon {
+    background-image    : url("../../images/admin/event-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end */
+
+.dashlet-ribbon.event .icon {
+    background-position: 0 0;
+}
+
+.menu-item.manage-session .icon {
+    background-position: -16px 0;
+}
+.menu-item.book-venue .icon {
+    background-position: -32px 0;
+}
+.menu-item.book-equipment .icon {
+    background-position: -48px 0;
+}
+.menu-item.manage-location .icon {
+    background-position: -64px 0;
+}
+.menu-item.manage-ticket .icon {
+    background-position: -80px 0;
+}
+.menu-item.approve .icon {
+    background-position: -96px 0;
+}
+.menu-item.reject .icon {
+    background-position: -112px 0;
+}
+.menu-item.manage-topic .icon {
+    background-position: -128px 0;
+}
+.menu-item.create-event-session-topic .icon {
+    background-position: -144px 0;
+}
+.seat-map-view.app-tab-container .app-tab-content-container {
+    background-color: #fff;
+    padding: 20px;
+}
+#tab-event .child-selector {
+    margin-left: 10px;
+}
+.calendar td {
+    vertical-align : top;
+}
+.calendar td span.date {
+    display    : inline-block;
+    text-align : right;
+    width      : 100%;
+}
+.calendar .event {
+    position : absolute;
+}
+.calendar .event .event-title {
+    padding-left : 2px;
+}
+.calendar .event .time {
+    font-weight : 900;
+}
+.calendar .event.single-day {
+    background-color : #FFDBDB;
+}
+.calendar .event.single-day .event-title {
+    color : #794100;
+}
+.calendar .event.multiple-day {
+    background-color : #005689;
+    text-align       : center;
+}
+.calendar .event.multiple-day .event-title {
+    color : #FFFFFF;
+}
+.calendar .event.start-point {
+    border-radius : 5px 0 0 5px;
+}
+.calendar .event.end-point {
+    border-radius : 0 5px 5px 0;
+}
+.calendar .event.day-view {
+    background-color : #005689;
+    text-align       : center;
+}
+.calendar .event.day-view .event-title {
+    color : #FFFFFF;
+}
+.calendar .event.day-view .time {
+    color : #FFFFFF;
+}
+.section-seat-view .seat-row {
+    white-space: nowrap;
+}
+.section-seat-view .seat-row span {
+    display: inline-block;
+    height: 45px;
+    vertical-align: top;
+    width: 45px;
+}
+.section-seat-view .seat-row span.pathway {
+    color: #1199c4;
+    font-size: 20px;
+    line-height: 42px;
+    margin: -1px;
+    padding-top: 0;
+    text-align: center;
+}
+.section-seat-view .seat-row span.booked {
+    opacity : 0.15;
+    filter  : alpha(opacity=15);
+}
+.image-preview-box {
+    height : 350px;
+    width  : 350px;
+}
+.event-session {
+    max-height : 100px;
+    max-width  : 500px;
+    border     : 1px outset #3A87AD;
+}
+.calendar-type-wrap {
+    margin-bottom : 10px;
+}
+.calendar-type.link {
+    border: 1px solid #e6e7e9;
+    border-radius: 2px;
+    color: #7b8385;
+    display: inline-block;
+    font-style: normal;
+    height: 28px;
+    line-height: 26px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.calendar-type.link:hover, .calendar-type.link.active {
+    background-color : #1198c5;
+    border-color     : #1083a9;
+    color            : #fff;
+}
+.section-seat-view {
+    padding-bottom: 20px;
+}
+.calendar-type-wrap > span {
+    vertical-align : middle;
+}
+.calendar-type-wrap .selector {
+    padding-left: 5px;
+}
+.calendar-type-wrap .selector .error {
+    color : #FF0000;
+}
+.seat-map-view .seat-name {
+    margin-bottom : 5px;
+    margin-top    : 5px;
+}
+.seat-map-view .body {
+    background-color : rgb(255, 255, 255);
+    padding          : 10px;
+}
+.seat-map-view .seat {
+    background : url("../../images/admin/seat-icon.png") no-repeat 6px 6px;
+    border     : 3px solid #e2e9e9;
+    margin     : -1px;
+}
+.venue-table.table-view table .select-column {
+    width: 50px;
+}
+.venue-table.table-view table .actions-column {
+    width: 90px;
+}
+.seat-map-view .header .toolbar > * {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.event-tab.table-view .select-column {
+    width: 50px;
+}
+.event-tab.table-view .actions-column {
+    width: 90px;
+}

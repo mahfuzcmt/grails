@@ -1,0 +1,68 @@
+.widget-location .location-container {
+    height: 500px;
+    position: relative;
+}
+
+.widget-location .autocomplete-suggestions {
+    position: absolute; top: 10px; left: 10px; z-index: 99;
+    display        : inline-block;
+    min-height     : 26px;
+    vertical-align : middle;
+    overflow: auto;
+}
+
+.widget-location .autocomplete-suggestions {
+    background-color: lightsteelblue;
+}
+
+.widget-location  .button-container {
+    background-color: white;
+}
+
+.widget-location ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    -webkit-display: flex;
+    -ms-display: flex;
+    display: flex;
+}
+
+.widget-location li {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.widget-location li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.widget-location li a.activeCountry {
+    background-color: lightsteelblue;
+}
+
+.widget-location .countryChoice {
+    color: #333333;
+    font-weight: bold;
+}
+
+.widget-location .autocomplete-suggestions h5 {
+    text-decoration-color: darkslategray;
+    text-align: center;
+}
+
+.widget-location .autocomplete-suggestions .autocomplete-suggestion {
+    box-sizing: border-box;
+    border-bottom: 1px solid #F1F1F1;
+    display: block;
+    font-size: 13px;
+    padding: 5px 15px;
+    text-overflow: ellipsis;
+}

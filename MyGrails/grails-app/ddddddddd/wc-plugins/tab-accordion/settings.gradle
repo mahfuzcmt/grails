@@ -1,0 +1,4 @@
+include ":webcommander"
+project(":webcommander").projectDir = file("../../webcommander")
+include ":embedded-page"
+project(":embedded-page").projectDir = file("../embedded-page")

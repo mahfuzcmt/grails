@@ -1,0 +1,36 @@
+.tab-accordion-tab .container-block,
+.tab-accordion-accordion .container-block {
+    display: table;
+}
+.tab-accordion-tab .left-panel,
+.tab-accordion-accordion .left-panel {
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.tab-accordion-tab .right-panel,
+.tab-accordion-accordion .right-panel {
+    display: table;
+}
+.tab-accordion-tab.bmui-tab.left-side-header .widget-information .bmui-tab-header-container {
+    float: none;
+    width: 100%;
+}
+.tab-accordion-tab.bmui-tab.left-side-header .widget-information .bmui-tab-header {
+    border-color: #e2e2e2;
+    border-radius: 3px 3px 0 0;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    display: inline-block;
+    margin-right: 4px;
+    padding: 8px 18px;
+}
+.tab-accordion-tab.bmui-tab.left-side-header .widget-information .bmui-tab-header .title {
+    display: inline;
+    line-height: normal;
+    padding: 0;
+}
+.tab-accordion-tab.bmui-tab.left-side-header .widget-information .bmui-tab-body-container {
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-width: 3px 1px 1px;
+}

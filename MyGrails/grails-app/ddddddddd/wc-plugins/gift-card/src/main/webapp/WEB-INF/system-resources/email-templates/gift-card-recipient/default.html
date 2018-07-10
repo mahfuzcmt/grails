@@ -1,0 +1,92 @@
+<table style="font-family:Arial, Helvetica, sans-serif; font-size:13px; border: 1px solid #cccccc; width: 580px;" border="0" cellspacing="0" cellpadding="40" align="center" bgcolor="#FFFFFF">
+    <tr><td>
+        <table style="width: 100%%;" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td style="border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;">%store_logo%</td>
+                <td style="text-align: right; border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;"><a style="font-style: italic; color: #1AAFEC; font-family:Arial, Helvetica, sans-serif; font-size:13px;" href="%store_url%">%store_url%</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 25px 0 0;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Dear %recipient_name%,</p>
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:20px;"><strong>%gift_sender_name%</strong> has sent you a Gift Certificate of <strong>%currency_symbol% %gift_amount%</strong>
+                        that  you can redeem on Check out page before proceeding to confirm order using code  given below:<br />
+                    </p>
+                </td>
+            </tr>
+            %if% %if:product_image_url%
+            <tr>
+                <td>
+                    <img src="%product_image_url%" alt="">
+                </td>
+            </tr>
+            %if%
+            <tr>
+                <td colspan="2">
+                    <table style="width: 100%%; padding:10px 20px;" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#f9f9f9">
+                        <tr><td>
+                            <table style="width: 100%%;" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td width="20%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Gift Card Code:</td>
+                                    <td width="80%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;">%gift_code%</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Gift Amount:</td>
+                                    <td width="80%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;">%currency_symbol% %gift_amount%</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Gift Validity:</td>
+                                    <td width="80%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;">%gift_available_to%</td>
+                                </tr>
+                                <tr>
+                                    <td width="20%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Sender Name:</td>
+                                    <td width="80%%" style="border-bottom: 1px solid rgb(204, 204, 204); padding: 7px 0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;">%gift_sender_name%</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%%" style="padding: 7px 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Sender Email:</td>
+                                    <td width="80%%" style="padding: 7px 0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;">%gift_sender_email%</td>
+                                </tr>
+                            </table>
+                        </td></tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding: 30px 0 10px;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:16px;"><strong>Sender Message : </strong></p>
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">%gift_sender_message%</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding: 20px 0 35px 0;">
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">Please keep this  email for your records, contact us at %store_email% if you have any questions.</p>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="padding: 20px 0 0; border-top: 4px solid #E4E4E4;" colspan="2">
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px; font-weight: bold;">%store_name%</p>
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line1%</p>
+                    %if:store_address_line2%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line2%</p>
+                    %if% %if:store_city%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_city%</p>
+                    %if% %if:store_country%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_country%</p>
+                    %if% %if:store_phone%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Phone: %store_phone%</p>
+                    %if% %if:store_mobile%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Mobile: %store_mobile%</p>
+                    %if% %if:store_fax%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Fax: %store_fax%</p>
+                    %if%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Email: %store_email%</p>
+                </td>
+            </tr>
+        </table>
+    </td></tr>
+</table>

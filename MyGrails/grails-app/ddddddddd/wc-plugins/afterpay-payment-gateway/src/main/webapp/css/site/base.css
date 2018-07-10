@@ -1,0 +1,11 @@
+.afterpay-icon {
+    background: url("../../images/afterpay.png") no-repeat scroll center center;
+    width: 100px;
+    height: 20px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+}
+.afterpay .gateway-thumb {
+    background : url("../../images/afterpay.png") no-repeat center #F7F7F7;
+}

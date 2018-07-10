@@ -1,0 +1,763 @@
+/*theme_sb*/
+.tab-header.form-data .icon,
+.tab-header.form-data .icon,
+.tab-header.form .icon,
+.menu-item.add-condition .icon
+.menu-item.add-block .icon,
+.menu-item.form .icon {
+    background-image : url("../../images/admin/16-form-editor.png");
+}
+.dashlet-ribbon.form .icon {
+    background-image    : url("../../images/admin/form-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+/*theam_sb end*/
+.dashlet-ribbon.form .icon {
+    background-position: 0 0;
+}
+.tab-header.form .icon {
+    background-position: 0 0;
+}
+.tab-header.form-data .icon {
+    background-position: -16px 0;
+}
+.menu-item.add-block .icon {
+    background-position: -32px 0;
+}
+.menu-item.add-condition .icon {
+    background-position: -48px 0;
+}
+.menu-item.add-block .icon {
+    background-position: -32px 0;
+}
+#tab-form.app-tab-container {
+    padding: 0;
+}
+#tab-form .app-tab-container .form-preview {
+    width: 100%;
+    height: 100%;
+}
+#tab-form .embedded-edit-form-panel > .header,
+#tab-form.app-tab-container > .header {
+    padding: 10px 20px;
+}
+.create-form-editor.embedded-edit-form-panel.create-panel > .body {
+    border: medium none;
+    padding: 0;
+}
+.create-form-editor .app-tab-content-container {
+    width: 100%;
+}
+.form-editor-panel .editor-work-area {
+    display: flex;
+    height: 100%;
+}
+.form-editor-panel .editor-work-area .field-tools {
+    background-color: #eef4f4;
+    border-right: 1px solid #d7e1e4;
+    border-top: 1px solid #d7e1e4;
+    border-left:1px solid #d7e1e4 ;
+    flex-basis: 350px;
+    min-width: 350px;
+    height: 100%;
+}
+.form-editor-panel .editor-work-area .field-tools .left-bar {
+    position: relative;
+    height: 100%;
+}
+
+.editor-work-area .field-tools .field-config {
+    display: none;
+}
+.editor-work-area .field-tools .field-config.active {
+    display: block;
+}
+.table-view .form-editor-panel .app-tab-content-container {
+    flex: 1 1 auto;
+    padding: 0;
+    height: 100%;
+}
+.table-view .form-editor-panel .app-tab-content-container .field-drop-zone {
+
+}
+.form-editor-panel {
+    height: 100%;
+}
+.form-editor-panel .left-bar .bmui-tab-header-container {
+    background-color: #fff;
+    border-bottom: 1px solid #ced6d8;
+    height: 41px;
+    padding: 0 20px;
+}
+.form-editor-panel .left-bar .bmui-tab-header {
+    background-color: #fff;
+    border-bottom: medium none;
+    border-left: 1px solid #ced6d8;
+    border-right: 1px solid #ced6d8;
+    box-shadow: none;
+    float: left;
+    margin-left: -1px;
+    padding: 10px 25px;
+    width: auto;
+    font-size: 15px;
+}
+.form-editor-panel .left-bar .bmui-tab-header:first-child {
+    border-left: 1px solid #fff;
+}
+.form-editor-panel .left-bar .bmui-tab-header.bmui-tab-active:first-child {
+    border-left: 1px solid #ced6d8;
+}
+.form-editor-panel .left-bar .bmui-tab-header:last-child {
+    border-right: 1px solid #fff;
+}
+.form-editor-panel .left-bar .bmui-tab-header.bmui-tab-active:last-child {
+    border-right: 1px solid #ced6d8;
+}
+.form-editor-panel .left-bar .bmui-tab-header.bmui-tab-active {
+    background-color: #eef4f4;
+    border-bottom: 1px solid #eef4f4;
+    margin-bottom: -1px;
+}
+.form-editor-panel .left-bar .bmui-tab-body-container {
+    height: calc(100% - 41px);
+    overflow: auto;
+    padding: 10px;
+}
+
+.form-editor-panel .field-drop-zone .bmi-sortable-placeholder{
+    border: 2px dashed #1199C4;
+    height: 118px;
+}
+.field-thumb {
+    background-color: #f3f9fb;
+    border: 1px solid #d9e1e3;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    width: 185px;
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+    -webkit-transition: background 0.2s ease-in-out 0s;
+    transition: background 0.2s ease-in-out 0s;
+}
+body > .field-thumb {
+    box-shadow: 0 0 5px #ccc;
+}
+.field-thumb.selected {
+    border: 2px solid #1198c5;
+}
+.field-thumb:hover {
+    background-color: #f8f9fb;
+}
+.field-thumb .label {
+    color: #444;
+    display: block;
+    font-size: 14px;
+    padding: 0 10px 10px;
+}
+.field-thumb .icon {
+    background: url("../../images/form/tools-icon-sprite.png") no-repeat scroll ;
+    display: inline-block;
+    height: 36px;
+    margin: 15px 0 7px;
+    width: 36px;
+}
+.field-thumb.textBox .icon {
+    background-position: 0 0;
+}
+.field-thumb.textArea .icon {
+    background-position: -36px 0;
+}
+.field-thumb.dropDown .icon {
+    background-position: -72px 0;
+}
+.field-thumb.radioButton .icon {
+    background-position: -108px 0;
+}
+.field-thumb.checkBox .icon {
+    background-position: -144px 0;
+}
+.field-thumb.date .icon {
+    background-position: -180px 0;
+}
+
+.field-thumb.label .icon {
+    background-position: -468px 0;
+}
+.field-thumb.file .icon {
+    background-position: -504px 0;
+}
+
+.table-view .form-editor-panel .app-tab-content-container .header.ribbon-tab {
+    border-bottom: 1px solid #cdd7d9;
+    height: 41px;
+}
+.form-editor-panel .tab-headers {
+    background-color: #f8f9fb;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+.form-editor-panel .tab-headers div {
+    background-color: #f8f9fb;
+    border-radius: 0;
+    box-shadow: none;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    font-size: 15px;
+    height: 41px;
+    line-height: 41px;
+    margin: 0 -1px -1px 0;
+    padding: 0 20px;
+    border-bottom: 1px #cdd7d9 solid;
+    border-left: 1px #cdd7d9 solid;
+    border-right: 1px #cdd7d9 solid;
+    border-top: none;
+}
+.form-editor-panel .tab-headers div:hover,
+.form-editor-panel .tab-headers div.active,
+.form-editor-panel .tab-headers div.active:hover {
+    color: #1199c4;
+}
+.form-editor-panel .tab-headers div:first-child {
+    border-left: none;
+}
+.form-editor-panel .tab-headers .active {
+     background-color: #fff;
+     border-bottom: 1px solid #fff;
+}
+.form-editor-panel .tab-headers div:first-child {
+    border-left: 1px solid transparent;
+}
+
+.form-editor-panel .tab-headers .active:last-child {
+    border-right: 1px solid #cdd7d9;
+}
+.form-editor-panel .ribbon-wrapper {
+    float: left;
+    margin: 5px 3px 0;
+}
+
+.form-editor-panel .field-drop-zone input {
+    border: 1px solid #d3dbdf;
+    border-radius: 3px;
+    color: #666666;
+    height: 40px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.form-editor-panel .field-drop-zone textarea {
+    border: 1px solid #d3dbdf;
+    border-radius: 3px;
+    color: #666666;
+    padding: 10px 15px;
+    width: 100%;
+}
+.form-editor-panel .field-drop-zone .editable-field .chosen-container {
+    width: 100%;
+}
+.form-editor-panel .field-drop-zone .editable-field .chosen-container a {
+    height: 40px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.form-editor-panel .field-drop-zone .editable-field .chosen-container a b {
+    right: 6px;
+    top: 7px;
+}
+
+.menu-item.move-up .icon {
+    background-position : -256px -32px;
+}
+.menu-item.move-down .icon {
+    background-position : -272px -32px;
+}
+.menu-item.copy .icon {
+    background-position : -288px -32px;
+}
+.menu-item.remove .icon,
+.menu-item.delete .icon {
+    background-position : -304px -32px;
+}
+.menu-item.create-web-form .icon {
+    background-position : -80px 0;
+}
+.tab-header.form .icon {
+    background-position : 0 0;
+}
+.form .widget-logo {
+    background-image    : url("../../images/admin/form-editor.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}
+
+.form-editor-panel .form-fixed-buttons {
+    width   : 186px;
+    height  : 57px;
+    padding : 16px 0 0 15px;
+}
+.form-editor-panel .form-fixed-buttons .save-web-form {
+    display: inline-block;
+}
+
+.ribbon-wrapper > * {
+    display        : inline-block;
+    vertical-align : top;
+}
+.form-editor-panel .tab-ribbons .font-style {
+    width  : 100%;
+    height : 75px;
+}
+.form-editor-panel .tab-ribbons .toolbar-element {
+    min-height : 24px;
+    min-width  : 24px;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field {
+    font-size: 0;
+    width: 100%;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field * {
+    font-size: 14px;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field .form-sub-field {
+    display: block;
+    padding-bottom: 25px;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field .form-sub-field:last-child {
+    padding-bottom: 0;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field label {
+    width: 194px;
+}
+.form-editor-panel .field-drop-zone .editable-field.form-group-field input {
+    width: 45%;
+}
+
+.field-drop-zone .editable-label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 250px;
+}
+.form-editor-panel .field-drop-zone .editable-field {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+}
+.field-drop-zone .selected-element .selected {
+    outline : 1px dashed #999999;
+}
+.field-drop-zone-wrapper {
+    background-color: #ffffff;
+    height: calc(100% - 65px);
+    overflow: auto;
+    padding: 40px 20px 10px;
+    clear: left;
+    border-top: 1px solid #d7e1e4;
+    border-left: 1px solid #d7e1e4;
+}
+.field-drop-zone.empty-zone {
+    min-height: 100px;
+}
+.field-drop-zone .row {
+    position: relative;
+}
+.field-drop-zone .form-field {
+    border: 2px solid transparent;
+    padding: 15px;
+    position: relative;
+    height: 100%;
+}
+
+.field-drop-zone .close-option-header {
+    display : none;
+}
+.field-drop-zone .selected-row .close-option-header {
+    bottom: 0;
+    display: inline-block;
+    margin-top: -11px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    height: 22px;
+    z-index: 100;
+}
+.field-drop-zone .selected-element {
+    border     : 1px solid #CCCCCC;
+    background : #EEEEEE;
+    cursor     : move;
+}
+.field-drop-zone .form-field-empty {
+    border  : 1px dashed #0000CC;
+    cursor  : move;
+    height  : 14px;
+    padding : 4px;
+}
+.field-drop-zone .form-field.selected-element {
+    background-color: #f8f9fb;
+    border: 1px solid #1199c4;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.form-editor-panel .bmui-sortable-placeholder {
+    border: 2px dashed #1199c4;
+    height: 20px;
+}
+.field-drop-zone .form-field .editable-field .form-sub-label-container {
+    margin-left : 8px;
+}
+.field-drop-zone .close-option-header .close,
+.field-drop-zone .close-option-header .settings {
+    cursor         : pointer;
+    display        : inline-block;
+    height         : 16px;
+    margin-left    : 6px;
+    vertical-align : middle;
+    width          : 16px;
+}
+.field-drop-zone .close-option-header .close {
+    background-image    : url('../../images/formbuilder/index.png');
+    background-position : -26px 0;
+}
+.field-drop-zone .close-option-header .close:hover {
+    background-position : -26px -16px;
+}
+.field-drop-zone .close-option-header .settings {
+    background-image  : url('../../images/formbuilder/gear.png');
+    background-repeat : no-repeat;
+    background-position: 0 0;
+}
+.field-drop-zone .close-option-header .settings:hover,
+.field-drop-zone .close-option-header.expanded .settings {
+    background-position: 0 -16px;
+}
+.form-editor > .content {
+    padding : 0;
+}
+
+.field-drop-zone .row .block {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 80px;
+    position: relative;
+}
+
+.field-drop-zone .row.block-container-1 .block {
+    width: 100%;
+}
+.field-drop-zone .row.block-container-2 .block {
+    width: 50%;
+}
+.field-drop-zone .row.block-container-3 .block {
+    width: 33.33%;
+}
+.form-editor-panel .field-drop-zone .bmui-draggable-cloned-helper .bmi-sortable-placeholder {
+    display: none;
+}
+
+.form-editor-panel .field-drop-zone .block .remove-field {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    z-index: 100;
+}
+.form-editor-panel .field-drop-zone .row:not(.block-container-1) .block:hover .remove-field {
+    display: inline-block;
+}
+
+table.form-condition-editor td {
+    overflow: initial;
+}.form-editor-panel .field-drop-zone .row {
+     background-color: rgb(255, 255, 255);
+    display: flex;
+    display: -webkit-flex;
+}
+.form-editor-panel .field-drop-zone .row .block {
+    border: 1px dashed #cccccc;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction:column;
+
+}
+.form-editor-panel .field-drop-zone .row .block.selected-block{
+    border: 1px solid #1199c4;
+}
+.quote2-form .form-row.classLabel {
+    margin: 20px 0 10px;
+}
+
+
+/* New Form UI desing */
+#tab-form .form-row label {
+    color: #333;
+}
+
+#workspace #tab-form .leftbar-accordion .accordion-item{
+    background: none;
+}
+.config-section .form-row span, .config-section .form-row label{
+    display: inline-block;
+}
+.config-section .form-row label, .setup-config  .form-row label {
+    padding: 3px 0 2px;
+}
+.config-section .form-row .errorlist  .pointer{
+    display: none;
+}
+.config-section .form-row,
+.setup-config .form-row {
+    padding:15px 0 0;
+}
+
+.config-section .form-row input[type="text"],
+.config-section .form-row input[type="password"],
+.config-section .form-row select,
+.setup-config .form-row input[type="text"],
+.setup-config .form-row input[type="password"],
+.setup-config .form-row select
+{    height: 32px;
+    padding: 5px 15px;
+}
+.setup-config, .field-config{
+    display: none;
+}
+.setup-config.active, .field-config.active{
+    display: block;
+}
+
+.form-preview{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+#tab-form .body{
+    position: relative;
+}
+.empty-form-content, .blank-form-msg {
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+    left: 0;
+    padding-top: 130px;
+    background: url("../../images/admin/empty-form.png") no-repeat top center;
+}
+#tab-form .embedded-edit-form-panel {
+    padding-bottom: 0;
+}
+.empty-form-content .highlight, .blank-form-msg .add {
+    cursor: pointer;
+}
+#tab-form .search-text {
+    width: 195px;
+}
+#tab-form .left-panel{
+    margin-right: 15px;
+    border-right: 1px solid #d7e1e4;
+    border-top: 1px solid #d7e1e4;
+}
+#tab-form .two-panel-explorer .right-panel{
+    border-left: 1px solid #d7e1e4;
+}
+#tab-form .body p {
+    font-size:20px;
+    text-align: center;
+    line-height: 22px;
+}
+#tab-form .body p .highlight, .search-icon, .too-icon.add {
+    color: #1199c4;
+    font-weight: bold;
+}
+#tab-form .double-input-row .form-row:nth-child(2) {
+    margin: 0;
+}
+
+#tab-form .double-input-row .form-row:last-child {
+    float: right;
+}
+#tab-form .no-entry-row{
+    padding: 15px 0;
+}
+#tab-form .tool-group.toolbar-btn.back i::before {
+    content: "\2190";
+}
+#tab-form .tool-group.toolbar-btn.back {
+    display: block;
+    text-align: center;
+    margin-bottom:15px ;
+}
+#tab-form .radio-group {
+    display: block;
+}
+
+#tab-form .triple-input-row .submit-btn{
+    padding: 3px 15px;
+}
+#tab-form .triple-input-row .remove-btn{
+    background: #fff;
+    border:1px solid #d7e1e4;
+    color: #555;
+    padding: 4px 15px;
+}
+
+#tab-form .triple-input-row .wcui-checkbox{
+    margin-right: 0;
+}
+#tab-form .chosen-drop .btn.edit {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #1199c4;
+    float: right;
+    line-height: normal;
+    padding: 0;
+}
+#tab-form .chosen-drop .text {
+    float: left;
+}
+.wcui-radio, .wcui-checkbox {
+    background: #fff;
+}
+#tab-form .radio-group.vertical label, #tab-form .form-row label{
+    display: inline-block;
+}
+#tab-form .radio-group.horizontal .radio{
+    display: inline-block;
+    width: 48%;
+}
+#tab-form .double-input-row .form-row{
+    display: inline-block;
+    width: 48%;
+}
+#tab-form .double-input-row .form-row input{
+    background: #fff;
+}
+#tab-form .dropdown-date-type-config .form-row{
+    display: inline-block;
+    width: 30%;
+}
+
+#tab-form .form-row.format-row .check-box-group .check-box{
+ display: inline-block;
+    width: 30%;
+}
+#tab-form .form-row .combodate select{
+    padding: 5px;
+}
+#tab-form .double-input-row .form-row span{
+    min-width: auto;
+}
+#tab-form .search-icon  {
+    color: #1199c4;
+    font-size:26px;
+}
+#tab-form  .app-tab-content-container{
+    height: calc(100%);
+    border-left: 15px solid #f0f3f4;
+}
+#tab-form .field-drop-zone-wrapper {
+    height: 100%;
+    padding: 50px 50px 10px;
+}
+#workspace #tab-form .leftbar-accordion .accordion-item.expanded{
+    overflow: visible;
+    padding:0;
+}
+#tab-form  .setup-config, #tab-form  .field-config{
+    padding: 25px 20px 25px;
+}
+.form-template {
+    width: 250px;
+    height: 120px;
+    padding: 15px;
+    margin: 12px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #d9e1e3;
+    cursor: pointer;
+    background: #f3f9fb;
+    border-radius: 3px;
+}
+#tab-form .form-row textarea{
+    min-height: 80px;
+}
+#tab-form .toolbar-btn.add{
+    font-size:24px;
+    color:#1199c4;
+}
+
+.form-template.selected {
+    border: 1px solid #1199c4;
+}
+.form-template:first-child {
+    background: #fff;
+}
+
+.form-template .icon{
+    background: url("../../images/admin/form-template-icon.png") no-repeat center center;
+    width: 35px;
+    height: 36px;
+    display: block;
+    margin:10px  auto;
+}
+
+.form-template .blank-form{
+    background-position: 5px 0;
+}
+
+.form-template .contact-form{
+    background-position: -26px 0;
+}
+.form-template .event-registration{
+    background-position: -64px 0;
+}
+.form-template .customer-survey{
+    background-position: -100px 0;
+    width: 40px;
+}
+.form-template .job-application-form, .form-template .order-form{
+    background-position: -138px 0;
+}
+
+.form-template .label{
+    font-weight: bold;
+    display: block;
+    color: #333;
+    margin: 5px 0;
+}
+.view-popup .info-row {
+    margin:10px 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.view-popup .info-row:first-child{
+    margin-top: 30px;
+}
+.view-popup .info-row > label{
+    padding-right: 10px;
+    display: block;
+    margin-bottom: 0;
+}
+#tab-form .form-row .minute {
+    width: 70px !important;
+}
+.form-preview{
+    margin: 50px;
+}
+
+/*todo: remove*/
+.edit-popup{
+    width: 900px !important;
+    height: 600px;
+}
+
+@media (max-width: 1400px) {
+    .form-editor-panel .tab-ribbons .tab-setup {
+        max-width: 570px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

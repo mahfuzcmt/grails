@@ -1,0 +1,17 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name":"Sajid Bhuiyan",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'label_for_call_for_price' and `type` = 'compare_product'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('label_for_call_for_price', 'compare_product', 's:call.for.price')",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

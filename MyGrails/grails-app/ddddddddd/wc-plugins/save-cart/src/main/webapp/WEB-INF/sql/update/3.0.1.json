@@ -1,0 +1,30 @@
+{
+  "fromVersion": "3.0.1",
+  "releaseVersion": "3.0.1",
+  "developers":[
+
+    {
+      "name": "Tanvirul",
+      "sql" : [
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'save_cart_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('save_cart_active', 'my_carts', 'true')"
+        },
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'save_cart_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('save_cart_label', 'my_carts', 'Saved Cart')"
+        },
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'save_cart_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('save_cart_default_label', 'my_carts', 'Saved Cart')"
+        }
+      ]
+    }
+  ]
+}

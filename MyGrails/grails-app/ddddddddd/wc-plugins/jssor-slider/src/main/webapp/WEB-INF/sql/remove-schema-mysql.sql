@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `jssor_slider_caption`;

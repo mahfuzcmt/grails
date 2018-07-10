@@ -1,0 +1,207 @@
+/*common design*/
+.post.post-list-view-height {
+    padding-bottom : 20px;
+}
+
+/* +++++++++++++++++  Blog post widget design +++++++++++++++++++++++++ */
+.widget-blogPost .title {
+    font-size      : 30px;
+    padding-bottom : 20px;
+}
+.blog-post-item {
+    border-bottom  : 1px dashed #CCCCCC;
+    margin-bottom  : 20px;
+    padding-bottom : 20px;
+}
+.blog-post-item.last {
+    border-bottom  : none;
+}
+.blog-post-content {
+    overflow : auto;
+}
+.blog-post-item .title {
+    display : block;
+}
+.blog-post-item .title a {
+    font-size : 22px;
+}
+.blog-post-item .title a:hover {
+    color : #666;
+}
+.blog-post-item .image {
+    display        : block;
+    padding-bottom : 20px;
+}
+.blog-post-item .content {
+    display        : block;
+    font-size      : 13px;
+    padding-bottom : 20px;
+}
+.blog-post-item .details-link.link {
+    display        : block;
+    padding-bottom : 20px;
+}
+.blog-post-item .details-link.link a {
+    background-color : #4D4D4D;
+    color            : #FFFFFF;
+    display          : inline-block;
+    font-size        : 14px;
+    padding          : 5px 15px;
+}
+.blog-post-item .details-link.link a:hover {
+    background-color : #666666;
+}
+
+.blog-post-info span {
+    font-size : 13px;
+}
+.blog-post-info span.date {
+    background   : url("../../images/site/calender.png") no-repeat left 2px;
+    padding-left : 24px;
+    margin-right : 10px;
+}
+.blog-post-info span.author {
+    background   : url("../../images/site/author.png") no-repeat left 2px;
+    padding-left : 24px;
+    margin-right : 10px;
+}
+.blog-post-info span.categories {
+    background   : url("../../images/site/blog-category.png") no-repeat left 3px;
+    padding-left : 24px;
+    margin-right : 10px;
+}
+.blog-post-info span.comment-count {
+    background   : url("../../images/site/comments.png") no-repeat left 3px;
+    padding-left : 24px;
+}
+.blog-post-info span.categories a {
+    color: #FF9000;
+    padding-right: 15px;
+}
+.blog-post-info span.categories a:hover {
+    color: #FBBA65;
+}
+.blog-post-info span.comment-count .count {
+    padding-right : 5px;
+}
+/* +++++++++++++++++  blog.category design +++++++++++++++++++++++++ */
+.blog-category-details .blog-category.image {
+    display        : block;
+    padding-bottom : 20px;
+}
+.blog-category-details .title {
+    display        : block;
+    font-size      : 30px;
+    padding-bottom : 20px;
+}
+.blog-category-details .blog-post-info span.date,
+.blog-category-details .blog-post-info span.author {
+    background-position : left 2px;
+}
+.blog-category-details .blog-post-info span.comment-count {
+    margin-right : 10px;
+}
+/* +++++++++++++++++  blog.post design +++++++++++++++++++++++++ */
+.blog-post-details .title {
+    display        : block;
+    font-size      : 30px;
+    padding-bottom : 20px;
+}
+.blog-post-details .image {
+    display        : block;
+    padding-bottom : 20px;
+}
+.blog-post-details .content {
+    display        : block;
+    font-size      : 13px;
+    padding-bottom : 20px;
+}
+.blog-post-details span.date {
+    background   : url("../../images/site/calender.png") no-repeat left top;
+    padding-left : 24px;
+    margin-right : 10px;
+}
+.blog-post-details span.author {
+    background   : url("../../images/site/author.png") no-repeat left top;
+    padding-left : 24px;
+    margin-right : 10px;
+}
+.blog-post-details span.categories {
+    background   : url("../../images/site/blog-category.png") no-repeat left 3px;
+    padding-left : 24px;
+    margin-top   : 5px;
+    clear        : left;
+    margin-right : 10px;
+}
+.blog-post-details .social-media-share-bar {
+    display     : block;
+    padding-top : 10px;
+}
+.blog-post-details .social-media-share-bar .social-media-share {
+    display : inline-block;
+}
+.blog-post-details .blog-post-comment-panel {
+    padding-top : 20px;
+}
+.blog-post-details .blog-post-comment-panel .comment-count-info-row {
+    border-bottom  : 1px solid #CCCCCC;
+    display        : block;
+    font-size      : 20px;
+    margin-bottom  : 20px;
+    padding-bottom : 10px;
+}
+.blog-post-details .blog-post-comment-panel .comment-item {
+    border-bottom : 1px dashed #CCCCCC;
+    margin-bottom : 20px;
+}
+.blog-post-details .blog-post-comment-panel .comment-item .name {
+    font-size     : 15px;
+    padding-right : 10px;
+}
+.blog-post-details .blog-post-comment-panel .comment-item .email {
+    font-size     : 13px;
+    padding-right : 10px;
+}
+.blog-post-details .blog-post-comment-panel .comment-item .content {
+    padding-top : 5px;
+}
+.blog-post-details .comment-post-panel {
+    border     : 1px solid #CCCCCC;
+    margin-top : 40px;
+    padding    : 25px 30px;
+}
+.blog-post-details .comment-post-panel h2 {
+    font-size      : 22px;
+    font-weight    : normal;
+    padding-bottom : 15px;
+}
+.blog-post-details .comment-post-panel label {
+    display : block;
+}
+.blog-post-details .comment-post-panel input {
+    width : 300px;
+}
+.blog-post-details .comment-post-panel textarea {
+    height : 200px;
+    width  : 560px;
+}
+.blog-post-details .comment-post-panel .message {
+    display        : block;
+    font-size      : 14px;
+    padding-bottom : 10px;
+}
+.blog-post-details .comment-post-panel .message .success {
+    color : #008000;
+}
+.blog-post-details .comment-post-panel .message .error {
+    color : #ff0000;
+}
+#blog-post-create-comment-panel .max-character {
+    color: #999;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    padding-left: 5px;
+    padding-right: 370px;
+    text-align: right;
+}

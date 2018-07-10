@@ -1,0 +1,21 @@
+/*theam_sb*/
+.tab-header.embedded-page .icon,
+.menu-item.embedded-page .icon {
+    background-image : url("../../images/admin/16-embedded-page.png");
+}
+.dashlet-ribbon.embedded-page .icon {
+    background-image    : url("../../images/admin/embeded-page-ribbion-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end*/
+.dashlet-ribbon.embedded-page .icon {
+    background-position: 0 0;
+}
+.tab-header.embedded-page .icon,
+.menu-item.embedded-page .icon {
+    background-position: 0 0;
+}
+.menu-item.create-embedded-page .icon {
+    background-position : 0 0;
+}

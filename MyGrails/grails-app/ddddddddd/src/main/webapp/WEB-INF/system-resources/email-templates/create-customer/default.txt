@@ -1,0 +1,20 @@
+%store_url%
+
+Dear %customer_name%%if:customer_last_name% %customer_last_name%%if%,
+
+You are now registered for the website %store_url%.Please keep this email as it contains your login information.
+You can login to the store using your login details. If you have any query or question,contact us at %if:store_phone%phone %store_phone% or%if% email %store_email%.
+
+Your Email: %customer_email%
+Your Password: %customer_password%
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

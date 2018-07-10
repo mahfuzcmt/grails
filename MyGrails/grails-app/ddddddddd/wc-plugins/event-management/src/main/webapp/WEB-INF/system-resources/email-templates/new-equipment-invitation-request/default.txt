@@ -1,0 +1,39 @@
+%store_url%
+
+Dear %equipment_organiser_name%,
+
+It is our utmost pleasure to inform you that %equipment_organiser_name% has been approved to provide equipment and logistical support for %event_name% to be held on %start_date_of_event%.
+The event will be coordinated by %event_organiser_name%.
+
+You would be expected to provide %equipment_name% and required logistical support.
+
+Related details of the event are as follows:
+
+Title: %event_name%
+Date: %start_date_of_event%
+Principal Organiser: %event_organiser_name%
+
+We are formally requesting you to provide us with your approval, should you choose to accept the request to provide the aforementioned equipment for the event.
+Even though it is at your discretion, we forebode the success of the event with your support.
+
+You will be contacted accordingly with detailed information in regard to the event, logistics, monetary transactions and other peripheries on our event calendar page.
+If you choose to accept the invitation, please click on the link provided.
+
+%link_to_admin_panel%
+
+You will be contacted accordingly with detailed information in regard to the event, logistics and other peripheries if you accept the request.
+
+Please feel free to contact us with any query that you may have.
+
+We look forward to your support and cooperation.
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

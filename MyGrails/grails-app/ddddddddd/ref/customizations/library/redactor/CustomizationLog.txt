@@ -1,0 +1,6 @@
+# Need to add customized code after plugin update
+# Customized code added to:
+
+# Plugins (redactor/plugins/js/):
+    - sources.js        (Line: 43 - 50)
+    - fullscreen.js     (Line: 6)

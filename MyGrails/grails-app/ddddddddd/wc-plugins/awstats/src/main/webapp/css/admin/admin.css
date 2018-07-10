@@ -1,0 +1,24 @@
+/*theam_sb*/
+.tab-header.awstats .icon,
+.menu-item.awstats .icon {
+    background-image : url("../../images/admin/16-awstats.png");
+}
+.dashlet-ribbon.awstats .icon {
+    background-image    : url("../../images/admin/awstats-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end*/
+.dashlet-ribbon.awstats .icon {
+    background-position: 0 0;
+}
+
+.tab-header.awstats .icon,
+.menu-item.awstats .icon {
+    background-position: 0 0;
+}
+.awstats-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

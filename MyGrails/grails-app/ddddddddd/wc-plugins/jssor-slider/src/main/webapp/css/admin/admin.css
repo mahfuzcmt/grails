@@ -1,0 +1,20 @@
+#bmui-tab-jssor-slider .div-table-cell .chosen-container {
+    width: 100%;
+}
+#bmui-tab-jssor-slider .div-table-cell input {
+    width: 100%;
+}
+#bmui-tab-jssor-slider .div-table-cell .value {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+#bmui-tab-jssor-slider .div-table-cell.editable {
+    padding: 5px 20px 5px 5px;
+}
+#bmui-tab-jssor-slider .div-table .action-column {
+    width: 60px;
+}

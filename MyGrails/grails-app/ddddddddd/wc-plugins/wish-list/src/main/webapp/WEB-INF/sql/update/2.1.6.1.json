@@ -1,0 +1,23 @@
+{
+  "fromVersion": "2.1.6",
+  "releaseVersion": "2.1.6.1",
+  "developers":[
+    {
+      "name":"Arman Bhuiyan",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_on_hover' and `type` = 'wish_list'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_on_hover', 'wish_list', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'add_to_compare' and `type` = 'wish_list'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('add_to_compare', 'wish_list', 'true')",
+          "isTrue": ";"
+        }
+      ]
+    }
+  ]
+}

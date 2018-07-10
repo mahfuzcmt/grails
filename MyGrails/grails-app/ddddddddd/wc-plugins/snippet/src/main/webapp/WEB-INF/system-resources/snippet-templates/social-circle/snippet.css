@@ -1,0 +1,33 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.footer-social-round a {
+    background-color: #313131;
+    border-radius: 50%;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    margin: 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 42px;
+}
+.footer-social-round a i {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    -webkit-transition: transform 0.5s ease 0s;
+    -moz-transition: transform 0.5s ease 0s;
+    -ms-transition: transform 0.5s ease 0s;
+    -o-transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+}
+.footer-social-round a:hover i {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}

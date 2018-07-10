@@ -1,0 +1,16 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-best-collections a {
+    display: block;
+    overflow: hidden;
+}
+.snippet-best-collections img {
+    height: auto;
+    width: 100%;
+    max-height: 356px;
+
+}
+.snippet-best-collections .col-sm-5 a:first-child {
+    margin-bottom: 30px;
+}

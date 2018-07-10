@@ -1,0 +1,10 @@
+2018-07-07 12:13:06,313 TRACE PayPalLogger  - 
+Action: Redirecting to PayPal
+RequestData:
+ServiceUrl=https%3A%2F%2Fwww.sandbox.paypal.com%2Fus%2Fcgi-bin%2Fwebscr&Email=null&Amount=5.50&Currency=AUD&CustomerFirstName=Md&CustomerLastName=ISLAM&CustomerAddress1=Uttara%2CDhaka%2CBangladesh&CustomerAddress2=null&CustomerCity=fh&CustomerState=Victoria&CustomerPostCode=1000&CustomerCountry=Australia&CustomerEmail=tanvir1ariyan%40gmail.com&CustomerPhone=01300361806&CancelURL=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FcancelPayment&ReturnUrl=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FreturnPayment&NotifyUrl=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FnotifyPayment&MerchantReference=2&MerchantInvoice=37&itemNumber=Store+Receipt
+
+2018-07-07 12:16:24,877 TRACE PayPalLogger  - 
+Action: Redirecting to PayPal
+RequestData:
+ServiceUrl=https%3A%2F%2Fwww.sandbox.paypal.com%2Fus%2Fcgi-bin%2Fwebscr&Email=null&Amount=5.50&Currency=AUD&CustomerFirstName=Md&CustomerLastName=ISLAM&CustomerAddress1=Uttara%2CDhaka%2CBangladesh&CustomerAddress2=null&CustomerCity=fh&CustomerState=Victoria&CustomerPostCode=1000&CustomerCountry=Australia&CustomerEmail=tanvir1ariyan%40gmail.com&CustomerPhone=01300361806&CancelURL=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FcancelPayment&ReturnUrl=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FreturnPayment&NotifyUrl=http%3A%2F%2Flocalhost%3A9999%2F%2FpayPal%2FnotifyPayment&MerchantReference=3&MerchantInvoice=37&itemNumber=Store+Receipt
+

@@ -1,0 +1,142 @@
+{
+  "fromVersion": "2.2.0.1",
+  "releaseVersion": "2.2.1",
+  "developers":[
+    {
+      "name": "Tariq Ahmed Khan",
+      "sql": [
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'enable_purchase_point' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_purchase_point', 'loyalty-point', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_purchase_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_purchase_amount', 'loyalty-point', '0')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'enable_product_review_point' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_product_review_point', 'loyalty-point', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_product_review_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_product_review_amount', 'loyalty-point', '0')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'enable_signup_registration_point' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_signup_registration_point', 'loyalty-point', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_signup_registration_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_signup_registration_amount', 'loyalty-point', '0')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_facebook_share_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_facebook_share_amount', 'loyalty-point', '10')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_twitter_share_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_twitter_share_amount', 'loyalty-point', '10')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_googleplus_share_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_googleplus_share_amount', 'loyalty-point', '10')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_linkedin_share_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_linkedin_share_amount', 'loyalty-point', '10')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'purchase_valid_for' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('purchase_valid_for', 'loyalty-point', 'every')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'on_first_purchase_amount' and `type` = 'loyalty-point'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('on_first_purchase_amount', 'loyalty-point', '0')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'redeem_enabled' and `type` = 'loyalty-point'",
+          "isTrue": "DELETE from site_config WHERE `type` = 'loyalty-point' AND `config_key` = 'redeem_enabled'",
+          "isFalse": ""
+        }
+      ]
+    },
+    {
+      "name": "Imrul Hasan",
+      "sql": [
+        {
+          "for": "add site_config for enable_referral",
+          "condition": "select * from site_config where `config_key` = 'enable_referral' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_referral', 'loyalty-point', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for enable_refer_product",
+          "condition": "select * from site_config where `config_key` = 'enable_refer_product' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_refer_product', 'loyalty-point', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for refer_product_on_purchase_referrer_loyalty_point",
+          "condition": "select * from site_config where `config_key` = 'refer_product_on_purchase_referrer_loyalty_point' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('refer_product_on_purchase_referrer_loyalty_point', 'loyalty-point', '0')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for refer_product_on_purchase_referree_loyalty_point",
+          "condition": "select * from site_config where `config_key` = 'refer_product_on_purchase_referree_loyalty_point' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('refer_product_on_purchase_referree_loyalty_point', 'loyalty-point', '0')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for enable_refer_customer",
+          "condition": "select * from site_config where `config_key` = 'enable_refer_customer' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_refer_customer', 'loyalty-point', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for refer_customer_on_signup_referrer_loyalty_point",
+          "condition": "select * from site_config where `config_key` = 'refer_customer_on_signup_referrer_loyalty_point' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('refer_customer_on_signup_referrer_loyalty_point', 'loyalty-point', '0')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for refer_customer_on_signup_referree_loyalty_point",
+          "condition": "select * from site_config where `config_key` = 'refer_customer_on_signup_referree_loyalty_point' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('refer_customer_on_signup_referree_loyalty_point', 'loyalty-point', '0')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for enable_send_referral_code_with_mail",
+          "condition": "select * from site_config where `config_key` = 'enable_send_referral_code_with_mail' and `type` = 'loyalty-point'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_send_referral_code_with_mail', 'loyalty-point', 'false')",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

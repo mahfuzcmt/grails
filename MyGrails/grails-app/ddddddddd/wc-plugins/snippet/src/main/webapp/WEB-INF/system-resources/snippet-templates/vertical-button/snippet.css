@@ -1,0 +1,21 @@
+body.widget-snippet {
+     padding: 40px;
+ }
+.snippet-vertical-button a.snippet-btn-block,
+.snippet-vertical-button a.snippet-btn-block:link,
+.snippet-vertical-button a.snippet-btn-block:active
+.snippet-vertical-button a.snippet-btn-block:visited {
+    border: 2px solid #1b9ab4;
+    color: #444444;
+    display: block;
+    margin: 15px 0;
+    max-width: 300px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.snippet-vertical-button a.snippet-btn-block:hover {
+    background-color: #1b9ab4;
+    border: 2px solid #1b9ab4;
+    color: #fff;
+}

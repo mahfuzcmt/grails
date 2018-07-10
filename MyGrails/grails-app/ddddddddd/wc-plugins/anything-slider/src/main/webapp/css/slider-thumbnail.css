@@ -1,0 +1,88 @@
+/*metallic*/
+div.anythingSlider-metallic .anythingControls { bottom: 25px !important; }
+div.anythingSlider-metallic .thumbNav a {
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.anythingSlider-metallic .start-stop {
+    margin-top: 15px !important;
+}
+
+/*minimalist-square*/
+div.anythingSlider-minimalist-square .anythingControls { bottom: 20px !important; }
+div.anythingSlider-minimalist-square .thumbNav a {
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.anythingSlider-minimalist-square .start-stop {
+    margin-top: 12px !important;
+}
+
+/*minimalist-round*/
+div.anythingSlider-minimalist-round .anythingControls { bottom: 20px !important; }
+div.anythingSlider-minimalist-round .thumbNav a {
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.anythingSlider-minimalist-round .start-stop {
+    margin-top: 12px !important;
+}
+.anythingSlider-minimalist-round .thumbNav img {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+/*construction*/
+div.anythingSlider-construction .anythingControls { bottom: 20px !important; }
+div.anythingSlider-construction .thumbNav a {
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.anythingSlider-construction .start-stop {
+    margin-top: 10px !important;
+}
+
+/*cs-portfolio*/
+div.anythingSlider-cs-portfolio .anythingControls { bottom: 0px !important; }
+div.anythingSlider-cs-portfolio .thumbNav a {
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.anythingSlider-cs-portfolio .start-stop {
+    margin-top: 2px !important;
+}
+.anythingSlider-cs-portfolio .anythingControls ul.thumbNav {
+    padding-top: 10px;
+}
+
+/*for all theme*/
+div.anythingSlider .thumbNav img {
+    height: 30px;
+    width: 30px;
+    resize: both;
+}
+div.anythingSlider .thumbNav a span { visibility: visible; }
+.anythingSlider .thumbNav a:hover, .anythingSlider .thumbNav a.cur {
+    border-color: #fff;
+}

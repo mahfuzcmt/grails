@@ -1,0 +1,23 @@
+{
+  "fromVersion": "2.1.8",
+  "releaseVersion": "2.1.9",
+  "developers":[
+    {
+      "name": "Sajedur Rahman",
+      "sql": [
+        {
+          "for": "Track Trial Package",
+          "condition": "select * from site_config where `config_key` = 'default_layout' and `type` = 'general'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('default_layout', 'general', '')"
+        },
+        {
+          "for": "Track Trial Package",
+          "condition": "select * from site_config where `config_key` = 'page_html' and `type` = 'customer_profile_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('page_html', 'customer_profile_page', '')"
+        }
+      ]
+    }
+  ]
+}

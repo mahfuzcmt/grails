@@ -1,0 +1,1 @@
+<g:include controller="liveChat" action="initChat"/>

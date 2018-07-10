@@ -1,0 +1,5 @@
+{
+   "order_id": "order.id",
+   "customer_name": "customer.name",
+   "comment_link": "comment.link"
+}

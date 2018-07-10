@@ -1,0 +1,906 @@
+@import url('//fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Source+Sans+Pro');
+
+/* New Doc Popup */
+.create-new-document.popup {
+    min-width: 200px;
+    padding: 0;
+    width: 200px !important;
+}
+
+.create-new-document.popup .action-item {
+    cursor: pointer;
+    padding: 8px 20px;
+    position: relative;
+}
+.create-new-document.popup .action-item:hover {
+    background-color: #F6F8F7;
+}
+/* End New Doc Popup */
+
+/* Layout Selection */
+.doc-designer .app-tab-content-container.layout-panel {
+    background-color: #E0E4E5;
+    padding: 30px;
+}
+
+.doc-designer .sample-layouts-container {
+    background-color: #FFFFFF;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 35px;
+    margin: auto;
+    height: 100%;
+    width: 650px;
+}
+
+.doc-designer .sample-layouts-container .header {
+    direction: rtl;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    margin-bottom: 30px;
+}
+
+.doc-designer .sample-layouts-container .doc-title {
+    color: #92999b;
+    font-size: 20px;
+    float: left;
+}
+
+.doc-designer .sample-layouts-container .body {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.doc-designer .sample-layouts-container .layout-title {
+    color: #6db8dd;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 0;
+}
+
+.doc-designer .sample-layouts-container .layout-title:before {
+    background-color: #ebf0f5;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 1px;
+    width: 100%;
+    z-index: -1;
+}
+
+.doc-designer .sample-layouts-container .layout-title span {
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.doc-designer .sample-layouts-container .layout-content img {
+    max-width: 100%;
+}
+
+.doc-designer .sample-layouts-container .layout-content {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.doc-designer .sample-layouts-container .layout-content:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.doc-designer .sample-layouts-container .layout-type ~ .layout-type {
+    margin-top: 20px;
+}
+
+.doc-designer .sample-layouts-container .layout {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 25%;
+}
+
+.doc-designer .sample-layouts-container .layout .thumb {
+    border: 1px solid #e9ecf2;
+}
+
+.doc-designer .sample-layouts-container .layout .thumb:hover {
+    border-color: #16AAD8;
+    cursor: pointer;
+}
+
+.doc-designer .sample-layouts-container .layout .name {
+    color: #848c9a;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Editor */
+.doc-designer .document-component {
+    position: absolute;
+    display: inline-block;
+    visibility: hidden;
+}
+.doc-designer .document-component.sorted {
+    position: static;
+    visibility: visible;
+}
+.doc-designer .app-tab-content-container.editor-panel {
+    background-color: #E0E4E5;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.doc-designer .left-detail-panel {
+    -moz-flex: 0 0 400px;
+    -webkit-flex: 0 0 400px;
+    flex: 0 0 400px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #E0E4E5;
+}
+.doc-designer .left-detail-panel .bmui-tab-body-container {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    min-height: 0;
+    position: relative;
+    padding: 0;
+}
+.doc-designer .editor-main-panel {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.doc-designer .left-tab-container {
+    min-height: 240px;
+    max-height: -moz-calc(100vh - 280px);
+    max-height: -webkit-calc(100vh - 280px);
+    max-height: calc(100vh - 280px);
+    overflow: hidden;
+}
+.doc-designer .editing-area .letter {
+    width: 215.9mm;
+    height: 279.4mm;
+}
+.doc-designer .editing-area .legal {
+    width: 215.9mm;
+    height: 355.6mm;
+}
+.doc-designer .editing-area .ledger {
+    width: 279.4mm;
+    height: 431.8mm;
+}
+.doc-designer .editing-area .a0 {
+    width: 841mm;
+    height: 1189mm;
+}
+.doc-designer .editing-area .a1 {
+    width: 594mm;
+    height: 841mm;
+}
+.doc-designer .editing-area .a2 {
+    width: 420mm;
+    height: 594mm;
+}
+.doc-designer .editing-area .a3 {
+    width: 297mm;
+    height: 420mm;
+}
+.doc-designer .editing-area .a4{
+    width: 210mm;
+    height: 297mm;
+}
+.doc-designer .editor-main-panel {
+    overflow: hidden;
+    max-height: 100%
+}
+.doc-designer .component-body {
+    position: relative;
+}
+
+.doc-designer .each-component {
+    cursor: move;
+    border: 1px solid rgba(162, 186, 220, 0.5);
+    margin-bottom: 0;
+    min-height: 13px;
+}
+
+.doc-designer .each-component img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.doc-designer .each-component:hover {
+    border-color: #fb6c6c;
+}
+
+.doc-designer .each-component .remove {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: -1px;
+    right: -14px;
+    cursor: pointer;
+    background-color: #fb6c6c;
+    visibility: hidden;
+}
+
+.doc-designer .each-component:hover .remove {
+    visibility: visible;
+}
+
+.doc-designer .each-component .remove:before,
+.doc-designer .each-component .remove:after {
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.doc-designer .each-component .remove:before {
+    width: 7px;
+    height: 1px;
+    left: 3px;
+    top: 6px;
+}
+
+.doc-designer .each-component .remove:after {
+    width: 1px;
+    height: 7px;
+    left: 6px;
+    top: 3px;
+}
+
+.doc-designer .component-config {
+    background-color: rgba(255, 255, 255, 0.95);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.doc-designer .component-config .title-bar {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e1e3e3;
+    color: #222426;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    padding: 20px 30px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.doc-designer .component-config .close-config {
+    background-color: #a3b1c2;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 10px;
+    font-weight: 400;
+    float: right;
+}
+
+.doc-designer .component-config .close-config:hover {
+    background-color: #fb6c6c;
+}
+
+.doc-designer .component-config .config-body {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    padding: 30px;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.doc-designer .config-body .body-title {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.doc-designer .config-body .link-btn {
+    color: #b9c2cb;
+    margin-top: 15px;
+}
+
+.doc-designer .config-body .link-btn:hover {
+    color: #1199c4;
+}
+
+.doc-designer .config-body .manage-style {
+    margin-top: 40px;
+}
+
+.doc-designer .component-config table {
+    border-top: 1px solid #d9e0e5;
+    border-left: 1px solid #d9e0e5;
+}
+
+.doc-designer .component-config tr {
+    background-color: #fff;
+}
+
+.doc-designer .component-config tr:hover {
+    background-color: #ebf0f5;
+}
+
+.doc-designer .component-config th,
+.doc-designer .component-config td {
+    border-right: 1px solid #d9e0e5;
+    border-bottom: 1px solid #d9e0e5;
+    font-size: 14px;
+    color: #373c42;
+    font-weight: 600;
+    padding: 10px 15px;
+    overflow: visible;
+}
+
+.doc-designer .component-config th {
+    background-color: #ebf0f5;
+    color: #959ca4;
+}
+
+.doc-designer .component-config td {
+    color: #373c42;
+}
+
+.doc-designer .component-config table .inline-editable {
+    display: block;
+    position: relative;
+    padding-right: 7px;
+}
+
+.doc-designer .component-config table .inline-editable input[type="text"] {
+    margin-top: -4px;
+    margin-bottom: -4px;
+    height: 100%;
+    width: 100%;
+}
+
+.doc-designer .component-config table .tool-icon {
+    margin: 0;
+    position: absolute;
+    right: -10px;
+    top: 3px;
+}
+
+.doc-designer .component-config table .chosen-container {
+    min-height: 0;
+    width: 100%;
+}
+
+.doc-designer .component-config table .chosen-container .chosen-single {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    padding: 0;
+    height: auto;
+}
+
+.doc-designer .component-config table .chosen-container-single .chosen-single span {
+    color: #373c42;
+    margin-right: 16px;
+}
+
+.doc-designer .component-config table .chosen-container-single .chosen-single div b {
+    background-position: 6px 0;
+    top: 0;
+}
+
+.doc-designer .component-config.invoice_table .action {
+    padding: 0;
+    text-align: center;
+    width: 40px;
+}
+
+.doc-designer .component-config.invoice_table .remove {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 14px;
+    width: 14px;
+}
+
+.doc-designer .component-config.invoice_table .remove:before,
+.doc-designer .component-config.invoice_table .remove:after {
+    content: "";
+    display: inline-block;
+    background-color: #a6b0ba;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: 50%;
+    top: 50%;
+}
+
+.doc-designer .component-config.invoice_table .remove:hover:before,
+.doc-designer .component-config.invoice_table .remove:hover:after {
+    background-color: #fb6c6c;
+}
+
+.doc-designer .component-config.invoice_table .remove:before {
+    width: 100%;
+    height: 1px;
+}
+
+.doc-designer .component-config.invoice_table .remove:after {
+    width: 1px;
+    height: 100%;
+}
+
+.doc-designer .each-component.selected {
+    border-color: #1199c4;
+}
+
+.doc-designer .each-component .bmui-resize-handle {
+    position: absolute;
+    visibility: hidden;
+}
+
+.doc-designer .each-component:hover .bmui-resize-handle {
+    visibility: visible;
+}
+
+.doc-designer .each-component .resize-top,
+.doc-designer .each-component .resize-bottom {
+    cursor: row-resize;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.doc-designer .each-component .resize-top {
+    top: 0;
+}
+
+.doc-designer .each-component .resize-bottom {
+    bottom: 0;
+}
+
+.doc-designer .each-component .resize-left,
+.doc-designer .each-component .resize-right {
+    cursor: col-resize;
+    height: 100%;
+    width: 3px;
+    bottom: 0;
+    top: 0;
+}
+
+.doc-designer .each-component .resize-left {
+    left: 0;
+}
+
+.doc-designer .each-component .resize-right {
+    right: 0;
+}
+
+/********************************************************** */
+
+#workspace .doc-designer .accordion-panel > .label-bar {
+    background: #f8f9fa;
+    color: #767c84;
+    font-size: 14px;
+    font-weight: 600;
+    border-left: none;
+    border-right: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: -1px 0 0 0;
+    height: 70px;
+    line-height: 70px;
+}
+
+#workspace .doc-designer .accordion-panel > .label-bar .toggle-icon {
+    background-image: url("../../images/admin/toolbar-icon-sprite.png");
+    background-position: -272px 0;
+    left: auto;
+    right: 28px;
+    top: 27px;
+}
+
+#workspace .doc-designer .accordion-panel > .label-bar.expanded .toggle-icon {
+    background-position: -256px 0;
+}
+
+#workspace .doc-designer .accordion-panel > .label-bar.expanded {
+    background: none;
+    border: none;
+    color: #222426;
+}
+
+#workspace .doc-designer .accordion-item {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 8px 0 50px;
+    padding: 0 30px;
+}
+
+.doc-designer .top-side-header {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.doc-designer .top-side-header:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.doc-designer .top-side-header .bmui-tab-header {
+    background-color: #fff;
+    border: none;
+    color: #909b9e;
+    font-weight: 600;
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 50%;
+}
+
+.doc-designer .top-side-header .bmui-tab-header.bmui-tab-active {
+    color: #000;
+}
+
+.doc-designer .top-side-header .bmui-tab-header:before {
+    display: none;
+}
+
+.doc-designer .top-side-header .bmui-tab-header:after {
+    bottom: -1px;
+    top: auto;
+}
+
+.doc-designer .top-side-header .bmui-tab-header.bmui-tab-active:after,
+.doc-designer .top-side-header .bmui-tab-header:hover:after {
+    background-color: #1199C4;
+}
+
+.component-item {
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #373c42;
+    font-size: 13px;
+    padding: 0 8px;
+    border: 1px solid #c7d1d9;
+    margin: 3px 1.5px;
+    min-width: 150px;
+    max-width: 170px;
+    height: 34px;
+    line-height: 34px;
+    -webkit-transition: background 150ms ease;
+    -moz-transition: background 150ms ease;
+    -ms-transition: background 150ms ease;
+    -o-transition: background 150ms ease;
+    transition: background 150ms ease;
+    width: -moz-calc(50% - 6px);
+    width: -webkit-calc(50% - 6px);
+    width: calc(50% - 6px);
+}
+
+.component-item:hover {
+    background-color: #1199c4;
+    border-color: #1199c4;
+    color: #fff;
+}
+
+.component-item.icon {
+    padding-left: 33px;
+    position: relative;
+}
+
+.component-item.icon:before {
+    background-image: url("../../images/admin/doc-design-sprite.png");
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    height: 13px;
+    width: 13px;
+}
+
+.component-item.icon.text:before {
+    background-position-x: 0;
+}
+
+.component-item.icon.invoice-table:before,
+.component-item.icon.data-table:before {
+    background-position-x: -39px;
+}
+
+.component-item.icon.image:before {
+    background-position-x: -13px;
+}
+
+.component-item.icon.line:before {
+    background-position-x: -26px;
+}
+
+.component-item.icon.area:before {
+    background-position-x: -52px;
+}
+
+.doc-designer .double-input-row .form-row:nth-child(2) {
+    margin-left: 20px;
+}
+
+.doc-designer .double-input-row .form-row {
+    width: -moz-calc(50% - 10px);
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+}
+
+.doc-designer .form-row input,
+.doc-designer .form-row select,
+.doc-designer .form-row textarea,
+.doc-designer .chosen-container-single .chosen-single span,
+.doc-designer .form-row input[type="text"] {
+    color: #373c42;
+}
+
+.doc-designer .form-row.inline-element .multi-button .button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #c7d1d9;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 2px;
+    width: 21px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.doc-designer .form-row.inline-element {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #e5eaf0;
+    border-bottom: 1px solid #e5eaf0;
+    padding: 15px 0;
+}
+
+.doc-designer .form-row.inline-element ~ .form-row.inline-element {
+    margin-top: -1px;
+}
+
+.doc-designer .form-row.inline-element label {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    padding: 0 5px 0 0;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.doc-designer .form-row.inline-element .chosen-container,
+.doc-designer .form-row.inline-element > input,
+.doc-designer .form-row.inline-element > select {
+    min-height: 24px;
+    width: 90px;
+}
+
+.doc-designer .form-row.inline-element input,
+.doc-designer .form-row.inline-element select {
+    padding: 5px 8px;
+    height: 24px;
+}
+
+.doc-designer .form-row.inline-element input {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-color: #c7d1d9;
+    color: #97a0aa;
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.doc-designer .form-row.inline-element .chosen-container-single .chosen-single {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 5px 10px;
+    height: 24px;
+    text-shadow: none;
+    line-height: 14px;
+    min-width: 0;
+}
+
+.doc-designer .form-row.inline-element .chosen-container-single .chosen-single span {
+    color: #97a0aa;
+    margin-right: 10px;
+}
+
+.doc-designer .form-row.inline-element .chosen-container-single .chosen-single div b {
+    top: 0;
+}
+
+.doc-designer .form-row.inline-element .sp-replacer {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.doc-designer .form-row.inline-element .sp-preview {
+    background: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 0;
+}
+
+.doc-designer .form-row.inline-element .sp-preview-inner {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #d1d9e2;
+}
+
+.doc-designer .form-row.inline-element .sp-dd {
+    display: none;
+}
+
+.doc-designer .form-row.inline-element .value {
+    color: #c2c9d2;
+    text-transform: uppercase;
+    top: 0;
+    padding-right: 10px;
+}
+
+.doc-designer .form-row.inline-element .unit {
+    background-color: #ebf0f5;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #c7d1d9;
+    color: #909ba8;
+    padding: 5px;
+    line-height: 1;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    z-index: 22;
+}
+
+.doc-designer .form-row.inline-element .unit + input {
+    padding-right: 30px;
+}
+
+.doc-designer .form-row label {
+    color: #969ea8;
+}
+
+.doc-designer .double-input-row .form-row .unit {
+    color: #969ea8;
+    font-style: normal;
+    text-transform: lowercase;
+    position: absolute;
+    padding: 0;
+    top: 38px;
+    right: 10px;
+    max-width: 22px;
+    overflow: hidden;
+    z-index: 22;
+}
+
+.doc-designer .double-input-row .form-row .unit + input {
+    padding-right: 35px;
+}
+
+.doc-designer .editing-area {
+    background-color: #fff;
+    margin: 30px auto;
+    height: 297mm;
+    width: 210mm;
+    position: relative;
+}
+
+.doc-designer .editing-area:before {
+    background-image: url("../../images/admin/editor-grid.png");
+    background-clip: content-box;
+    background-origin: content-box;
+    content: '';
+    padding: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper:before,.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper:after {
+    content: "";
+    height: 1px;
+    width: 4000px;
+    background-color: rgba(143, 32, 213, 0.2);
+    position: absolute;
+    left: -2000px;
+    top: -1px;
+    z-index: 9999;
+}
+
+.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper:after {
+    top: auto;
+    bottom: -1px;
+}
+
+.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper .value:before,.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper .value:after {
+    content: "";
+    width: 1px;
+    height: 4000px;
+    background-color: rgba(143, 32, 213, 0.2);
+    position: absolute;
+    top: -2000px;
+    left: -1px;
+    z-index: 9999;
+}
+
+.filler-row.each-component.bmui-resizable.bmui-draggable.bmui-draggable-cloned-helper .value:after {
+    left: auto;
+    right: -1px;
+}

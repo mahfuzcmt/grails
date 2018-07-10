@@ -1,0 +1,486 @@
+.fee-floating-editor-menu {
+    background-color: rgba(38, 42, 46, 0.96);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 4px 4px 0 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: absolute;
+    overflow: hidden;
+    width: 250px;
+    top: 3px;
+    z-index: 10525;
+}
+
+.fee-floating-editor-menu.fee-floating-row {
+    right: 3px;
+    margin-bottom: 70px; /* to avoid bottom overlap*/
+}
+
+.fee-floating-editor-menu.fee-floating-column {
+    left: 3px;
+    margin-bottom: 70px;
+}
+
+.fee-floating-editor-menu .fee-fm-button {
+    background-color: #4f575d;
+    border: 1px solid #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: none;
+    cursor: pointer;
+    line-height: 30px;
+    height: 30px;
+    color: #000;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    text-align: center;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+.fee-floating-editor-menu .fee-fm-button:hover {
+    background-color: #f0cf65;
+}
+
+.fee-floating-editor-menu .fee-fm-button[disabled],
+.fee-floating-editor-menu .fee-fm-button[disabled]:hover,
+.fee-floating-editor-menu .fee-fm-button.disabled,
+.fee-floating-editor-menu .fee-fm-button.disabled:hover,
+.fee-floating-editor-menu .fee-fm-button.fee-fm-disabled,
+.fee-floating-editor-menu .fee-fm-button.fee-fm-disabled:hover {
+    background-color: #42494f;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
+    cursor: default;
+}
+
+.fee-floating-editor-menu .fee-fm-content {
+    /*max-height: 350px;*/
+    /*overflow: auto;*/
+    padding: 10px 0;
+}
+
+.fee-floating-editor-menu .fee-fm-button.fee-fm-active:hover,
+.fee-floating-editor-menu .fee-fm-button.fee-fm-active {
+    background-color: #f0cf65;
+}
+
+.fee-floating-editor-menu .fee-fm-input-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fee-floating-editor-menu .fee-fm-input-row .fee-fm-input {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.fee-floating-editor-menu .fee-fm-radio-row .fee-fm-input {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+.fee-floating-editor-menu .fee-fm-input-row .fee-fm-input + .fee-fm-input {
+    margin-left: 4px;
+}
+
+.fee-floating-editor-menu .fee-fm-input-row.fee-background-input-area .fee-fm-input {
+    margin-left: 0;
+}
+
+.fee-floating-editor-menu .fee-fm-input-row.fee-fm-radio-row .fee-fm-input + .fee-fm-input {
+    margin-left: 15px;
+}
+
+.fee-floating-editor-menu input[type="text"],
+.fee-floating-editor-menu input,
+.fee-floating-editor-menu select,
+.fee-floating-editor-menu textarea {
+    background-color: #1b2024;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    padding: 8px;
+    height: auto;
+    width: 100%;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+.fee-floating-editor-menu input.error{
+    border-color: red!important;
+}
+
+.fee-floating-editor-menu input:focus,
+.fee-floating-editor-menu select:focus,
+.fee-floating-editor-menu textarea:focus {
+    border-color: rgba(240, 207, 101, 0.5);
+}
+
+.fee-floating-editor-menu select option {
+    background-color: #1b2024;
+}
+
+.fee-floating-editor-menu input[type="checkbox"],
+.fee-floating-editor-menu input[type="radio"],
+.fee-floating-editor-menu input[type="file"] {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.fee-floating-editor-menu input[type="checkbox"] + span,
+.fee-floating-editor-menu input[type="radio"] + span {
+    color: #fff;
+    font-size: 11px;
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0;
+    line-height: 18px;
+}
+
+.fee-floating-editor-menu input[type="checkbox"] + span:before,
+.fee-floating-editor-menu input[type="radio"] + span:before {
+    content: '';
+    border: 1px solid #000;
+    background-color: #4f575d;
+    position: absolute;
+    left: 0;
+    line-height: 16px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+.fee-floating-editor-menu input[type="checkbox"] + span:before {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-family: FontAwesome;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.fee-floating-editor-menu input[type="radio"] + span:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.fee-floating-editor-menu input[type="checkbox"]:checked + span:before {
+    background-color: #f0cf65;
+    border-color: #f0cf65;
+    color: #fff;
+    content: '\f00c';
+}
+
+.fee-floating-editor-menu input[type="radio"]:checked + span:before {
+    border-color: #f0cf65;
+    background-color: rgba(50, 57, 63, 0.96);
+}
+
+.fee-floating-editor-menu input[type="radio"]:checked + span:after {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: '';
+    background-color: #f0cf65;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+}
+
+.fee-floating-editor-menu input[type="file"] + span {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-height: 100px;
+    background-color: #32393f;
+    border: 1px dashed #000;
+    color: #68737d;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    /* height width for upload button*/
+    height: 100px;
+    width: 215px;
+    display: inline-block;
+}
+
+.fee-floating-editor-menu input[type="file"] + span:hover {
+    background-color: #222;
+}
+
+.fee-floating-editor-menu input[type="file"] + span:before {
+    content: '\e827';
+    color: #000;
+    font-family: 'Linearicons-Free';
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fee-floating-editor-menu .fee-fm-header {
+    background-color: #000;
+    align-items: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 5px 20px;
+}
+
+.fee-floating-editor-menu .fee-fm-header .fee-fm-title {
+    color: #f0cf65;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.fee-floating-editor-menu .fee-fm-header .fee-fm-close {
+    cursor: pointer;
+}
+
+.fee-floating-editor-menu .fee-fm-header .fee-fm-close:hover {
+    color: #e42c2c;
+}
+
+.fee-floating-editor-menu .fee-fm-header .fee-fm-draggable {
+    margin-right: 10px;
+}
+
+.fee-floating-editor-menu .fee-icon-drag {
+    position: relative;
+    height: 14px;
+    width: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fee-floating-editor-menu .fee-icon-drag:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 3px 3px;
+    background-color: #646b72;
+    background-position: 1px 1px;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 1px, transparent 1.2px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 1px, transparent 1.2px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 1px, transparent 1.2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 1px, transparent 1.2px, transparent 100%);
+}
+
+.fee-floating-editor-menu .fee-icon-drag:hover:after {
+    background-color: #f0cf65;
+}
+
+.fee-floating-editor-menu .fee-fm-header .fee-fm-action {
+    color: #646b72;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fee-floating-editor-menu .fee-fm-menu-block {
+    padding: 10px 20px;
+}
+
+.fee-floating-editor-menu .fee-fm-block-content + .fee-fm-block-content {
+    margin-top: 15px;
+}
+
+.fee-floating-editor-menu .fee-fm-menu-block + .fee-fm-menu-block {
+    /*border-top: 1px solid #1b2024;*/
+    position: relative;
+}
+
+.fee-floating-editor-menu .fee-fm-menu-block + .fee-fm-menu-block:before {
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+}
+
+.fee-floating-editor-menu .fee-fm-menu-block .fee-fm-label {
+    color: #999;
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.fee-floating-editor-menu .fee-fm-action-group,
+.fee-floating-editor-menu .fee-fm-size-button-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fee-floating-editor-menu .fee-fm-action-group .fee-fm-button + .fee-fm-button {
+    margin-left: 4px;
+}
+
+.fee-floating-editor-menu .fee-fm-action-group .fee-fm-button,
+.fee-floating-editor-menu .fee-fm-size-button-container .fee-fm-button {
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.fee-fm-size-button-container {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.fee-fm-size-button-container .fee-fm-button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    font-size: 11px;
+}
+
+.fee-fm-size-button-container .fee-fm-button:hover {
+    background-color: rgba(50, 57, 63, 1);
+}
+
+.fee-fm-size-button-container .fee-fm-button.fee-fm-active {
+    color: #000;
+}
+
+.fee-fm-size-button-container .fee-fm-button + .fee-fm-button {
+    border-left: 1px solid #000;
+}
+
+.fee-fm-action-group .fee-icon {
+    font-size: 15px;
+}
+/*----------------------------------------- !action-panel --------------------------------------*/
+.fee-floating-editor-menu.fee-floating-action-panel {
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: 40040;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-header {
+    background-color: transparent;
+    padding: 0 0 5px;
+    text-align: center;
+    display: block;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-content {
+    padding: 0;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-header .fee-fm-action {
+    display: inline-block;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-header .fee-fm-draggable {
+    margin-right: 0;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-menu-block {
+    padding: 0;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-menu-block .fee-fm-input {
+    padding: 8px 5px 5px;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-menu-block label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 10px;
+    display: block;
+    padding: 0 5px 4px;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-button {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-menu-block .fee-fm-button:hover {
+    background-color: #3d79f2;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-button:hover {
+    background-color: transparent;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu .fee-fm-button.fee-fm-disabled {
+    display: none;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+
+.fee-floating-action-panel.fee-floating-editor-menu  .fee-fm-menu-block:hover input[type="text"]:focus,
+.fee-floating-action-panel.fee-floating-editor-menu input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,15 @@
+ext.includePlugins = {
+    return [
+//            "blog",
+//            "gift-card",
+//            "gift-wrapper",
+//            "discount",
+            "variation",
+            "standard-variation",
+            "enterprise-variation",
+//            "order-custom-fields",
+//            "wish-list",
+//            "gift-registry",
+//            "subscription-from-checkout"
+    ] as String[]
+}

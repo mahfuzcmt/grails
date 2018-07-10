@@ -1,0 +1,88 @@
+body.widget-snippet{
+    padding: 40px;
+}
+.snippet-amazing-feature h2 {
+    line-height: normal;
+}
+.snippet-amazing-feature h2 .small {
+    color: #888;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.snippet-amazing-feature h2 .big {
+    color: #555;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.snippet-amazing-feature .separator-line {
+    background-color: #999;
+    height: 2px;
+    margin: 15px 0;
+    width: 80px;
+}
+.snippet-amazing-feature p {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+    padding: 0;
+}
+.snippet-amazing-feature a.readmore {
+    background-color: #555;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 12px 30px;
+}
+.snippet-amazing-feature a.readmore:hover {
+    background-color: #000 !important;
+}
+.snippet-amazing-feature .col-sm-6 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.snippet-amazing-feature .item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    position: relative;
+}
+.snippet-amazing-feature .item i {
+    color: #999;
+    font-size: 70px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.snippet-amazing-feature .item h4 {
+    color: #555;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-amazing-feature .item p {
+    font-size: 14px;
+    height: 65px;
+    margin: 0 0 0 90px;
+    overflow: hidden;
+}
+@media (max-width:991px) {
+    .snippet-amazing-feature .col-md-4 {
+        padding-bottom: 15px;
+    }
+}

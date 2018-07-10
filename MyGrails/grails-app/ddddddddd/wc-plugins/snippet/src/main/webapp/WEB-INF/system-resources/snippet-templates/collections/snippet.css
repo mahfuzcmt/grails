@@ -1,0 +1,55 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-collection .col-md-4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.snippet-collection .item {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    overflow: hidden;
+    padding: 20px;
+}
+.snippet-collection .item .image-wrap {
+    float: left;
+    max-width: 150px;
+    padding-right: 20px;
+}
+.snippet-collection .information {
+    overflow: hidden;
+}
+.snippet-collection .title {
+    color: #000;
+    font-size: 16px;
+    overflow: hidden;
+    padding-bottom: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-collection .description {
+    color: #818181;
+    height: 40px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.snippet-collection a {
+    background-color: #34d1c6;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+.snippet-collection a:hover {
+    background-color: #666;
+    color: #fff;
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 479px) {
+    .snippet-collection .item .image-wrap {
+        max-width: 120px;
+    }
+}

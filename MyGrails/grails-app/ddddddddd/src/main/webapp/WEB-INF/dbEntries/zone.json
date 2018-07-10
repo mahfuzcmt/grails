@@ -1,0 +1,620 @@
+[
+  {
+    "name": "BUILT_IN_AU",
+    "countries": [
+      "AU"
+    ],
+    "states": []
+  },
+  {
+    "name": "REST_OF_THE_WORLD",
+    "countries": [],
+    "states": []
+  },
+  {
+    "name": "BUILT_IN_CA_ALBERTA",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "AB"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_BRITISH_COLUMBIA",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "BC"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_MANITOBA",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "MB"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_NEW_BRUNSWICK",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "NB"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_NEWFOUNDLAND_&_LABRADOR",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "NL"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_NOVA_SCOTIA",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "NS"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_NORTHWEST_TERRITORIES",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "NT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_NUNAVUT",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "NU"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_ONTARIO",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "ON"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_PRINCE_EDWARD_ISLAND",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "PE"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_QUEBEC",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "QC"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_SASKATCHEWAN",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "SK"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CA_YUKON",
+    "countries": [
+      "CA"
+    ],
+    "states": [
+      "YT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_CANADA",
+    "countries": [
+      "CA"
+    ],
+    "states": []
+  },
+  {
+    "name": "BUILT_IN_USA_ALASKA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "AK"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_ALABAMA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "AL"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_ARKANSAS",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "AR"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_ARIZONA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "AZ"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_CALIFORNIA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "CA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_COLORADO",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "CO"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_CONNECTICUT",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "CT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_WASHINGTON_DC",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "DC"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_DELAWARE",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "DE"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_FLORIDA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "FL"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_GEORGIA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "GA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_HAWAII",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "HI"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_IOWA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "IA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_IDAHO",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "ID"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_ILLINOIS",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "IL"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_INDIANA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "IN"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_KANSAS",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "KS"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_KENTUCKY",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "KY"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_LOUISIANA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "LA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MASSACHUSETTS",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MARYLAND",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MD"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MAINE",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "ME"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MICHIGAN",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MI"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MINNESOTA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MN"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MISSOURI",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MO"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MISSISSIPPI",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MS"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_MONTANA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "MT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NORTH_CAROLINA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NC"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NORTH_DAKOTA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "ND"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEBRASKA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NE"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEW_HAMPSHIRE",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NH"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEW_JERSEY",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NJ"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEW_MEXICO",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NM"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEVADA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NV"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_NEW_YORK",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "NY"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_OHIO",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "OH"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_OKLAHOMA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "OK"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_OREGON",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "OR"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_PENNSYLVANIA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "PA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_PUERTO_RICO",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "PR"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_RHODE_ISLAND",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "RI"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_SOUTH_CAROLINA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "SC"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_SOUTH_DAKOTA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "SD"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_TENNESSEE",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "TN"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_TEXAS",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "TX"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_UTAH",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "UT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_VIRGINIA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "VA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_VERMONT",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "VT"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_WASHINGTON",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "WA"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_WISCONSIN",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "WI"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_WEST_VIRGINIA",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "WV"
+    ]
+  },
+  {
+    "name": "BUILT_IN_USA_WYOMING",
+    "countries": [
+      "US"
+    ],
+    "states": [
+      "WY"
+    ]
+  },
+  {
+    "name": "BUILT_IN_NEW_ZEALAND",
+    "countries": [
+      "NZ"
+    ],
+    "states": []
+  },
+  {
+    "name": "BUILT_IN_UNITED_KINGDOM",
+    "countries": [
+      "GB"
+    ],
+    "states": []
+  }
+]

@@ -1,0 +1,11 @@
+.product-image-container img {
+    vertical-align : middle;
+    cursor         : pointer;
+}
+.image-thumb-container .thumb-image {
+    display        : inline-block;
+    vertical-align : top;
+}
+.image-thumb-container {
+    white-space : nowrap;
+}

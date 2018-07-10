@@ -1,0 +1,23 @@
+{
+  "fromVersion": "2.2.0.1",
+  "releaseVersion": "2.2.1",
+  "developers":[
+    {
+      "name": "Imrul Hasan",
+      "sql": [
+        {
+          "for": "add site_config for is_enabled",
+          "condition": "select * from site_config where `config_key` = 'is_enabled' and `type` = 'multi_level_pricing'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('is_enabled', 'multi_level_pricing', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for lowest_or_highest_price",
+          "condition": "select * from site_config where `config_key` = 'lowest_or_highest_price' and `type` = 'multi_level_pricing'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('lowest_or_highest_price', 'multi_level_pricing', 'false')",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

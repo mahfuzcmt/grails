@@ -1,0 +1,29 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.client-logo-footer > div {
+    text-align: center;
+}
+.client-logo-footer img {
+    max-height: 96px;
+    max-width: 100%;
+}
+.client-logo-footer .col-sm-4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+@media (min-width: 992px) {
+    .client-logo-footer .col-sm-4:nth-child(6n+1) {
+        clear: left;
+    }
+}
+@media (max-width: 991px) and (min-width:768px) {
+    .client-logo-footer .col-sm-4:nth-child(3n+1) {
+        clear: left;
+    }
+}
+@media (max-width: 767px) {
+    .client-logo-footer .col-sm-4:nth-child(2n+1) {
+        clear: left;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "customer_first_name": "customer.first.name",
+    "customer_last_name": "customer.last.name",
+    "customer_email": "customer.email",
+    "customer_address": "contact.address",
+    "customer_city": "customer.city",
+    "customer_postCode": "customer.postcode",
+    "customer_phone": "customer.phone"
+}

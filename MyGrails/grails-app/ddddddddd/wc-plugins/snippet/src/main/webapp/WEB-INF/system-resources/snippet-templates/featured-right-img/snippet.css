@@ -1,0 +1,56 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-featured-right-img .padding-100 {
+    background-color: #e6af2a;
+    padding: 100px;
+}
+.snippet-featured-right-img h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+}
+.snippet-featured-right-img p {
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 15px 0;
+    padding: 0;
+}
+.snippet-featured-right-img li::before {
+    content: "\f1db";
+    display: inline-block;
+    float: left;
+    font-family: FontAwesome;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.snippet-featured-right-img ul li {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+.snippet-featured-right-img .btn {
+    border: 2px solid #333;
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 25px;
+    padding: 8px 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.snippet-featured-right-img .img-cell {
+    padding: 0;
+}
+.snippet-featured-right-img img {
+    max-width: 100%;
+}
+@media screen and (max-width: 991px) {
+    .snippet-featured-right-img .padding-100 {
+        padding: 50px;
+    }
+}

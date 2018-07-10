@@ -1,0 +1,35 @@
+%store_url%
+
+Dear %venue_organiser_name%,
+
+It is our privilege to inform you that %event_name%  is going to be held from %start_date_of_event% to %end_date_of_event%  and the event will be organised by %event_organiser_name%.
+For the purpose of the auspicious event, we have considered %venue_name% to be appropriate as a venue location.
+
+Related details of the event are as follows:
+
+Title: %event_name%
+Date: %start_date_of_event%
+Principal Organiser: %event_organiser_name%
+
+We are formally requesting you to provide us with your approval, should you be available for hosting the event.  Even though it is at your discretion, we forebode the success of the event at your venue.
+
+If you choose to accept the invitation, please click on the calendar link provided.
+
+%link_to_admin_panel%
+
+You will be contacted accordingly with detailed information in regard to the event, logistics and other peripheries if you accept the request.
+
+Please feel free to contact us with any query that you may have.
+
+We look forward to your support and cooperation.
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

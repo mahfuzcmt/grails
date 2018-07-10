@@ -1,0 +1,2 @@
+include ":webcommander"
+project(":webcommander").projectDir = file("../../webcommander")

@@ -1,0 +1,80 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-client-testimonial h3 {
+    color: #666;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+.snippet-client-testimonial h3 em {
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.snippet-client-testimonial .quote::after {
+    border-color: #f6f6f6 transparent transparent;
+    border-style: solid;
+    border-width: 25px 20px 0 0;
+    bottom: -25px;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.snippet-client-testimonial .quote {
+    background-color: #f6f6f6;
+    min-height: 120px;
+    margin: 40px 0;
+    padding: 30px 25px;
+    position: relative;
+}
+.snippet-client-testimonial .quote span.icon-wraper {
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin-left: 0;
+    margin-right: 18px;
+    margin-top: 5px;
+    padding: 13px;
+}
+.snippet-client-testimonial .quote i {
+    color: #999;
+    font-size: 18px;
+}
+.snippet-client-testimonial .quote p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+.snippet-client-testimonial .client-cell > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.snippet-client-testimonial .client-cell .img-cell {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    width: 50px;
+}
+.snippet-client-testimonial .client-info {
+    color: #666;
+    line-height: normal;
+    margin-left: 13px;
+}
+.snippet-client-testimonial .client-info span {
+    display: block;
+    margin-bottom: 3px;
+}
+.snippet-client-testimonial .client-info em {
+    color: #000;
+}

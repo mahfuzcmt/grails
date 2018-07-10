@@ -1,0 +1,185 @@
+apply plugin: "idea"
+apply plugin: "org.grails.grails-plugin"
+apply plugin: "org.grails.grails-plugin-publish"
+apply plugin: "org.grails.grails-gsp"
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url "https://repo.grails.org/grails/core"
+    }
+    maven {
+        url "http://central.maven.org/maven2"
+    }
+}
+
+if (!project.hasProperty("isProductionBuild")) {
+    grails {
+        plugins {
+            compile project(':webcommander')
+        }
+    }
+} else {
+    if (project.hasProperty("projectBasePath")) {
+        apply from: "$projectBasePath/gradle-file/wc-dependencies.gradle"
+        dependencies {
+            compile fileTree(dir: "$projectBasePath/webcommander/libs", include: '*.jar')
+            compile fileTree(dir: "$projectBasePath/webcommander/build/libs", include: '*.jar')
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile "org.springframework.boot:spring-boot-starter-logging"
+    compile "org.springframework.boot:spring-boot-autoconfigure"
+    compile "org.grails:grails-core"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-tomcat"
+    compile "org.grails:grails-web-boot"
+    compile "org.grails:grails-logging"
+    compile "org.grails:grails-plugin-rest"
+    compile "org.grails:grails-plugin-databinding"
+    compile "org.grails:grails-plugin-i18n"
+    compile "org.grails:grails-plugin-services"
+    compile "org.grails:grails-plugin-url-mappings"
+    compile "org.grails:grails-plugin-interceptors"
+    compile "org.grails.plugins:cache"
+    compile "org.grails.plugins:async"
+    compile "org.grails.plugins:scaffolding"
+    compile "org.grails.plugins:gsp"
+    console "org.grails:grails-console"
+    profile "org.grails.profiles:web-plugin"
+    provided "org.grails:grails-plugin-services"
+    provided "org.grails:grails-plugin-domain-class"
+    testCompile "org.grails:grails-gorm-testing-support"
+    testCompile "org.grails:grails-plugin-testing"
+    testCompile "org.grails.plugins:geb"
+    testCompile "org.grails:grails-web-testing-support"
+}
+
+bootRun {
+    jvmArgs('-Dspring.output.ansi.enabled=always')
+    addResources = true
+}
+
+bootRepackage.enabled = false
+
+def APP_LIBS = "lib"
+def WEB_APP = "src/main/webapp"
+def WEB_INF = "src/main/webapp/WEB-INF"
+def SQL_DIR = "sql"
+def SQL = "src/main/webapp/WEB-INF/$SQL_DIR"
+def BUILD_DIR = "build"
+def PLUGIN_DESTROYER = "destroyer/PluginDestroyer.groovy"
+def BUILD_LIB_DIR = "build/libs"
+def BUILD_ZIP_DIR = "build/libs/build_zip"
+def BUILD_ZIP_LIBS_DIR = "build/libs/build_zip/lib"
+def BUILD_ZIP_WEB_INF_DIR = "build/libs/build_zip/WEB-INF"
+def BUILD_ZIP_PUBLIC_DIR = "build/libs/build_zip/public"
+def BUILD_ZIP_SQL_DIR = "build/libs/build_zip/sql"
+def BUILD_ZIP_FILE_NAME = "$project.name" + ".zip"
+def WEB_INF_DIR = "WEB-INF"
+def BUILD_ZIP_FILE = "build/$BUILD_ZIP_FILE_NAME"
+def PLUGIN_INFO_JSON_NAME = "$buildDir/libs/build_zip/info.json"
+def BUILD_ZIP_WEB_INF_DIR_ABSOLUTE_PATH = "$buildDir/libs/build_zip/WEB-INF/system-resources"
+
+task cleanAll(type: Delete) {
+    delete BUILD_ZIP_DIR, BUILD_ZIP_FILE
+    followSymlinks = true
+}
+
+task cleanZippacket(type: Delete) {
+    delete BUILD_ZIP_DIR
+    followSymlinks = true
+}
+
+task copyAllContent() {
+    doLast {
+        copy {
+            from APP_LIBS
+            include '*.jar'
+            into BUILD_ZIP_LIBS_DIR
+        }
+
+        copy {
+            from PLUGIN_DESTROYER
+            into BUILD_ZIP_DIR
+        }
+
+        copy {
+            from SQL
+            into BUILD_ZIP_SQL_DIR
+        }
+
+        copy {
+            from WEB_INF
+            exclude SQL_DIR
+            into BUILD_ZIP_WEB_INF_DIR
+        }
+
+        copy {
+            from WEB_APP
+            exclude WEB_INF_DIR
+            into BUILD_ZIP_PUBLIC_DIR
+        }
+
+        def jarNameVersion = "$project.name-$version" + ".jar"
+        copy {
+            from BUILD_LIB_DIR + "/$jarNameVersion"
+            into BUILD_ZIP_DIR
+            rename { String fileName ->
+                fileName.replace(jarNameVersion, "plugin.jar")
+            }
+        }
+    }
+}
+
+task archiveBinary(type: Zip) {
+    from BUILD_ZIP_DIR
+    archiveName BUILD_ZIP_FILE_NAME
+    destinationDir(file(BUILD_DIR))
+}
+
+task distributionPacking(dependsOn: ['assemble']) {
+    doFirst {
+        def nameVersion = "$project.name $version"
+        println "Cleaning zip packet"
+        tasks.cleanAll.execute()
+
+        println "Coping all $nameVersion Content to zip packet"
+        tasks.copyAllContent.execute()
+
+        println "Creating plugin info meta"
+        def resources = []
+        if (new File(BUILD_ZIP_WEB_INF_DIR_ABSOLUTE_PATH).exists()) {
+            def replaceWithBuildLocation = BUILD_ZIP_WEB_INF_DIR_ABSOLUTE_PATH.replace("/", File.separator)
+            new File(BUILD_ZIP_WEB_INF_DIR_ABSOLUTE_PATH).traverse() { file ->
+                resources.add("\"" + file.path.replace(replaceWithBuildLocation, "").replace(File.separator, "/") + "\"")
+            }
+            resources = resources.reverse()
+        }
+
+        def infoFile = new File("$PLUGIN_INFO_JSON_NAME")
+        infoFile.createNewFile()
+        infoFile.write("{\"identifier\":\"$project.name\",\"version\":\"$version\",\"resources\":$resources}")
+
+        println "Archiving $nameVersion Binary packet"
+        tasks.archiveBinary.execute()
+
+        println "Cleaning zip packet"
+        tasks.cleanZippacket.execute()
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

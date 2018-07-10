@@ -1,0 +1,36 @@
+/*theam_sb*/
+.menu-item.reply .icon,
+.tab-header.ask-question .icon,
+.menu-item.ask-question .icon {
+    background-image : url("../../images/admin/16-ask-question.png");
+}
+.tab-header.ask-question .icon,
+.menu-item.ask-question .icon {
+    background-position: 0 0;
+}
+.dashlet-ribbon.ask-question .icon {
+    background-image    : url("../../images/admin/ask-question-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+/*theam_sb end*/
+.dashlet-ribbon.ask-question .icon {
+    background-position: 0 0;
+}
+.menu-item.reply .icon {
+    background-position: -16px 0;
+}
+.status-replied {
+    background-color : #00CE27;
+    border           : 1px solid #02AF23;
+}
+.ask-question-panel .form-row label {
+    width: 80px;
+}
+.ask-question-panel .form-row textarea {
+    height: 150px;
+    width: 300px;
+}
+
+.ask-question-popup .content {
+    min-height: 275px;
+}

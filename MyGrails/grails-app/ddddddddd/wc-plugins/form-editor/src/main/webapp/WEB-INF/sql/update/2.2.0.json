@@ -1,0 +1,70 @@
+{
+  "fromVersion": "2.1.9.1",
+  "releaseVersion": "2.2.0",
+  "developers":[
+    {
+      "name":"Md Sajedur Rahman",
+      "sql": [
+        {
+          "for": "",
+          "condition": "SELECT * FROM information_schema.`COLUMNS` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'form_field' AND COLUMN_NAME = 'value' and CHARACTER_MAXIMUM_LENGTH = 255",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `form_field` CHANGE COLUMN `value` `value` VARCHAR(500) NULL DEFAULT NULL"
+        },
+        {
+          "for": "To add submission count column to form table",
+          "condition": "SELECT * FROM information_schema.`COLUMNS` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'form' AND COLUMN_NAME = 'submission_count'",
+          "isFalse": "ALTER TABLE `form` ADD COLUMN `submission_count` INT(11) NOT NULL;",
+          "isTrue": ""
+        },
+        {
+          "for": "To init submission count column",
+          "condition": "select * from form where submission_count is null or submission_count = 0",
+          "isFalse": "",
+          "isTrue": "update form f set f.submission_count = (select count(*) from form_submission where form_id = f.id) where submission_count is null or submission_count = 0"
+        },
+        {
+          "for": "Update old options",
+          "condition": "select * from form_extra_prop where label is null or label = ''",
+          "isFalse": "",
+          "isTrue": "update form_extra_prop set label = value where label is null or  label = ''"
+        },
+        {
+          "for": "Update old checkbox options",
+          "condition": "select * from form_field f left join form_field_form_field ff on f.id = ff.form_field_id  where type = 'checkboxOption'",
+          "isTrue": "insert into form_extra_prop (id, label, `type`, value) select (f.id + 1000) as id, f.name as label, 'option' as `option`, f.value from form_field f left join form_field_form_field ff on f.id = ff.form_field_id  where f.`type` = 'checkboxOption';",
+          "isFalse": ""
+        },
+        {
+          "for": "Update old checkbox options",
+          "condition": "select * from form_field f left join form_field_form_field ff on f.id = ff.form_field_id  where type = 'checkboxOption'",
+          "isTrue": "insert into form_field_form_extra_prop (form_field_extras_id, form_extra_prop_id) select ff.form_field_fields_id, (f.id + 1000) as form_extra_prop_id from form_field f left join form_field_form_field ff on f.id = ff.form_field_id  where f.`type` = 'checkboxOption';",
+          "isFalse": ""
+        },
+        {
+          "for": "Update old checkbox options",
+          "condition": "select * from form_field where type = 'checkboxOption'",
+          "isFalse": "",
+          "isTrue": "delete from form_field_form_field where form_field_id in (select id from form_field where `type` = 'checkboxOption');"
+        },
+        {
+          "for": "Update old checkbox options",
+          "condition": "select * from form_field where type = 'checkboxOption'",
+          "isFalse": "",
+          "isTrue": "delete from form_field where `type` = 'checkboxOption';"
+        }
+      ]
+    },
+    {
+      "name":"Tariq Ahmed Khan",
+      "sql": [
+        {
+          "for": "add message_key for form builder",
+          "condition": "select * from message_source where `message_key` = 'i.agree.term.condition' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'I agree to the terms and conditions', 'i.agree.term.condition', NOW())",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

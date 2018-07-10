@@ -1,0 +1,1 @@
+<span class="link analytics-config-link"><g:message code="please.authorize.first"/></span>

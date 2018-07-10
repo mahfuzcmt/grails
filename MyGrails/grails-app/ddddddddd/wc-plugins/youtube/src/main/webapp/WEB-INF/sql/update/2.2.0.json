@@ -1,0 +1,17 @@
+{
+  "fromVersion": "2.1.9.1",
+  "releaseVersion": "2.2.0",
+  "developers":[
+    {
+      "name": "Sajid",
+      "sql": [
+        {
+          "for": "Youtube API key update",
+          "condition": "select * from site_config where `config_key` = 'api_key' and `type` = 'youtube' and value = 'AIzaSyBpbOIttWv-z8ewaMk7I519xs_UA5rsyZ4'",
+          "isTrue": "update site_config set value = 'AIzaSyAhsSICxrIawj50V9t4zif7h9OPKgez5gE' where `config_key` = 'api_key' and `type` = 'youtube' and value = 'AIzaSyBpbOIttWv-z8ewaMk7I519xs_UA5rsyZ4'",
+          "isFalse": ""
+        }
+      ]
+    }
+  ]
+}

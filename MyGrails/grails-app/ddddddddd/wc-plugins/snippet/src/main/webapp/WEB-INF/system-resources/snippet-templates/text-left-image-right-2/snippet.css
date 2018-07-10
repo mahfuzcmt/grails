@@ -1,0 +1,24 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-text-left-image-right-2 h1 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.snippet-text-left-image-right-2 img {
+    padding-left: 16px;
+}
+@media (max-width:991px ) {
+    .snippet-text-left-image-right-2 img {
+        padding-top: 30px;
+        padding-left: 0;
+    }
+}
+@media (max-width:767px ) {
+    .snippet-text-left-image-right-2 img {
+        padding-top: 15px;
+    }
+
+}

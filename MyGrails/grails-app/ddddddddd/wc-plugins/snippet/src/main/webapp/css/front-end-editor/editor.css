@@ -1,0 +1,193 @@
+.fee .widget-snippet * {
+    overflow: visible !important;
+}
+
+.fee .widget-snippet .fee-config-body * {
+    color: #444444 !important;
+}
+
+.widget-snippet .fee-config-body {
+    overflow: auto !important;
+}
+
+.fee-template-wrapper .fee-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #767676;
+    padding: 20px;
+}
+
+.fee-snippet-templates {
+    max-height: 500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 740px;
+}
+
+.fee-snippet-templates .fee-snippet-template {
+    float: left;
+    width: 350px;
+    padding: 5px;
+}
+
+.fee-popup .chosen-container.fee-snippet-selector {
+    width: 300px;
+}
+
+.fee-snippet-templates .fee-snippet-template img {
+    width: 100%;
+    border: 1px solid #cccccc;
+    padding: 1px;
+}
+
+.fee-snippet-templates .fee-snippet-template img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ABABAB;
+}
+
+.fee-snippet-activated-elm, .fee-snippet-highlighted-elm, .fee-snippet-activated-elm.redactor-in:focus {
+    outline: 2px #f26522 dashed;
+    border: none;
+}
+
+.fee-snippet-activated-elm {
+    cursor: text !important;
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+.fee-snippet-highlighted-elm {
+    cursor: pointer;
+}
+
+[data-cloneable], [data-editable], [data-style-type] {
+    outline-offset: -2px;
+}
+
+.fee-snippet-activated-elm.redactor-in {
+    padding: 0;
+}
+
+.fee-snippet-command {
+    position: absolute;
+    top: -2px;
+    left: -30px;
+    width: 30px;
+    background: #1098C2;
+    color: #ffffff;
+    display: none;
+}
+
+.fee-snippet-command .fee-snippet-command-item {
+    width: 16px;
+    height: 17px;
+    cursor: pointer;
+    margin: 10px auto;
+    background: transparent url("../../images/admin/widget-configure.png") no-repeat center;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-configure {
+    background-position: 0 0;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-delete {
+    background-position: -17px 0;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-edit {
+    background-position: -32px 0;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-copy {
+    background-position: -80px 0;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-move-left {
+    background-position: -48px 0;
+}
+
+.fee-snippet-command .fee-snippet-command-item.fee-move-right {
+    background-position: -64px 0;
+}
+
+.template-category-list {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.template-category-list .category {
+    height: 50px;
+    padding: 1px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 60px;
+}
+
+.template-category-list .category.selected {
+    background-color: #12a3d1;
+}
+
+.template-category-list .category .icon {
+    background: url("../../images/admin/snippet-category-icon.png") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.template-category-list .category .label {
+    display: block;
+    line-height: 16px;
+}
+
+.template-category-list .category .icon.intros {
+    background-position: 0 0;
+}
+
+.template-category-list .category .icon.features {
+    background-position: 0 -20px;
+}
+
+.template-category-list .category .icon.title_and_text {
+    background-position: 0 -40px;
+}
+
+.template-category-list .category .icon.testimonials {
+    background-position: 0 -60px;
+}
+
+.template-category-list .category .icon.call_to_actions {
+    background-position: 0 -80px;
+}
+
+.template-category-list .category .icon.clients {
+    background-position: 0 -100px;
+}
+
+.template-category-list .category .icon.social_media {
+    background-position: 0 -120px;
+}
+
+.template-category-list .category .icon.team {
+    background-position: 0 -140px;
+}
+
+.template-category-list .category .contact {
+    background-position: 0 -160px;
+}
+
+.template-category-list .category .all {
+    background-position: 0 -180px;
+}
+
+body.fee .widget-snippet button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 5px 0;
+}

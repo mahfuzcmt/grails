@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS `get_price_category_mapping` (  `id` bigint(20) NOT NULL AUTO_INCREMENT,  `get_price_category` varchar(255) NOT NULL,  `category_id` bigint(20) NOT NULL,  PRIMARY KEY (`id`),  UNIQUE KEY `UK_di6g564y9kcng2pa2pi6sibup` (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;

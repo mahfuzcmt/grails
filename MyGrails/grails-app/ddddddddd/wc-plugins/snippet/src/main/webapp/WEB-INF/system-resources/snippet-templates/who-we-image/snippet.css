@@ -1,0 +1,85 @@
+body.widget-snippet{
+    padding: 40px;
+}
+.snippet-who-we-image {
+    background-color: #19446f;
+    overflow: hidden;
+}
+.snippet-who-we-image .content-wrap {
+    padding: 60px;
+}
+.snippet-who-we-image h2 {
+    color: #fde428;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+.snippet-who-we-image .bottom-line {
+    background-color: #fde428;
+    height: 1px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 70px;
+}
+.snippet-who-we-image p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 30px 0;
+    padding: 0;
+}
+.snippet-who-we-image .col-xs-4 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.snippet-who-we-image .col-xs-4 .item {
+    padding-left: 60px;
+    position: relative;
+}
+.snippet-who-we-image .col-xs-4 .item i {
+    color: #fde428;
+    font-size: 35px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+}
+.snippet-who-we-image .col-xs-4 .item span {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.snippet-who-we-image .col-md-pull-6 img {
+    max-width: none;
+    position: absolute;
+    right: 15px;
+}
+@media screen and (max-width: 991px){
+    .snippet-who-we-image .col-md-pull-6 img {
+        max-width: 100%;
+        position: static;
+    }
+    .snippet-who-we-image .content-wrap {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 479px){
+    .snippet-who-we-image .content-wrap {
+        padding: 30px;
+    }
+    .snippet-who-we-image .col-xs-4 {
+        width: 50%;
+    }
+    .snippet-who-we-image .col-xs-4 .item {
+        padding-left: 45px;
+    }
+    .snippet-who-we-image .col-xs-4 .item i {
+        font-size: 30px;
+    }
+}

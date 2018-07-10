@@ -1,0 +1,36 @@
+.product-selection-panel table .actions-column {
+    width: 70px;
+}
+.product-selection-panel .product-name {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 5px;
+    vertical-align: middle;
+    width: -webkit-calc(100% - 70px);
+    width: -moz-calc(100% - 70px);
+    width: calc(100% - 70px);
+}
+.product-selection-panel .show-variation {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #1199C4;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #1199C4;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+}
+.list-variation-popup.popup {
+    padding: 0;
+    width: 180px !important;
+    min-width: 0;
+}

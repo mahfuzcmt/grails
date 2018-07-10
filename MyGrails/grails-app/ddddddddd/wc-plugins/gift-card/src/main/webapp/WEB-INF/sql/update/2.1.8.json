@@ -1,0 +1,17 @@
+{
+  "fromVersion": "2.1.7",
+  "releaseVersion": "2.1.8",
+  "developers":[
+    {
+      "name": "Shahin",
+      "sql": [
+        {
+          "for": "To add modifiable gift certificate code prefix feature",
+          "condition": "SELECT * FROM site_config WHERE type='gift_certificate' AND config_key='gc_code_prefix'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO site_config(`type`, config_key, `value`) VALUES('gift_certificate', 'gc_code_prefix', 'GCFT-')"
+        }
+      ]
+    }
+  ]
+}

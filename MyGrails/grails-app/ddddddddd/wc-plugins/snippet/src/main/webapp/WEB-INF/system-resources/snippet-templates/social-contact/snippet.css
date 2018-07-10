@@ -1,0 +1,44 @@
+body.widget-snippet {
+  padding: 40px;
+}
+.snippet-social-contact {
+  padding: 10px 0;
+}
+.snippet-social-contact a {
+  border: 1px solid #444;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 8px;
+  margin-top: 5px;
+  min-height: 35px;
+  min-width: 35px;
+  padding: 5px;
+  text-align: center;
+}
+.snippet-social-contact a:hover {
+  background-color: #444;
+  border: 1px solid #444;
+}
+.snippet-social-contact a:last-child {
+  margin-right: 0;
+}
+.snippet-social-contact a i {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+.snippet-social-contact a:hover i {
+  color: #fff;
+}
+.snippet-social-contact .separator {
+  background-color: #ccc;
+  display: inline-block;
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 1px;
+}

@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS `template`;
+DROP TABLE IF EXISTS `snippet`;

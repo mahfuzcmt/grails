@@ -1,0 +1,13 @@
+body.widget-snippet {
+  padding: 40px;
+}
+.snippet-partners .row > div {
+  max-height: 100px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+.snippet-partners img {
+  max-width: 120px;
+}

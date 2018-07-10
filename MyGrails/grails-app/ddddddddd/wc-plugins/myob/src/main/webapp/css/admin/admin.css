@@ -1,0 +1,31 @@
+/*theam_sb*/
+.tab-header.myob .icon,
+.menu-item.myob .icon {
+    background-image : url("../../images/admin/16-myob.png");
+}
+.dashlet-ribbon.myob .icon {
+    background-image    : url("../../images/admin/myob-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+/*theam_sb end */
+
+.dashlet-ribbon.myob .icon {
+    background-position: 0 0;
+}
+
+.tab-header.myob .icon,
+.menu-item.myob .icon {
+    background-position: 0 0;
+}
+
+
+#tab-myob .tool-group .toolbar-item.import,
+#tab-myob .tool-group .toolbar-item.export {
+    background-image : url("../../images/admin/myob-toolbar-icon.png");
+}
+#tab-myob .tool-group .toolbar-item.export {
+    background-position : 0 0;
+}
+#tab-myob .tool-group .toolbar-item.import {
+    background-position : -18px 0;
+}

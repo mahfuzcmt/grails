@@ -1,0 +1,89 @@
+{
+   "order_id": "order.id",
+   "order_date": "order.date",
+   "customer_name": "customer.name",
+   "order_details" : {
+        "label": "order.details",
+         "fields": {
+            "items": {
+                "fields": {
+                    "product_name": "product.name",
+                    "item_number": "product.sku",
+                    "is_downloadable": "is.downloadable",
+                    "product_download_url": "product.download.url",
+                    "url": "url",
+                    "variations": "variation",
+                    "price": "price",
+                    "quantity": "quantity",
+                    "discount": "discount",
+                    "tax": "tax",
+                    "total_with_tax_with_discount": "total.with.tax.and.discount",
+                    "total_with_tax_without_discount": "total.with.tax.and.without.discount",
+                    "total_without_tax_with_discount": "total.without.tax.and.with.discount",
+                    "total_without_tax_without_discount": "total.without.tax.and.without.discount"
+                }
+            },
+            "sub_total": "sub.total",
+            "total_discount": "total.discount",
+            "total_tax": "total.tax",
+            "total_shipping_cost": "total.shipping.cost",
+            "shipping_tax": "shipping.cost",
+            "handling_cost": "handling.cost",
+            "payment_surcharge": "payment.surcharge",
+            "total": "total",
+             "paid": "paid",
+             "due": "due"
+         }
+   },
+   "payment_details": {
+       "fields": {
+         "date": "date",
+         "payment_method": "payment.method",
+         "track_info": "track.info",
+         "payer_info": "payer.info",
+         "status": "status",
+         "amount": "amount"
+       }
+
+   },
+   "shipping_details": {
+       "fields": {
+           "product_name": "product.name",
+           "shipment_method": "shipment.method",
+           "order_quantity": "order.quantity",
+           "shipped_quantity": "shipped.quantity",
+           "track_info": "track.info"
+       }
+   },
+   "billing_address": {
+       "label": "billing.address",
+       "fields": {
+           "address_line1": "address.line.1",
+           "address_line2": "address.line.2",
+           "state": "state",
+           "city": "city",
+           "post_code": "post.code",
+           "email": "email",
+           "fax": "fax",
+           "phone": "phone",
+           "mobile": "mobile",
+           "country": "country"
+       }
+   },
+   "shipping_address": {
+        "label": "shipping.address",
+        "fields": {
+            "address_line1": "address.line.1",
+            "address_line2": "address.line.2",
+            "state": "state",
+            "city": "city",
+            "post_code": "post.code",
+            "email": "email",
+            "fax": "fax",
+            "phone": "phone",
+            "mobile": "mobile",
+            "country": "country"
+        }
+   },
+   "payment_info": "payment.info"
+}

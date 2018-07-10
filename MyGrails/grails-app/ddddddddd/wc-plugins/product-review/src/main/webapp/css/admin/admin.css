@@ -1,0 +1,27 @@
+/*theam_sb*/
+.menu-item.active .icon,
+.menu-item.inactive .icon,
+.tab-header.product-review .icon,
+.menu-item.product-review .icon {
+    background-image : url("../../images/admin/16-product-review.png");
+}
+.tab-header.product-review .icon,
+.menu-item.product-review .icon {
+    background-position: 0 0;
+}
+.dashlet-ribbon.product-review .icon {
+    background-image    : url("../../images/admin/product-review-ribbon-icon.png");
+    background-repeat: no-repeat;
+}
+
+/*theam_sb end*/
+.dashlet-ribbon.product-review .icon {
+    background-position: 0 0;
+}
+
+.menu-item.active .icon {
+    background-position: -16px 0;
+}
+.menu-item.inactive .icon {
+    background-position: -32px 0;
+}

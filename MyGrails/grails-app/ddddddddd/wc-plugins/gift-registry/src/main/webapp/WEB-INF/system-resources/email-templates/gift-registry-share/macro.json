@@ -1,0 +1,10 @@
+{
+    "gift_registry_name": "gift.registry.ame",
+    "gift_registry_link": "link",
+    "to_name": "to.name",
+    "customer_first_name": "customer.first.name",
+    "customer_last_name": "customer.last.name",
+    "comment": "comment",
+    "event_date": "event.date",
+    "event_name": "event.name"
+}

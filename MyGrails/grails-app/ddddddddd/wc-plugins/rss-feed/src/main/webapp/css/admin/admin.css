@@ -1,0 +1,5 @@
+.rssFeed .widget-logo {
+    background-image    : url("../../images/admin/rss-feed.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}

@@ -1,0 +1,102 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-services-left-img > .row {
+    margin-bottom: 60px;
+}
+.snippet-services-left-img > .row:last-child {
+    margin-bottom: 0;
+}
+.snippet-services-left-img img {
+    max-width: 100%;
+}
+.snippet-services-left-img .col-sm-6:nth-child(2n+1) {
+    clear: left;
+}
+.snippet-services-left-img .service {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.snippet-services-left-img .service > div {
+    overflow: hidden;
+}
+.snippet-services-left-img h2 {
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.snippet-services-left-img .title-bottom-line {
+    background-color: #999999;
+    height: 1px;
+    margin: 25px 0 50px;
+    width: 100px;
+}
+.snippet-services-left-img p.description {
+     color: #5d5d5d;
+     line-height: 26px;
+}
+.snippet-services-left-img .service span.iconWrap {
+    border: 2px solid #d2d2d2;
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    margin-top: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 75px;
+}
+.snippet-services-left-img .service span i {
+    color: #666666;
+    font-size: 30px;
+    margin: 0;
+}
+body.widget-snippet .snippet-services-left-img .service > div .readMoreWrap {
+    padding: 7px;
+}
+.snippet-services-left-img .service a > i {
+    font-size: 13px;
+}
+.snippet-services-left-img .service h4 {
+    color: #272727;
+    font-size: 18px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.snippet-services-left-img .service p {
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.snippet-services-left-img .service a {
+    color: #272727;
+    font-size: 14px;
+}
+.snippet-services-left-img .service .readMoreWrap i {
+    margin-right: 7px;
+    color: #272727;
+}
+.snippet-services-left-img .col-md-4 {
+    padding-right: 25px;
+}
+@media screen and (max-width:991px){
+    .snippet-services-left-img .col-md-4 {
+        padding: 30px 15px;
+    }
+    .snippet-services-left-img img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:767px){
+    .snippet-services-left-img .service p {
+        height: auto;
+    }
+}
+@media screen and (max-width:479px){
+    .snippet-services-left-img .service span {
+        margin-right: 15px;
+    }
+}

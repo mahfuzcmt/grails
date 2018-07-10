@@ -1,0 +1,6 @@
+{
+    "customer_first_name": "customer.first.name",
+    "customer_last_name": "customer.last.name",
+    "customer_email": "customer.email",
+    "password_reset_link": "password.reset.link"
+}

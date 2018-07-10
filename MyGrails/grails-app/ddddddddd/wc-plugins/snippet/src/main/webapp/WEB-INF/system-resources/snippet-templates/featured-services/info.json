@@ -1,0 +1,7 @@
+{
+  "category": "services",
+  "name": "Featured Services",
+  "uuid": "featured-services",
+  "thumb": "thumb.jpg",
+  "isSystemDefault": true
+}

@@ -1,0 +1,195 @@
+.tree-node.grand-root {
+    padding-bottom: 10px;
+}
+.tree-node.grand-root .tree-title {
+    font-size: 15px;
+}
+.tree-node {
+    display: block;
+    position: relative;
+}
+.wcui-tree {
+    font-size   : 10pt;
+    white-space : nowrap;
+    padding     : 5px;
+}
+.tree-container .tree-container {
+    padding : 0 0 0 24px;
+    margin  : 0;
+}
+.grand-root .tree-icon {
+    margin-left : 0;
+}
+.tree-container .tree-node-container {
+    list-style-image              : none;
+    list-style-position           : outside;
+    list-style-type               : none;
+    -moz-background-clip          : border;
+    -moz-background-inline-policy : continuous;
+    -moz-background-origin        : padding;
+    background-attachment         : scroll;
+    background-color              : transparent;
+    background-repeat             : repeat-y;
+    background-image              : url("../../images/widgets/tree/vline.png");
+    background-position           : 0 0;
+    margin                        : 0;
+}
+.tree-container .tree-node-container.tree-lastsib {
+    background-image    : url("../../images/widgets/tree/vline-last.png");
+    background-position : 0 0;
+    background-repeat   : no-repeat;
+}
+.tree-no-connector > .tree-node-connector {
+    background-image : none;
+}
+.ui-dynatree-disabled .tree-container {
+    opacity          : 0.5;
+    background-color : silver;
+}
+.tree-title {
+    cursor         : pointer;
+    padding        : 0 5px;
+    font-size      : 14px;
+    vertical-align : middle;
+}
+span.tree-empty,
+span.tree-vline,
+span.tree-icon,
+span.tree-checkbox,
+span.tree-radio,
+span.tree-drag-helper-img,
+#dynatree-drop-marker {
+    width               : 16px;
+    height              : 16px;
+    display             : inline-block;
+    vertical-align      : top;
+    background-repeat   : no-repeat;
+    background-position : left;
+    background-image    : url("../../images/widgets/tree/icons.png");
+    background-position : 0 0;
+}
+span.tree-connector,
+span.tree-expander {
+    width               : 45px;
+    height              : 25px;
+    display             : inline-block;
+    vertical-align      : middle;
+    background-repeat   : no-repeat;
+    background-position : left;
+    background-image    : url("../../images/widgets/tree/tree-icon.png");
+    background-position : 0 0;
+}
+
+.tree-container img {
+    width          : 16px;
+    height         : 16px;
+    margin-left    : 3px;
+    vertical-align : top;
+    border-style   : none;
+}
+span.tree-connector {
+    background-position : 0 0;
+}
+span.tree-expander {
+    background-position : -45px 0;
+    cursor              : pointer;
+}
+.tree-expanded span.tree-expander {
+    background-position : -90px 0px;
+}
+.tree-loading span.tree-expander {
+    background-position : 0 0;
+    background-image    : url("../../images/widgets/tree/loading.gif");
+}
+span.tree-checkbox {
+    margin-left         : 3px;
+    background-position : 0px -48px;
+}
+span.tree-checkbox:hover {
+    background-position : -24px -48px;
+}
+.tree-partsel span.tree-checkbox {
+    background-position : -96px -48px;
+}
+.tree-partsel span.tree-checkbox:hover {
+    background-position : -120px -48px;
+}
+.tree-selected span.tree-checkbox {
+    background-position : -48px -48px;
+}
+.tree-selected span.tree-checkbox:hover {
+    background-position : -72px -48px;
+}
+span.tree-radio {
+    margin-left         : 3px;
+    background-position : 0px -72px;
+}
+span.tree-radio:hover {
+    background-position : -24px -72px;
+}
+.tree-partsel span.tree-radio {
+    background-position : -96px -72px;
+}
+.tree-partsel span.tree-radio:hover {
+    background-position : -120px -72px;
+}
+.tree-selected span.tree-radio {
+    background-position : -48px -72px;
+}
+.tree-selected span.tree-radio:hover {
+    background-position : -72px -72px;
+}
+span.tree-icon {
+    margin        : 0 2px 0 3px;
+    vertical-align      : middle;
+}
+
+.tree-statusnode-wait span.tree-icon {
+    background-image : url("../../images/widgets/tree/loading.gif");
+}
+.tree-statusnode-error span.tree-icon {
+    background-position : 0px -24px;
+}
+div.tree-drag-helper {
+    background-color : #FFFFFF;
+    outline : 1px solid #0000FF;
+}
+div.tree-drag-helper.tree-drop-reject {
+    outline : 1px solid #FF0000;
+}
+div.tree-drag-helper.tree-drop-accept {
+    outline : 1px solid #00FF00;
+}
+div.tree-drag-helper span.tree-drag-helper-img {
+    background-position : 0 -24px;
+}
+div.tree-drop-accept span.tree-drag-helper-img {
+    background-position : -48px -24px;
+}
+div.tree-drop-reject span.tree-drag-helper-img {
+    background-position : -24px -24px;
+}
+.tree-drag-source .tree-title {
+    outline : 1px solid #0000FF;
+}
+.tree-active .tree-title {
+    background-color : #d7effa;
+}
+.tree-drop-target.tree-drop-accept .tree-title {
+    background-color : #ABEFAB;
+}
+.tree-node.tree-drop-accept.tree-drop-before {
+    border-top : 4px solid #9A9AFF;
+}
+.tree-node.tree-drop-before .tree-title {
+    background-color : transparent;
+}
+.tree-highlighted .tree-title {
+    outline : 1px solid #00FF00;
+}
+.folder span.tree-icon {
+    background-position: -48px 0;
+}
+.file span.tree-icon {
+    background-position: -64px 0;
+}

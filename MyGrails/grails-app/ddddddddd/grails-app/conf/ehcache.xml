@@ -1,0 +1,5 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ehcache.xsd" >
+	<diskStore path="java.io.tmpdir"/>
+	<cacheManagerEventListenerFactory class="" properties=""/>
+	<defaultCache eternal="true" overflowToDisk="true"/>
+</ehcache>

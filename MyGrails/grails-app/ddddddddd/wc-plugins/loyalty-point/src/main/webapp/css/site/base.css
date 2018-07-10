@@ -1,0 +1,233 @@
+#bmui-tab-loyalty-point .button-line {
+    padding: 7px 0;
+}
+/* Loyalty Point */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loyalty-claim .loyality_point_quentity {
+    margin-bottom: 15px;
+}
+
+.loyalty-claim label {
+    display: block;
+}
+
+.loyalty-claim input,
+.loyalty-claim select {
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 35px;
+}
+
+.referral-invite-link-section {
+    text-align: center;
+}
+
+.referral-invite-link-section .title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.referral-invite-link-section .link {
+    display: inline-block;
+    text-align: center;
+}
+
+.referral-invite-link-section .link:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.referral-invite-link-section .link input {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    border: 2px solid #666;
+    float: left;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 0;
+    width: 455px;
+    height: 50px;
+}
+
+#customer-profile-tabs .referral-invite-link-section .link .button {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    background-image: none;
+    background-color: #666;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    width: 110px;
+}
+
+.referral-invite-link-section .referral-code {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.invite-link-social-media {
+    text-align: center;
+}
+
+.invite-link-social-media .social-media-share {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: top;
+    height: 50px;
+    width: 50px;
+}
+
+.invite-link-social-media .social-media-share:before {
+    color: #fff;
+    font-size: 24px;
+    font-family: FontAwesome;
+}
+
+.invite-link-social-media .facebook {
+    background-color: #3B5998;
+}
+
+.invite-link-social-media .facebook:before {
+    content: '\f09a';
+}
+
+.invite-link-social-media .twitter {
+    background-color: #0084b4;
+}
+
+.invite-link-social-media .twitter:before {
+    content: '\f099';
+}
+
+.invite-link-social-media .google-plus {
+    background-color: #d34836;
+}
+
+.invite-link-social-media .google-plus:before {
+    content: '\f0d5';
+}
+
+.invite-link-social-media .linkedin {
+    background-color: #0077B5;
+}
+
+.invite-link-social-media .linkedin:before {
+    content: '\f0e1';
+}
+
+.invite-link-social-media .email {
+    background-color: #3B5998;
+}
+
+.invite-link-social-media .email:before {
+    content: '\f2b6';
+}
+
+.info-section-info-block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #cad4d7;
+    margin-top: 55px;
+}
+
+.info-section-info-block .info-box {
+    padding: 30px 20px;
+    text-align: center;
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    width: 25%;
+}
+
+.info-section-info-block .info-box + .info-box {
+    border-left: 1px solid #cad4d7;
+}
+
+.info-section-info-block .image {
+    background-image: url("../../images/sprite.png");
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.info-section-info-block .share {
+    background-position: 0 0;
+}
+
+.info-section-info-block .sign-up {
+    background-position: -60px 0;
+}
+
+.info-section-info-block .purchase {
+    background-position: -120px 0;
+}
+
+.info-section-info-block .earn-credit {
+    background-position: -180px 0;
+}
+
+.info-section-info-block .info-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.info-section-info-block .info-text {
+    line-height: 18px;
+    font-size: 14px;
+    color: #777777;
+}
+
+.popup.invite-friend .header,
+.popup.invite-friend .body,
+.popup.invite-friend .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.popup.invite-friend label {
+    display: block;
+}
+
+.popup.invite-friend input,
+.popup.invite-friend textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.popup.invite-friend input {
+    height: 40px;
+}
+
+.popup.invite-friend textarea {
+    height: 100px;
+}

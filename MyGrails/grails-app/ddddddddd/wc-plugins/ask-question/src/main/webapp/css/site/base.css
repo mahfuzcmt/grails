@@ -1,0 +1,7 @@
+.ask-question-panel .form-row label {
+    width: 105px;
+}
+.ask-question-panel .form-row textarea {
+    height: 150px;
+    width: 300px;
+}

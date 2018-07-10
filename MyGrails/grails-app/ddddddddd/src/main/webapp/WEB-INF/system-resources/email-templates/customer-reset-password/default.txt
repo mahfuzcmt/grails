@@ -1,0 +1,23 @@
+%store_url%
+
+Dear %customer_first_name%%if:customer_last_name% %customer_last_name%%if%,
+
+Please click here to reset password for your account or navigate to the URL below
+
+%password_reset_link%
+
+Please ignore this email, if you did not request for the password reset.
+
+The link would be valid for next 48 hours and if you don't reset password for your account within this hours, you would require to request for another
+reset password link.
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

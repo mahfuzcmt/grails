@@ -1,0 +1,76 @@
+<table style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; border: 1px solid #cccccc; width: 580px;" border="0" cellspacing="0" cellpadding="40" align="center" bgcolor="#FFFFFF">
+    <tbody>
+    <tr>
+        <td>
+            <table style="width: 100%%;" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tbody>
+                <tr>
+                    <td style="border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;">%store_logo%</td>
+                    <td style="text-align: right; border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;"><a style="font-style: italic; color: #1aafec; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" href="%store_url%">%store_url%</a></td>
+                </tr>
+                <tr>
+                    <td style="padding: 25px 0 0;" colspan="2">
+                        <p style="margin: 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">Dear Sir,</p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; margin-bottom: 0;">Thank you for purchasing ticket(s).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 30px 0 0;" colspan="2">
+                        <p style="margin: 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Ticket Details:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0px;" colspan="2">
+                        <table style="width: 100%%; padding: 10px 20px;" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#f9f9f9">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%%;" border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody>
+                                        <tr>
+                                            <td style="border-bottom: 1px solid #D5D5D5; padding: 7px 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 13px; width: 150px;">Event Name:</td>
+                                            <td style="border-bottom: 1px solid #D5D5D5; padding: 7px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">%event_name%</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-bottom: 1px solid #D5D5D5; padding: 7px 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 13px; width: 150px;">Event Date:</td>
+                                            <td style="border-bottom: 1px solid #D5D5D5; padding: 7px 0px; font-family: Arial, Helvetica, sans-serif; font-size: 13px;">%event_date% GMT</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 0 40px 0;" colspan="2">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; margin: 0;">If you have any questions about your ticket or any other matter, please feel free to contact us at <a style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; margin-bottom: 0;" href="mailto:%store_email%">%store_email%</a>%if:store_phone% or by phone at %store_phone%%if%.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0 0; border-top: 4px solid #E4E4E4;" colspan="2">
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px; font-weight: bold;">%store_name%</p>
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line1%</p>
+                        %if:store_address_line2%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line2%</p>
+                        %if% %if:store_city%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_city%</p>
+                        %if% %if:store_country%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_country%</p>
+                        %if% %if:store_phone%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Phone: %store_phone%</p>
+                        %if% %if:store_mobile%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Mobile: %store_mobile%</p>
+                        %if% %if:store_fax%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Fax: %store_fax%</p>
+                        %if%
+                        <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Email: %store_email%</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>

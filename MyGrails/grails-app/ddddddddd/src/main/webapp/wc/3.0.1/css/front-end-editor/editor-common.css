@@ -1,0 +1,15 @@
+body > .header,
+body > .footer {
+    position: relative;
+}
+.grid-block.fee-full-width-row.fee-fixed-width-content {
+    padding-left: calc(50% - 585px) !important;
+    padding-right: calc(50% - 585px) !important;
+}
+.v-split.grid-block > .grid-block {
+    height: auto !important;
+}
+.fee-fixed-width-row {
+    max-width: 1172px;
+    margin: 0 auto !important;
+}

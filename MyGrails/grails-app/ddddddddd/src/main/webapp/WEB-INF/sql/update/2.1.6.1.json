@@ -1,0 +1,125 @@
+{
+  "fromVersion": "2.2.",
+  "releaseVersion": "2.1.6.1",
+  "developers":[
+    {
+      "name":"All Developers",
+      "sql": [
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'oauth_access' AND CONSTRAINT_NAME = 'FK_is4y77kce0hvg837ukg3nfsnx'",
+          "isTrue": "ALTER TABLE `oauth_access` DROP FOREIGN KEY `FK_is4y77kce0hvg837ukg3nfsnx`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SHOW INDEX FROM oauth_access where Key_name = 'unique_client_id'",
+          "isTrue": "ALTER TABLE `oauth_access` DROP INDEX `unique_client_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'oauth_access' AND COLUMN_NAME = 'operator_id'",
+          "isTrue": "ALTER TABLE `oauth_access` MODIFY COLUMN `operator_id` BIGINT(20) NULL",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'oauth_access' AND CONSTRAINT_NAME = 'FK_is4y77kce0hvg837ukg3nfsnx'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `oauth_access`	ADD CONSTRAINT `FK_is4y77kce0hvg837ukg3nfsnx` FOREIGN KEY (`operator_id`) REFERENCES `operator` (`id`)"
+        },
+        {
+          "for": "",
+          "condition": "SHOW INDEX FROM oauth_access where Key_name = 'FK_is4y77kce0hvg837ukg3nfsnx'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `oauth_access`	ADD INDEX `FK_is4y77kce0hvg837ukg3nfsnx` (`operator_id`)"
+        },
+        {
+          "for": "",
+          "condition": "select * from  payment_gateway where code != \"CRD\" OR code != \"PPL\" and is_sur_charge_applicable = false",
+          "isTrue": "",
+          "isFalse": "UPDATE payment_gateway set is_sur_charge_applicable = false where code != \"CRD\" OR code != \"PPL\""
+        },
+        {
+          "for": "",
+          "condition": "select * from `site_config` WHERE type='abandoned_cart' AND config_key='interval' and `value` = '30'",
+          "isTrue": "",
+          "isFalse": "UPDATE `site_config` SET `value` = '30' WHERE type='abandoned_cart' AND config_key='interval'"
+        },
+        {
+          "for": "",
+          "condition": "select * from `site_config` WHERE type='abandoned_cart' AND config_key='no_of_max_time' and `value` = '0'",
+          "isTrue": "",
+          "isFalse": "UPDATE `site_config` SET `value` = '0' WHERE type='abandoned_cart' AND config_key='no_of_max_time'"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'add_to_cart' and `type` = 'product'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('add_to_cart', 'product', 'true')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_on_hover' and `type` = 'search_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_on_hover', 'search_page', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_on_hover' and `type` = 'category_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_on_hover', 'category_page', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_on_hover' and `type` = 'brand_manufacturer_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_on_hover', 'brand_manufacturer_page', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_on_hover' and `type` = 'customer_profile_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_on_hover', 'customer_profile_page', 'false')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'add_to_cart' and `type` = 'customer_profile_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('add_to_cart', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'thumbnail_width' and `type` = 'brand_manufacturer_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('thumbnail_width', 'brand_manufacturer_page', '150')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'thumbnail_height' and `type` = 'brand_manufacturer_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('thumbnail_height', 'brand_manufacturer_page', '60')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'template_container_class' and `type` = 'general'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('template_container_class', 'general', 'full-width')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_image' and `type` = 'brand_manufacturer_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_image', 'brand_manufacturer_page', 'true')"
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config where `config_key` = 'show_description' and `type` = 'brand_manufacturer_page'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_description', 'brand_manufacturer_page', 'true')"
+        }
+      ]
+    }
+  ]
+}

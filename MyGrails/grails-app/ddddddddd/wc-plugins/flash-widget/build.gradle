@@ -1,0 +1,29 @@
+apply from : '../../gradle-file/config.gradle'
+apply from : '../../gradle-file/plugin.gradle'
+
+buildscript {
+    apply from : '../../gradle-file/config.gradle'
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url "https://repo.grails.org/grails/core"
+        }
+        maven {
+            url "http://central.maven.org/maven2"
+        }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+    }
+}
+
+version "0.1"
+group "flash-widget"
+
+
+grailsPublish {
+    title = "FlashWidget"
+    desc = "WebCommander plugin description"
+    developers = [wcdeveloper:"WebCommander Developers"]
+}

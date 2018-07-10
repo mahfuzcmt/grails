@@ -1,0 +1,113 @@
+.loyaltyPoint .widget-logo {
+    background-image    : url("../../images/admin/loyalty-widget-icon.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}
+
+.form-row.expire-after_period .chosen-container {
+    display: inline-block;
+    width: 160px;
+}
+
+.form-row.expire-after_period .chosen-container .chosen-single {
+    min-width: 0;
+}
+
+.form-row.expire-after_period input {
+    display: inline-block;
+    margin-right: 5px;
+    width: 75px;
+}
+
+#workspace .form-row.expire-after_period .errorlist {
+     left: 8px;
+     right: auto;
+}
+
+.form-row.redeem_store_credit .note {
+    font-size: inherit;
+}
+
+.form-row.redeem_store_credit input {
+    display: inline-block;
+    width: 75px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.form-row.on-purchase .small {
+    display: inline-block;
+    width: 75px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Loyalty Point */
+.nested-panel {
+    padding-top: 15px;
+    border-top: 1px solid #e3e7e8;
+}
+
+.nested-content .nested-panel {
+    padding-bottom: 15px;
+}
+
+.nested-panel .form-row {
+    padding-bottom: 15px;
+}
+
+.nested-content {
+    padding: 0 0 15px 70px;
+}
+
+.loyalty-point-rules th:first-child,
+.loyalty-point-rules td:first-child,
+.show-config-for-share-loyalty-point th:first-child,
+.show-config-for-share-loyalty-point td:first-child {
+    padding-left: 0;
+}
+
+.loyalty-point-rules th:last-child,
+.loyalty-point-rules td:last-child,
+.show-config-for-share-loyalty-point th:last-child,
+.show-config-for-share-loyalty-point td:last-child {
+    padding-right: 0;
+}
+
+.loyalty-point-rules td {
+    color: #000000;
+}
+
+.loyalty-point-rules tr:nth-child(2n),
+.show-config-for-share-loyalty-point tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+.loyalty-point-rules .add-rule {
+    margin-top: 15px;
+}
+
+.loyalty-point-rule-panel > .rule-detail {
+    border-bottom: 1px solid #E7E9E9;
+    margin-bottom: 25px;
+}
+
+/*.loyalty-point-rule-panel .rule-type {
+    width: -moz-calc(100% - 110px);
+    width: -webkit-calc(100% - 110px);
+    width: calc(100% - 110px);
+}*/
+
+.loyalty-point-rule-panel .form-row .rule-type .chosen-single {
+    height: 40px;
+    line-height: 22px;
+}
+
+/*
+.loyalty-point-rule-panel .form-row .rule-point {
+    float: right;
+    margin-left: 5px;
+    width: 105px;
+}*/

@@ -1,0 +1,1 @@
+(app.widget.pageHeading = function() {}).no_config = true

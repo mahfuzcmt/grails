@@ -1,0 +1,17 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name": "Sajedur Rahman",
+      "sql": [
+        {
+          "for": "Get Price submit variation config key change",
+          "condition": "select * from site_config where `config_key` = 'submit_variation' and `type` = 'get_price'",
+          "isTrue": "Update site_config set config_key = 'submit_variations' where `config_key` = 'submit_variation' and `type` = 'get_price'",
+          "isFalse": ""
+        }
+      ]
+    }
+  ]
+}

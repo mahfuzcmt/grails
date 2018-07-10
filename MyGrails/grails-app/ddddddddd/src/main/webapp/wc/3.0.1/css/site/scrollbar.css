@@ -1,0 +1,26 @@
+.scrollbar {
+    background-color : rgba(0, 0, 0, 0.4);
+    border           : 1px solid #000000;
+    border-radius    : 4px 4px 4px 4px;
+    z-index          : 10;
+}
+.ie8 .scrollbar {
+    background-color : #000000;
+    background-image : url(../../images/common/transparent_40.png);
+}
+.scrollbar.vertical {
+    width : 6px;
+}
+
+.scrollbar.horizontal {
+    height : 6px;
+}
+.scrollbar-handle {
+    background-color : #FFFFFF;
+    border-radius    : 4px 4px 4px 4px;
+    cursor           : pointer;
+}
+.vertical > .scrollbar-handle {
+    left  : 0;
+    right : 0;
+}

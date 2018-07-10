@@ -1,0 +1,22 @@
+%store_url%
+
+Dear %operator_full_name%,
+
+Your account has been created.
+
+Your Username: %user_name%
+Your Password: %user_password%
+
+Please navigate to the following link to Login your account and change your password.\n
+%store_url%admin
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%

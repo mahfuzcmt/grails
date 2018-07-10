@@ -1,0 +1,499 @@
+[
+  {
+    "code": "BUILT_IN_GST_AU",
+    "name": "GST_BUILT_IN_AU",
+    "zones": [
+      "BUILT_IN_AU"
+    ]
+  },
+  {
+    "code": "BUILT_IN_FREE_REST_OF_THE_WORLD",
+    "name": "FREE_BUILT_IN_REST_OF_THE_WORLD",
+    "zones": [
+      "REST_OF_THE_WORLD"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_AB",
+    "name": "GST_BUILT_IN_CA_AB",
+    "zones": [
+      "BUILT_IN_CA_ALBERTA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_BC",
+    "name": "GST_BUILT_IN_CA_BC",
+    "zones": [
+      "BUILT_IN_CA_BRITISH_COLUMBIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_MB",
+    "name": "GST_BUILT_IN_CA_MB",
+    "zones": [
+      "BUILT_IN_CA_MANITOBA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_NB",
+    "name": "GST_BUILT_IN_CA_NB",
+    "zones": [
+      "BUILT_IN_CA_NEW_BRUNSWICK"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_NL",
+    "name": "GST_BUILT_IN_CA_NL",
+    "zones": [
+      "BUILT_IN_CA_NEWFOUNDLAND_&_LABRADOR"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_NS",
+    "name": "GST_BUILT_IN_CA_NS",
+    "zones": [
+      "BUILT_IN_CA_NOVA_SCOTIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_NT",
+    "name": "GST_BUILT_IN_CA_NT",
+    "zones": [
+      "BUILT_IN_CA_NORTHWEST_TERRITORIES"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_NU",
+    "name": "GST_BUILT_IN_CA_NU",
+    "zones": [
+      "BUILT_IN_CA_NUNAVUT"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_ON",
+    "name": "GST_BUILT_IN_CA_ON",
+    "zones": [
+      "BUILT_IN_CA_ONTARIO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_PE",
+    "name": "GST_BUILT_IN_CA_PE",
+    "zones": [
+      "BUILT_IN_CA_PRINCE_EDWARD_ISLAND"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_QC",
+    "name": "GST_BUILT_IN_CA_QC",
+    "zones": [
+      "BUILT_IN_CA_QUEBEC"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_SK",
+    "name": "GST_BUILT_IN_CA_SK",
+    "zones": [
+      "BUILT_IN_CA_SASKATCHEWAN"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_CA_YT",
+    "name": "GST_BUILT_IN_CA_YT",
+    "zones": [
+      "BUILT_IN_CA_YUKON"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_AK",
+    "name": "SALES_TAX_BUILT_IN_US_AK",
+    "zones": [
+      "BUILT_IN_USA_ALASKA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_AL",
+    "name": "SALES_TAX_BUILT_IN_US_AL",
+    "zones": [
+      "BUILT_IN_USA_ALABAMA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_AR",
+    "name": "SALES_TAX_BUILT_IN_US_AR",
+    "zones": [
+      "BUILT_IN_USA_ARKANSAS"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_AZ",
+    "name": "SALES_TAX_BUILT_IN_US_AZ",
+    "zones": [
+      "BUILT_IN_USA_ARIZONA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_CA",
+    "name": "SALES_TAX_BUILT_IN_US_CA",
+    "zones": [
+      "BUILT_IN_USA_CALIFORNIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_CO",
+    "name": "SALES_TAX_BUILT_IN_US_CO",
+    "zones": [
+      "BUILT_IN_USA_COLORADO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_CT",
+    "name": "SALES_TAX_BUILT_IN_US_CT",
+    "zones": [
+      "BUILT_IN_USA_CONNECTICUT"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_DC",
+    "name": "SALES_TAX_BUILT_IN_US_DC",
+    "zones": [
+      "BUILT_IN_USA_WASHINGTON_DC"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_DE",
+    "name": "SALES_TAX_BUILT_IN_US_DE",
+    "zones": [
+      "BUILT_IN_USA_DELAWARE"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_FL",
+    "name": "SALES_TAX_BUILT_IN_US_FL",
+    "zones": [
+      "BUILT_IN_USA_FLORIDA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_GA",
+    "name": "SALES_TAX_BUILT_IN_US_GA",
+    "zones": [
+      "BUILT_IN_USA_GEORGIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_HI",
+    "name": "SALES_TAX_BUILT_IN_US_HI",
+    "zones": [
+      "BUILT_IN_USA_HAWAII"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_IA",
+    "name": "SALES_TAX_BUILT_IN_US_IA",
+    "zones": [
+      "BUILT_IN_USA_IOWA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_ID",
+    "name": "SALES_TAX_BUILT_IN_US_ID",
+    "zones": [
+      "BUILT_IN_USA_IDAHO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_IL",
+    "name": "SALES_TAX_BUILT_IN_US_IL",
+    "zones": [
+      "BUILT_IN_USA_ILLINOIS"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_IN",
+    "name": "SALES_TAX_BUILT_IN_US_IN",
+    "zones": [
+      "BUILT_IN_USA_INDIANA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_KS",
+    "name": "SALES_TAX_BUILT_IN_US_KS",
+    "zones": [
+      "BUILT_IN_USA_KANSAS"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_KY",
+    "name": "SALES_TAX_BUILT_IN_US_KY",
+    "zones": [
+      "BUILT_IN_USA_KENTUCKY"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_LA",
+    "name": "SALES_TAX_BUILT_IN_US_LA",
+    "zones": [
+      "BUILT_IN_USA_LOUISIANA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MA",
+    "name": "SALES_TAX_BUILT_IN_US_MA",
+    "zones": [
+      "BUILT_IN_USA_MASSACHUSETTS"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MD",
+    "name": "SALES_TAX_BUILT_IN_US_MD",
+    "zones": [
+      "BUILT_IN_USA_MARYLAND"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_ME",
+    "name": "SALES_TAX_BUILT_IN_US_ME",
+    "zones": [
+      "BUILT_IN_USA_MAINE"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MI",
+    "name": "SALES_TAX_BUILT_IN_US_MI",
+    "zones": [
+      "BUILT_IN_USA_MICHIGAN"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MN",
+    "name": "SALES_TAX_BUILT_IN_US_MN",
+    "zones": [
+      "BUILT_IN_USA_MINNESOTA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MO",
+    "name": "SALES_TAX_BUILT_IN_US_MO",
+    "zones": [
+      "BUILT_IN_USA_MISSOURI"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MS",
+    "name": "SALES_TAX_BUILT_IN_US_MS",
+    "zones": [
+      "BUILT_IN_USA_MISSISSIPPI"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_MT",
+    "name": "SALES_TAX_BUILT_IN_US_MT",
+    "zones": [
+      "BUILT_IN_USA_MONTANA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NC",
+    "name": "SALES_TAX_BUILT_IN_US_NC",
+    "zones": [
+      "BUILT_IN_USA_NORTH_CAROLINA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_ND",
+    "name": "SALES_TAX_BUILT_IN_US_ND",
+    "zones": [
+      "BUILT_IN_USA_NORTH_DAKOTA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NE",
+    "name": "SALES_TAX_BUILT_IN_US_NE",
+    "zones": [
+      "BUILT_IN_USA_NEBRASKA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NH",
+    "name": "SALES_TAX_BUILT_IN_US_NH",
+    "zones": [
+      "BUILT_IN_USA_NEW_HAMPSHIRE"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NJ",
+    "name": "SALES_TAX_BUILT_IN_US_NJ",
+    "zones": [
+      "BUILT_IN_USA_NEW_JERSEY"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NM",
+    "name": "SALES_TAX_BUILT_IN_US_NM",
+    "zones": [
+      "BUILT_IN_USA_NEW_MEXICO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NV",
+    "name": "SALES_TAX_BUILT_IN_US_NV",
+    "zones": [
+      "BUILT_IN_USA_NEVADA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_NY",
+    "name": "SALES_TAX_BUILT_IN_US_NY",
+    "zones": [
+      "BUILT_IN_USA_NEW_YORK"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_OH",
+    "name": "SALES_TAX_BUILT_IN_US_OH",
+    "zones": [
+      "BUILT_IN_USA_OHIO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_OK",
+    "name": "SALES_TAX_BUILT_IN_US_OK",
+    "zones": [
+      "BUILT_IN_USA_OKLAHOMA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_OR",
+    "name": "SALES_TAX_BUILT_IN_US_OR",
+    "zones": [
+      "BUILT_IN_USA_OREGON"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_PA",
+    "name": "SALES_TAX_BUILT_IN_US_PA",
+    "zones": [
+      "BUILT_IN_USA_PENNSYLVANIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_PR",
+    "name": "SALES_TAX_BUILT_IN_US_PR",
+    "zones": [
+      "BUILT_IN_USA_PUERTO_RICO"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_RI",
+    "name": "SALES_TAX_BUILT_IN_US_RI",
+    "zones": [
+      "BUILT_IN_USA_RHODE_ISLAND"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_SC",
+    "name": "SALES_TAX_BUILT_IN_US_SC",
+    "zones": [
+      "BUILT_IN_USA_SOUTH_CAROLINA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_SD",
+    "name": "SALES_TAX_BUILT_IN_US_SD",
+    "zones": [
+      "BUILT_IN_USA_SOUTH_DAKOTA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_TN",
+    "name": "SALES_TAX_BUILT_IN_US_TN",
+    "zones": [
+      "BUILT_IN_USA_TENNESSEE"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_TX",
+    "name": "SALES_TAX_BUILT_IN_US_TX",
+    "zones": [
+      "BUILT_IN_USA_TEXAS"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_UT",
+    "name": "SALES_TAX_BUILT_IN_US_UT",
+    "zones": [
+      "BUILT_IN_USA_UTAH"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_VA",
+    "name": "SALES_TAX_BUILT_IN_US_VA",
+    "zones": [
+      "BUILT_IN_USA_VIRGINIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_VT",
+    "name": "SALES_TAX_BUILT_IN_US_VT",
+    "zones": [
+      "BUILT_IN_USA_VERMONT"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_WA",
+    "name": "SALES_TAX_BUILT_IN_US_WA",
+    "zones": [
+      "BUILT_IN_USA_WASHINGTON"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_WI",
+    "name": "SALES_TAX_BUILT_IN_US_WI",
+    "zones": [
+      "BUILT_IN_USA_WISCONSIN"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_WV",
+    "name": "SALES_TAX_BUILT_IN_US_WV",
+    "zones": [
+      "BUILT_IN_USA_WEST_VIRGINIA"
+    ]
+  },
+  {
+    "code": "BUILT_IN_SALES_TAX_US_WY",
+    "name": "SALES_TAX_BUILT_IN_US_WY",
+    "zones": [
+      "BUILT_IN_USA_WYOMING"
+    ]
+  },
+  {
+    "code": "BUILT_IN_GST_NZ",
+    "name": "GST_BUILT_IN_NZ",
+    "zones": [
+      "BUILT_IN_NEW_ZEALAND"
+    ]
+  },
+  {
+    "code": "BUILT_IN_VAT_UK_REDUCED",
+    "name": "REDUCED_VAT_BUILT_IN_UK",
+    "zones": [
+      "BUILT_IN_UNITED_KINGDOM"
+    ]
+  },
+  {
+    "code": "BUILT_IN_VAT_UK_REDUCED",
+    "name": "REDUCED_BUILT_IN_VAT_UK",
+    "zones": [
+      "BUILT_IN_UNITED_KINGDOM"
+    ]
+  },
+  {
+    "code": "BUILT_IN_FREE_UK",
+    "name": "FREE_BUILT_IN_UK",
+    "zones": [
+      "BUILT_IN_UNITED_KINGDOM"
+    ]
+  }
+]

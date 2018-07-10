@@ -1,0 +1,39 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-home-promotions .row {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+body.widget-snippet .snippet-home-promotions .col-sm-4 {
+    padding: 7px;
+}
+.snippet-home-promotions .col-sm-4 {
+    overflow: hidden;
+    padding: 3px;
+}
+body.widget-snippet .snippet-home-promotions a {
+    padding: 5px;
+}
+.snippet-home-promotions a {
+    display: block;
+}
+.snippet-home-promotions img {
+    max-height: 262px;
+    max-width: 100%;
+}
+.snippet-home-promotions a:hover img {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+.snippet-home-promotions .col-sm-4:nth-child(3n+1) {
+    clear: left;
+}
+@media screen and (max-width: 767px){
+    .snippet-home-promotions .col-sm-4 {
+        height: auto;
+    }
+}

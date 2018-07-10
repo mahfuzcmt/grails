@@ -1,0 +1,9 @@
+Dear %customer_name%,
+    %loyalty_point_amount% Loyalty Point(s) from your account has been converted to %reward_name% at %store_name%(%store_url%)
+    
+    Please keep this  email for your records, contact us if you have any questions.
+    
+%store_name%
+%store_address%
+Phone: %store_phone%
+Email: %store_email%

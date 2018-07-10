@@ -1,0 +1,20 @@
+.quote-edit-popup .editable-group input,
+.quote-edit-popup .editable-group .tool-icon.edit
+.quote-edit-popup .editable-group.editing label,
+.quote-edit-popup .editable-group.editing .value {
+    display: none;
+    width: calc(100% - 27px);
+}
+.quote-edit-popup .editable-group.editing input,
+.quote-edit-popup .editable-group.editing .tool-icon.edit {
+    display: inline-block;
+}
+.quote-edit-popup label {
+    width: 160px;
+}
+.quote-edit-popup .details-table.items {
+    margin: 15px 0;
+}
+.requote-button-line {
+    text-align: right;
+}

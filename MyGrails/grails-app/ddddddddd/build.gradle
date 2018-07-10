@@ -1,0 +1,113 @@
+apply from: 'gradle-file/config.gradle'
+
+buildscript {
+    apply from: 'gradle-file/config.gradle'
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url "https://repo.grails.org/grails/core"
+        }
+        maven {
+            url "http://central.maven.org/maven2"
+        }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "org.grails.plugins:hibernate5:${gormVersion - ".RELEASE"}"
+    }
+}
+
+version "$appVersion"
+group "ExtremeV3"
+
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: "org.grails.grails-web"
+apply plugin: "org.grails.grails-gsp"
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url "https://repo.grails.org/grails/core"
+    }
+    maven {
+        url "http://central.maven.org/maven2/"
+    }
+}
+
+if (new File("development-plugin.gradle").exists()) {
+    apply from: "development-plugin.gradle"
+}
+
+grails {
+    plugins {
+        compile project(':webcommander')
+        if (new File("development-plugin.gradle").exists()) {
+            includePlugins().each { compile project(":" + it) }
+        }
+    }
+}
+
+dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java', version: "$mySQLjdbc"
+    compile "org.springframework.boot:spring-boot-starter-logging"
+    compile "org.springframework.boot:spring-boot-autoconfigure"
+    compile "org.grails:grails-core"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-tomcat"
+    compile "org.grails:grails-web-boot"
+    compile "org.grails:grails-logging"
+    compile "org.grails:grails-plugin-rest"
+    compile "org.grails:grails-plugin-databinding"
+    compile "org.grails:grails-plugin-i18n"
+    compile "org.grails:grails-plugin-services"
+    compile "org.grails:grails-plugin-url-mappings"
+    compile "org.grails:grails-plugin-interceptors"
+    compile "org.grails.plugins:cache"
+    compile "org.grails.plugins:async"
+    compile "org.grails.plugins:scaffolding"
+    compile "org.grails.plugins:events"
+    compile "org.grails.plugins:$hibernate"
+    compile "org.hibernate:hibernate-core:$hibernateCore"
+    compile "org.hibernate:hibernate-ehcache"
+    compile "org.grails.plugins:gsp"
+    console "org.grails:grails-console"
+    profile "org.grails.profiles:web"
+    runtime "joda-time:joda-time"
+    runtime "org.apache.tomcat:tomcat-jdbc"
+    testCompile "org.grails:grails-gorm-testing-support"
+    testCompile "org.grails.plugins:geb"
+    testCompile "org.grails:grails-web-testing-support"
+}
+
+bootRun {
+    jvmArgs('-Dspring.output.ansi.enabled=always')
+    addResources = true
+}
+
+task buildWCPlugin(type: GradleBuild) {
+    File file = file("$buildDir/tempBuildablePluginList")
+    if (file.exists()) {
+        file.readLines().each {
+            buildFile = "wc-plugins/$it/build.gradle"
+            startParameter.projectProperties = [
+                    isProductionBuild: "Yes",
+                    projectBasePath  : "$projectDir"
+            ]
+            tasks = ['distributionPacking']
+        }
+    }
+}
+
+task copyWar(type: Copy) {
+    def jarNameVersion = "$project.name-$version" + ".war"
+    copy {
+        from "$projectDir/build/libs/$jarNameVersion"
+        into "$projectDir/binary-collection"
+        rename { String fileName ->
+            fileName.replace(jarNameVersion, "application-binary.war")
+        }
+    }
+}

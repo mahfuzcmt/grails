@@ -1,0 +1,276 @@
+html,
+body {
+    font-size        : 14px;
+    font-family      : "Segoe UI", Verdana, Arial, sans-serif;
+    margin           : 0;
+    background-color : #FCFCFC;
+    position         : relative;
+    height           : 100%
+}
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+    text-decoration : none;
+    font-weight     : inherit;
+    color           : inherit;
+}
+textarea {
+    resize : none;
+}
+.errorlist {
+    background    : #FEFEFE;
+    border        : 1px solid #E6E6E6;
+    border-radius : 6px 6px 6px 6px;
+    color         : #333333;
+    min-width     : 250px;
+    padding       : 4px 7px;
+    box-shadow    : 0 -1px 0 #F4F4F4 inset, 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.errorlist.positioned-error {
+    position : absolute;
+    z-index  : 1;
+}
+.errorlist.positioned-right {
+    margin-left : 8px;
+}
+.errorlist.positioned-left {
+    margin-right : 8px;
+}
+.errorlist .message-text:before {
+    color          : #000000;
+    content        : "* ";
+    vertical-align : middle;
+}
+.errorlist .message-text {
+    vertical-align : middle;
+}
+.errorlist.positioned-right .pointer {
+    background : url("../../images/common/errorlist/errorlist-left-arrow.png") no-repeat scroll left top transparent;
+    position   : absolute;
+    left       : -9px;
+    top        : 7px;
+    width      : 10px;
+    height     : 15px;
+}
+.errorlist.positioned-error .close-btn {
+    background : url("../../images/common/errorlist/errorlist_close.png") no-repeat scroll left top transparent;
+    height     : 12px;
+    position   : absolute;
+    right      : -6px;
+    top        : -6px;
+    width      : 12px;
+    cursor     : pointer;
+}
+.errorlist.positioned-left .pointer {
+    background : url("../../images/common/errorlist/errorlist-right-arrow.png") no-repeat scroll left top transparent;
+    position   : absolute;
+    right      : -10px;
+    top        : 7px;
+    width      : 10px;
+    height     : 15px;
+}
+.errorlist.positioned-error.positioned-left .close-btn {
+    background : url("../../images/common/errorlist/errorlist_close.png") no-repeat scroll left top transparent;
+    height     : 12px;
+    position   : absolute;
+    left       : -6px;
+    top        : -6px;
+    width      : 12px;
+    cursor     : pointer;
+}
+.error-field-error.inline-error,
+.validation-error {
+    background-color : #FFEEEE;
+    border           : 1px solid #FF0000;
+    color            : #FF0000;
+}
+.radio-checkbox-row.validation-error{
+    border: 0;
+    background: none;
+}
+.div-mask {
+    background-color : rgba(0, 0, 0, 0.6);
+    text-align       : center;
+}
+.div-mask.bg-white {
+    background-color : white;
+}
+
+.vertical-aligner {
+    display        : inline-block;
+    height         : 100%;
+    vertical-align : middle;
+}
+.loader {
+    font-size         : 40px;
+    width             : 1em;
+    height            : 1em;
+    border-radius     : 50%;
+    margin            : -0.5em 0 0 -0.5em;
+    -webkit-animation : load6 1.7s infinite ease;
+    animation         : load6 1.7s infinite ease;
+    position          : absolute;
+    left              : 50%;
+    top               : 50%;
+}
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+    5%,
+    95% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+    30% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.51em -0.66em 0 -0.38em #1199C4, -0.75em -0.36em 0 -0.41em #1199C4, -0.83em -0.03em 0 -0.44em #1199C4, -0.81em 0.21em 0 -0.47em #1199C4;
+    }
+    55% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.29em -0.78em 0 -0.38em #1199C4, -0.43em -0.72em 0 -0.41em #1199C4, -0.52em -0.65em 0 -0.44em #1199C4, -0.57em -0.61em 0 -0.47em #1199C4;
+    }
+    100% {
+        -webkit-transform : rotate(360deg);
+        box-shadow        : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+}
+@keyframes load6 {
+    0% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+    5%,
+    95% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+    30% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.51em -0.66em 0 -0.38em #1199C4, -0.75em -0.36em 0 -0.41em #1199C4, -0.83em -0.03em 0 -0.44em #1199C4, -0.81em 0.21em 0 -0.47em #1199C4;
+    }
+    55% {
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.29em -0.78em 0 -0.38em #1199C4, -0.43em -0.72em 0 -0.41em #1199C4, -0.52em -0.65em 0 -0.44em #1199C4, -0.57em -0.61em 0 -0.47em #1199C4;
+    }
+    100% {
+        transform  : rotate(360deg);
+        box-shadow : -0.11em -0.83em 0 -0.35em #1199C4, -0.11em -0.83em 0 -0.38em #1199C4, -0.11em -0.83em 0 -0.41em #1199C4, -0.11em -0.83em 0 -0.44em #1199C4, -0.11em -0.83em 0 -0.47em #1199C4;
+    }
+}
+/*Loader 2*/
+.loader2 {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+.view-popup .info-row {
+    padding : 5px 0;
+}
+.view-popup {
+    min-width : 450px;
+}
+.view-popup > div.value {
+    display       : block;
+    margin        : 10px;
+    border-radius : 5px;
+    border        : 1px solid #000000;
+    padding       : 5px;
+}
+/*********************** accordion ************************/
+.accordion-panel {
+    padding : 0 0 15px;
+}
+.accordion-panel > .label-bar {
+    background  : none repeat scroll 0 0 #FAFDFD;
+    border      : 1px solid #E1E5E5;
+    color       : #777;
+    cursor      : pointer;
+    font-size   : 15px;
+    height      : 42px;
+    line-height : 42px;
+    margin      : 0 0 7px;
+    padding     : 0 20px 0 30px;
+    position    : relative;
+}
+.ie9 .accordion-panel > .label-bar {
+    background-size : 100% 100%;
+    filter          : none;
+}
+.accordion-panel > .label-bar.expanded {
+    background : none repeat scroll 0 0 #FFFFFF;
+    color      : #1199C4;
+    margin     : 0;
+}
+.accordion-panel > .label-bar:hover {
+    background : none repeat scroll 0 0 #FFFFFF;
+}
+.accordion-panel > .label-bar .toggle-icon {
+    background-image : url("../../images/widgets/accordion/accordion-toggle.png");
+    display          : inline-block;
+    height           : 16px;
+    left             : 7px;
+    position         : absolute;
+    top              : 12px;
+    vertical-align   : top;
+    width            : 16px;
+}
+.accordion-item {
+    background : none repeat scroll 0 0 #FFFFFF;
+    border     : 1px solid #E1E5E5;
+    box-shadow : 0 4px 0 0 rgba(0, 0, 0, 0.05);
+    margin     : 0 0 15px;
+    padding    : 25px 30px;
+    position   : relative;
+    top        : -1px;
+}
+.accordion-item form {
+    padding : 0;
+}
+.accordion-panel > .accordion-item.collapsed {
+    display : none;
+}
+.accordion-panel > .accordion-item table th:first-child,
+.accordion-panel > .accordion-item table th:last-child {
+    border-radius : 0;
+}
+.expanded .toggle-icon {
+    background-position : -16px 0;
+}
+.multi-column.two-column .columns {
+    width : 50%;
+}
+.multi-column .columns {
+    display        : inline-block;
+    vertical-align : top;
+    margin         : 0;
+    padding        : 0;
+    outline        : 0;
+}
+.two-column .first-column .column-content {
+    margin-right : 5px;
+}
+.two-column .last-column .column-content {
+    margin-left : 5px;
+}
+.multi-column.three-column .columns {
+    width : 33.33%;
+}

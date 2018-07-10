@@ -1,0 +1,191 @@
+<table style="font-family:Arial, Helvetica, sans-serif; font-size:13px; border: 1px solid #cccccc; width: 580px;" border="0" cellspacing="0" cellpadding="40" align="center" bgcolor="#FFFFFF">
+    <tr><td>
+        <table style="width: 100%%;" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td style="border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;">%store_logo%</td>
+                <td style="text-align: right; border-bottom: 4px solid #3997D6; padding: 0px 0px 20px;"><a style="font-style: italic; color: #1AAFEC; font-family:Arial, Helvetica, sans-serif; font-size:13px;" href="%store_url%">%store_name%</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 25px 0 0;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:13px;">Dear %customer_name%,</p>
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">Thank you for ordering products from <strong>%store_name%</strong>. Your order payment is pending and we are awaiting for your payment.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 30px 0 0;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:16px;">Your Order Details:</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 5px 0 25px;">
+                    <p style="margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">
+                        <strong>Order:</strong> %order_id%<br />
+                        <strong>Order date:</strong> %order_date%
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table style="background-color: #F9F9F9; border: 1px solid #E6E6E6; width:500px;" border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tr>
+                            <td style="padding:20px; border-right: 1px solid #E6E6E6;">
+                                <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:15px; padding-bottom: 5px;">Billing Address</p>
+                                <p style="margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">
+                                    %if:billing_address%
+                                    %billing_address>first_name%%if:billing_address>last_name% %billing_address>last_name% %if% <br/>
+                                    %billing_address>address_line1%<br/>
+                                    %if:billing_address>city%%billing_address>city%%if%%if:billing_address>state%, %billing_address>state%%if%%if:billing_address>post_code%, %billing_address>post_code%%if%<br/>
+                                    %billing_address>country%<br/>
+                                    Email: <a style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;" href="%billing_address>email%">%billing_address>email%</a>
+                                    %if%
+                                </p>
+                            </td>
+                            %if:shipping_address%
+                            <td style="padding:20px;">
+                                <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:15px; padding-bottom: 5px;">Shipping Address</p>
+                                <p style="margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">
+                                    %shipping_address>first_name%%if:shipping_address>last_name% %shipping_address>last_name% %if% <br/>
+                                    %shipping_address>address_line1%<br/>
+                                    %if:shipping_address>city%%shipping_address>city%%if%%if:shipping_address>state%, %shipping_address>state%%if%%if:shipping_address>post_code%, %shipping_address>post_code%%if%<br/>
+                                    %shipping_address>country%<br/>
+                                    Email: <a style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;" href="%shipping_address>email%">%shipping_address>email%</a>
+                                </p>
+                            </td>
+                            %if%
+
+                        </tr>
+                    </table>
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding: 30px 0 0;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:16px;">Product Details:</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px 0 0;">
+                    <!--order details start-->
+                    <table style="border-collapse:collapse; width:500px;" border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tr>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Name</th>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Unit Price</th>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Ordered Quantity</th>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Discount</th>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Tax</th>
+                            <th style="padding:5px; background-color: #3997D6;  border-left: 1px solid #3997D6; border-right: 1px solid #3997D6; border-top: 1px solid #3997D6; color: #FFFFFF; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Price</th>
+                        </tr>
+                        %each:order_details>items:item:index%
+                        <tr>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">
+                                %if:item>url%<a href="%item>url%">%if% %item>product_name% %if:item>variations%(%item>variations%)%if%%if:item>url%</a>%if%
+                            </td>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%item>price%</td>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%item>quantity%</td>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%item>discount%</td>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%item>tax%</td>
+                            <td style="padding:5px; border:1px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%item>total_with_tax_with_discount%</td>
+                        </tr>
+                        %each%
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Sub Total</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>sub_total%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Total Discount</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>total_discount%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Tax</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>total_tax%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Shipping Cost</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>total_shipping_cost%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Shipping Tax</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>shipping_tax%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Handling Cost</td>
+                            <td style="padding:5px; border-bottom:2px #e6e6e6 solid; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>handling_cost%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; text-align:center; font-weight:bold;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Total </td>
+                            <td style="padding:5px; text-align:center; font-weight:bold;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>total%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; background-color: #E0F0FB; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Paid </td>
+                            <td style="padding:5px; background-color: #E0F0FB; text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>paid%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td style="padding:5px; text-align:center; font-weight:bold;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">Due</td>
+                            <td style="padding:5px; text-align:center; font-weight:bold;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px;">%currency_symbol%%order_details>due%</td>
+                        </tr>
+                    </table>
+                    <!--order details end-->
+                </td>
+            </tr>
+            %if:custom_message%
+            <tr>
+                <td colspan="2" style="padding: 20px 0 35px 0;">
+                %each:custom_message:message:index%
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">%message%</p>
+                %each%
+                </td>
+            </tr>
+            %if%
+            %if:order_comment%
+            <tr>
+                <td colspan="2" style="padding: 30px 0 0;">
+                    <p style="margin: 0px; font-weight: bold; font-family:Arial, Helvetica, sans-serif; font-size:16px;">Comment:</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px 0 0;">
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0; border: 1px solid #e6e6e6; margin-top: 0; padding: 10px;">%order_comment%</p>
+                </td>
+            </tr>
+            %if%
+            <tr>
+                <td colspan="2" style="padding: 20px 0 35px 0;">
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">To view your order details login to your account:</p>
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0; margin-top:5px;"><a style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;" href="%customer_login_url%">%customer_login_url%</a></p>
+                    <p style="font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 20px; margin-bottom:0;">Contact us if you have any query or question about your order.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 20px 0 0; border-top: 4px solid #E4E4E4;" colspan="2">
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px; font-weight: bold;">%store_name%</p>
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line1%</p>
+                    %if:store_address_line2%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_address_line2%</p>
+                    %if% %if:store_city%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_city%</p>
+                    %if% %if:store_country%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">%store_country%</p>
+                    %if% %if:store_phone%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Phone: %store_phone%</p>
+                    %if% %if:store_mobile%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Mobile: %store_mobile%</p>
+                    %if% %if:store_fax%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Fax: %store_fax%</p>
+                    %if%
+                    <p style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 22px;">Email: %store_email%</p>
+                </td>
+            </tr>
+        </table>
+    </td></tr>
+</table>

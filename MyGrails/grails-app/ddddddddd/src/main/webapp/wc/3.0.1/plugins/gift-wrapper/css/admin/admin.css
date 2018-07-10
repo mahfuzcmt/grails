@@ -1,0 +1,21 @@
+.gift-wrapper-message-btn {
+    color: #26ace2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gift-wrapper-info {
+    margin: 0 0 0px;
+}
+
+.gift-wrapper {
+    padding-top: 10px;
+}
+
+.gift-wrapper-message-body {
+    text-align: center;
+}
+
+.gift-wrapper-message-body.not-found {
+    color: #cf232c;
+}

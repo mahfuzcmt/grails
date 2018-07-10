@@ -1,0 +1,13 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-two-columns-of-text h1 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.snippet-two-columns-of-text .col-sm-6:nth-child(2n+1) {
+    clear: left;
+}

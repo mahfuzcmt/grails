@@ -1,0 +1,37 @@
+.tabAccordion .widget-logo {
+    background-image    : url("../../images/admin/tab-accordian.png");
+    background-repeat: no-repeat;
+    background-position : 0 0;
+}
+.tab-accordion-add-content-popup .parent-selector {
+    display: inline-block;
+    margin-right: 6px;
+    width: calc(50% - 3px);
+}
+.tab-accordion-add-content-popup .parent-selector .chosen-container {
+    width: 100%;
+}
+.tab-accordion-add-content-popup .parent-selector .chosen-container a {
+    height: 34px;
+    padding: 6px 12px;
+}
+.tab-accordion-add-content-popup .search-form {
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+    width: calc(50% - 3px);
+}
+.floating-panel-popup .search-block input {
+    margin: 0;
+    padding: 8px 35px 8px 10px;
+    width: 100%;
+}
+.tab-accordion-add-content-popup .add-content {
+    width: auto;
+}
+.widget-tab-accordion-config .div-table-cell.editable {
+    overflow: hidden;
+    padding: 5px 30px 5px 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

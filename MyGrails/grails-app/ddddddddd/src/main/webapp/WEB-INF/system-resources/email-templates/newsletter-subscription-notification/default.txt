@@ -1,0 +1,20 @@
+%store_url%
+
+Dear %customer_name%,
+You have successfully subscribed to %store_name%. From now on, you will be receiving our newsletter.
+Thanks.
+
+
+%store_name%
+%store_address_line1%%if:store_address_line2%
+%store_address_line2%%if%%if:store_city%
+%store_city%%if%%if:store_country%
+%store_country%%if%%if:store_phone%
+Phone: %store_phone%%if%%if:store_mobile%
+Mobile: %store_mobile%%if%%if:store_fax%
+Fax: %store_fax%%if%
+Email: %store_email%
+
+Disclaimer: This e-mail is not SPAM & it's never sent unsolicited. You have received this mail because you subscribed to it or someone forwarded it to you or your e-mail address to us.
+To unsubscribe from our newsletter, please navigate to the following link
+%unsubscribe_link%

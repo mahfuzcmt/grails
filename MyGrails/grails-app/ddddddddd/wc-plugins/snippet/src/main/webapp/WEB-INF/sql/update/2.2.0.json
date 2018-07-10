@@ -1,0 +1,17 @@
+{
+  "fromVersion": "2.1.9.1",
+  "releaseVersion": "2.2.0",
+  "developers": [
+    {
+      "name": "Rajibul Islam",
+      "sql": [
+        {
+          "for": "",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'snippet' AND COLUMN_NAME = 'is_disposable'",
+          "isFalse": " ALTER TABLE `snippet` ADD COLUMN `is_auto_generated` TINYINT(1) DEFAULT 0 NULL AFTER `is_disposable`;",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

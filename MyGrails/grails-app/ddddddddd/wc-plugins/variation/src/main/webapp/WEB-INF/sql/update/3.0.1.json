@@ -1,0 +1,17 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name": "Md.Sourav",
+      "sql": [
+        {
+          "for": "To add a new column order",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'variation_option' AND COLUMN_NAME = 'idx'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE variation_option ADD COLUMN `idx` INT NOT NULL"
+        }
+      ]
+    }
+  ]
+}

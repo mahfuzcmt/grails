@@ -1,0 +1,413 @@
+@media screen and (max-width: 980px) {
+    body > .body {
+        padding: 0 10px;
+    }
+}
+/* +++++++++++++++++  Login widget design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .login-form {
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+    }
+    .login-form input {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        padding: 7px;
+        width: 100%;
+    }
+}
+/* +++++++++++++++++  add to cart design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .add-cart-information-popup .variation-container .variation-type {
+        text-align: center;
+    }
+    .add-cart-information-popup .button-item {
+        overflow: hidden;
+    }
+    .add-cart-information-popup .add-to-cart-button.button {
+        float: left;
+        width: auto;
+    }
+    .add-cart-information-popup .close-btn.button {
+        float: right;
+        width: auto;
+    }
+
+}
+/* +++++++++++++++++  Product widget design +++++++++++++++++++++++++ */
+@media screen and (max-width: 479px) {
+    .product-view.image-view .product-block {
+        box-sizing: border-box;
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .product-view.image-view .product-name,
+    .product-view.image-view .summary,
+    .product-view.image-view .price-n-cart {
+        text-align: center;
+    }
+    .product-view.list-view col.product-price,
+    .product-view.list-view col.product-list-view-width {
+        width: auto;
+    }
+    .product-view.list-view td {
+        display: block;
+        text-align: center;
+    }
+
+}
+/* +++++++++++++++++  popup design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .add-to-cart-popup, .add-cart-information-popup {
+        min-width: inherit;
+    }
+    .popup .button-line, .popup .footer {
+        text-align: center;
+    }
+    .add-to-cart-popup .button,
+    .add-to-cart-popup a.button {
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .add-to-cart-popup, .add-cart-information-popup {
+        max-width: 280px;
+    }
+}
+/* +++++++++++++++++  category widget design +++++++++++++++++++++++++ */
+@media screen and (max-width: 479px) {
+    .category-image-view.category {
+        box-sizing: border-box;
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+/* +++++++++++++++++  Login page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .page-login .login-form {
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+    }
+    .login-form input {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        padding: 7px;
+        width: 100%;
+    }
+}
+/* +++++++++++++++++  registration page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .registration-form {
+        padding: 0;
+    }
+    .registration-form label {
+        display: block;
+    }
+    .registration-form input,
+    .registration-form select {
+        box-sizing: border-box;
+        height: auto;
+        padding: 7px;
+        width: 100%;
+    }
+}
+/* +++++++++++++++++  shopping cart page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 979px) {
+    .discount-coupon-code-panel .btn-row label {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    body.page-cart .body .page-content {
+        overflow: hidden;
+    }
+    .shopping-cartitem h1 {
+        float: none;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .cartitem-table thead {
+        display: none;
+    }
+    .confirm-order-btn-row,
+    .cartitem-btn-wrapper {
+        text-align: center;
+    }
+    .page-checkout .confirm-order .confirm-order-button {
+        float: none;
+    }
+    .cartitem-btn-wrapper .button {
+        float: none;
+        margin: 3px;
+    }
+    .cartitem-table .action-column {
+        width: 100%;
+    }
+    .cartitem-table .image-column,
+    .cartitem-table .unit-price-column,
+    .cartitem-table .quantity-column,
+    .cartitem-table .total-price-column {
+        width: auto;
+    }
+    .cartitem-table tr {
+        border-bottom: 1px #000 solid;
+    }
+    .cartitem-table td {
+        border: medium none;
+        display: block;
+    }
+    .cartitem-table td.remove {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .cartitem-table th {
+        display: block;
+        text-align: center;
+    }
+    .cartitem-table .empty-left-footer-block {
+        border-right: medium none;
+    }
+    .cartitem-table tfoot td {
+        background-color: #f9f9f9;
+    }
+    .cartitem-table tfoot td.empty-left-footer-block {
+        background-color: transparent;
+    }
+    .cartitem-table tbody th:first-child {
+        display: none;
+    }
+    .cartitem-table .tax-column, .cartitem-table .discount-column {
+        width: auto;
+    }
+    .check-out-total .left-column,
+    .check-out-total .right-column,
+    .shopping-cart-total .left-column,
+    .shopping-cart-total .right-column {
+        margin: 0;
+        width: 100%;
+    }
+    .gift-certificate-code-panel,
+    .discount-coupon-code-panel {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .gift-certificate-code-panel label,
+    .discount-coupon-code-panel label {
+        display: block;
+    }
+    .check-out-total table,
+    .shopping-cart-total table {
+        float: none;
+        margin: 0 auto;
+        width: auto;
+    }
+    .cartitem-table td .wrapper > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .cartitem-table td .wrapper::before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-right: 3px;
+    }
+    .cartitem-table .stepper {
+        margin: 0;
+    }
+
+}
+/* +++++++++++++++++ checkout option page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 479px) {
+    .checkout-page-options .new-customer {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        margin-bottom: 15px;
+        padding: 0 0 25px;
+        width: 100%;
+    }
+    .checkout-page-options .new-customer p {
+        padding-bottom: 10px;
+    }
+    .checkout-page-options .registered-customer {
+        border: medium none;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+/* +++++++++++++++++ checkout page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 479px) {
+    .page-checkout .multi-column.two-column .columns {
+        width: 100%;
+    }
+    .page-checkout .two-column .first-column .column-content {
+        margin: 0;
+    }
+    .page-checkout .two-column .column-content label {
+        display: block;
+        width: 100%;
+    }
+    .page-checkout .two-column .column-content input,
+    .page-checkout .two-column .column-content select {
+        box-sizing: border-box;
+        height: auto;
+        padding: 6px;
+        width: 100%;
+    }
+    .page-checkout .two-column .last-column .column-content {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 979px) {
+    .page-checkout .accordion-panel form .errorlist.positioned-right {
+        background: none;
+        border: medium none;
+        box-shadow: none;
+        color: #ff0000;
+        margin-left: 0;
+        padding: 0 0 0 155px;
+        position: static !important;
+    }
+    .page-checkout .accordion-panel form .errorlist.positioned-right .pointer,
+    .page-checkout .accordion-panel form .errorlist.positioned-right .close-btn {
+        display: none;
+    }
+    .page-checkout .accordion-panel form .errorlist .message-text:before {
+        color: #ff0000;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .page-checkout .accordion-panel form .errorlist.positioned-right {
+        padding: 0;
+    }table.cartitem-table {
+         border: 1px solid #000;
+         table-layout: inherit;
+     }
+}
+/* +++++++++++++++++  category page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 479px) {
+    .category-details-container .title {
+        text-align: center;
+    }
+    .category-details-container .category {
+        margin: 0 auto 20px;
+    }
+    .category-details .product-container .title,
+    .category-details .subcategory-container .title {
+        text-align: center;
+    }
+}
+/* +++++++++++++++++  product page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .page-product .page-content .grid-block {
+        display: block;
+    }
+    .widget-productImage {
+        padding-bottom: 15px;
+    }
+    .bmui-tab .bmui-tab-header {
+        border-radius: 0;
+        display: block;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .payment-form label {
+        display: block;
+    }
+}
+/* +++++++++++++++++  blog details page design +++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    div.blog-post-details .comment-post-panel {
+        padding: 10px;
+    }
+    div.blog-post-details .comment-post-panel input,
+    div.blog-post-details .comment-post-panel textarea {
+        box-sizing: border-box;
+        height: auto;
+        padding: 7px;
+        width: 100%;
+    }
+    div.blog-post-details .comment-post-panel textarea {
+        height: 150px;
+    }
+}
+/*ask a question*/
+@media screen and (max-width: 767px) {
+    .ask-question-panel .form-row label {
+        display: block;
+    }
+    div.ask-question-panel .form-row input,
+    div.ask-question-panel .form-row textarea{
+        box-sizing: border-box;
+        height: auto;
+        padding: 7px;
+        width: 100%;
+    }
+    div.ask-question-panel .form-row textarea{
+        height: 150px;
+    }
+    .ask-question-panel .form-row:last-child label {
+        display: none;
+    }
+
+}
+/*discount coupon*/
+@media screen and (max-width: 479px) {
+    .cartitem-table tfoot td.empty-left-footer-block {
+        padding: 0;
+    }
+    div.gift-certificate-code-panel,
+    div.discount-coupon-code-panel {
+        display: block;
+        padding: 30px;
+        text-align: left;
+    }
+    div.gift-certificate-code-panel label,
+    div.discount-coupon-code-panel label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    div.gift-certificate-code-panel input,
+    div.discount-coupon-code-panel input {
+        width: 100%;
+    }
+    .discount-coupon-code-panel a.button,
+    .gift-certificate-code-panel a.button {
+        display: inline-block;
+        height: auto;
+        margin-top: 7px;
+    }
+}
+
+
+/* ++++++++++++++++++++++++++++ error message design start +++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 767px) {
+    .errorlist.positioned-right {
+        background: none;
+        border: medium none;
+        box-shadow: none;
+        color: #ff0000;
+        margin-left: 0;
+        padding: 0;
+        position: static !important;
+    }
+    .errorlist.positioned-right .pointer,
+    .errorlist.positioned-right .close-btn {
+        display: none;
+    }
+    .errorlist .message-text:before {
+        color: #ff0000;
+    }
+}

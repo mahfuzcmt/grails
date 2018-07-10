@@ -1,0 +1,24 @@
+body.widget-snippet {
+    padding: 40px;
+}
+.snippet-text-left-button-right a.snippet-btn-block,
+.snippet-text-left-button-right a.snippet-btn-block:link,
+.snippet-text-left-button-right a.snippet-btn-block:active
+.snippet-text-left-button-right a.snippet-btn-block:visited {
+    border: 2px solid #1b9ab4;
+    color: #444444;
+    display: block;
+    margin-top: 20px;
+    max-width: 300px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.snippet-text-left-button-right a.snippet-btn-block:hover {
+    background-color: #1b9ab4;
+    border: 2px solid #1b9ab4;
+    color: #fff;
+}
+.snippet-text-left-button-right a.snippet-btn-block:first-child {
+    margin-top:0;
+}

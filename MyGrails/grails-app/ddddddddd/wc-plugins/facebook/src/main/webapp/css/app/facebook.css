@@ -1,0 +1,354 @@
+.body > .widget-container {
+    border-bottom: 3px solid #d7deee;
+    border-top: 3px solid #d7deee;
+    padding: 20px 0;
+}
+/************************************************** common design start ****************************/
+input[type=submit],
+input[type=button],
+button,
+.button,
+a.button {
+    background : url("../../images/site/btn_bg.png") repeat-x left top;
+    color: #fff;
+}
+input[type=submit],
+input[type=button],
+button {
+    height  : 26px;
+    padding : 4px 10px;
+}
+.button,
+a.button {
+    height  : 14px;
+    padding : 6px 10px;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover,
+a.button:hover,
+.button:hover {
+    background : url("../../images/site/btn_bg_hover.png") repeat-x left top;
+}
+input[type=submit][disabled],
+input[type=button][disabled],
+button[disabled],
+.button.disabled,
+a.button.disabled {
+    background  : url("../../images/site/btn_bg_disabled.png") repeat-x left top;
+    border      : none;
+    color       : #a0aecb;
+    text-shadow : 0 0 1px #E6E6E6;
+}
+/* +++++++++++++++++++++++++++++++++ pagination design +++++++++++++++++++++++++++++++++++++ */
+.pagination span.current {
+    background : url("../../images/site/btn_bg.png") repeat-x left top;
+    border     : 1px solid #4D4D4D;
+}
+/* +++++++++++++++++++++++++++++++++++++++++ custom select +++++++++++++++++++++++++++++++++++++ */
+
+/* +++++++++++++++++++++++++++++++++++++++++ scroll design ++++++++++++++++++++++++++++++++++++++++ */
+.scrollable-view {
+    border-bottom: 2px solid #e0eafd;
+}
+.scrollable-view > .content {
+    border: 1px solid #e0eafd;
+}
+/* +++++++++++++++++++++++++++++++++++++++++ spinner design +++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ rechaptcha +++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++ Password Strength Meter start +++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++++++++++ accordion design +++++++++++++++++++++++++++++++++++ */
+.accordion-panel > .label-bar {
+    background: none repeat scroll 0 0 #f4f8ff;
+    border: 1px solid #d3e1fe;
+}
+/* ++++++++++++++++++++++++++++++++++++++++ tab design +++++++++++++++++++++++++++++++++++ */
+/*horizontal*/
+/*vertical*/
+/* ++++++++++++++++++++++++++++++++++++++++ action icon design +++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++++++++++ popup box design +++++++++++++++++++++++++++++++++++ */
+.popup .header {
+    background-color : #47639e;
+    border-bottom    : 2px solid #CCCCCC;
+    color: #fff;
+}
+.popup .button-line,
+.popup .footer {
+    background-color : #d7e4fe;
+    border-top       : 1px solid #9fbeff;
+}
+.popup .close-icon {
+    background : url("../../images/site/cart-popup-close.png") no-repeat;
+    height     : 33px;
+    width      : 33px;
+    position   : absolute;
+    right      : 4px;
+    top        : 4px;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    page content block design start  ++++++++++++++++++++++++++*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    page content block design end  ++++++++++++++++++++++++++*/
+
+/*********************************************************************************************** Page design ****************************************************************************/
+/* +++++++++++++++++ Common title design for  Login page, Registration page, Reset password, customer new password page +++++++++++++++++++++++++ */
+.login-form .title,
+.registration-form .title,
+.password-reset-form .title,
+.customer-new-password .title {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Login page design +++++++++++++++++++++++++ */
+.login-form {
+    background-color: #e0eafd;
+}
+.login-form .account-register a {
+    color: #3b5998;
+}
+.login-form .account-register a:hover {
+    color: #88a1d6;
+}
+/* +++++++++++++++++  Registration page design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Reset password page design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  customer new password page design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Article details page design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Brand details page design +++++++++++++++++++++++++ */
+.brand-details .brand-title h1 {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Cart details page design +++++++++++++++++++++++++ */
+
+.shopping-cartitem h1 {
+    color: #3b5998;
+}
+/*empty cart page design*/
+
+/* +++++++++++++++++  checkout page design +++++++++++++++++++++++++ */
+.checkout-page-options .item-head {
+    background : url("../../images/site/btn_bg.png") repeat-x left top;
+    color      : #fff;
+}
+.checkout-page-options .content-wrapper {
+    border: 1px solid #47639e;
+}
+.checkout-page-options .registered-customer {
+    border-left: 1px solid #47639e;
+}
+.checkout-page-options > h1 {
+    color: #3b5998;
+}
+.checkout-page-options .new-customer > h1,
+.checkout-page-options .registered-customer > h1 {
+    color: #3b5998;
+}
+.checkout-address-selector .selected-option {
+    background-color: #47639e;
+    border: 1px solid #47639e;
+}
+.checkout-address-selector .selected-value {
+    color: #fff;
+}
+.checkout-address-selector .down-arrow {
+    background: url("../../images/site/custom-select-arrow_40.png") no-repeat scroll center center #6680b5;
+    border: 1px solid #6680b5;
+}
+.checkout-address-selector .down-arrow:hover {
+    background: url("../../images/site/custom-select-arrow_40.png") no-repeat scroll center center #748dc2;
+    border: 1px solid #748dc2;
+}
+.checkout-address-selector .edit-address {
+    background: url("../../images/site/edit-icon_40.png") no-repeat scroll center center #47639e;
+}
+.checkout-page .header-wrapper h1 {
+    color: #3b5998;
+}
+/* +++++++++++++++++  customer profile page design +++++++++++++++++++++++++ */
+.bmui-tab.left-side-header .bmui-tab-header.bmui-tab-active .title {
+    background: url("../../images/site/customer-pro-active-tab.png") no-repeat scroll right top;
+    color: #fff;
+}
+.bmui-tab.left-side-header .bmui-tab-header.bmui-tab-active {
+    background: #47639e;
+    border-left: 1px solid #47639e;
+}
+.bmui-tab.left-side-header .bmui-tab-header {
+    border-left   : 1px solid #d7deee;
+    border-top    : 1px solid #d7deee;
+}
+.bmui-tab.left-side-header .bmui-tab-header-container {
+    border-bottom : 1px solid #d7deee;
+}
+.bmui-tab.left-side-header .bmui-tab-body-container {
+    border     : 1px solid #d7deee;
+}
+#customer-profile-tabs th {
+    background: url("../../images/site/btn_bg.png") repeat-x scroll left top;
+    color: #fff;
+}
+#customer-profile-tabs td, #customer-profile-tabs th {
+    border: 1px solid #47639e;
+}
+.cartitem-table th, .cartitem-table td {
+    border: 1px solid #47639e;
+}
+/* +++++++++++++++++  search result page design +++++++++++++++++++++++++ */
+.search-result {
+    color: #3b5998;
+}
+.total-result {
+    color: #3b5998;
+}
+.product-view.list-view .product-details-link {
+    color: #3b5998;
+}
+.product-view.list-view .product-details-link:hover {
+    color: #87a3dd;
+}
+
+/* +++++++++++++++++  category details page page design +++++++++++++++++++++++++ */
+.category-details-container .title {
+    color: #3b5998;
+}
+.subcategory-container .title, .product-container .title {
+    color: #3b5998;
+}
+/* +++++++++++++++++  product details page page design +++++++++++++++++++++++++ */
+.product-widget.widget-productName .product-name {
+    color: #3b5998;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+.widget-productSummary .title {
+    color: #3b5998;
+}
+.widget-price .price {
+    color: #3b5998;
+}
+/*saba add*/
+
+/*variation design*/
+
+/*combined product design*/
+
+/*matrix view*/
+
+
+/*********************************************************************************************** Widget design start ****************************************************************************/
+/* +++++++++++++++++  Widget common  design +++++++++++++++++++++++++ */
+.widget > .widget-title {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Article widget  design +++++++++++++++++++++++++ */
+.widget-article .read-more a {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Breadcrumb widget  design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Cart widget design +++++++++++++++++++++++++ */
+.quick-cart-content {
+    border: 1px solid #e0eafd;
+}
+.quick-cart-content table th {
+    background-color: #f1f6ff;
+    border: 1px solid #e0eafd;
+}
+.quick-cart-content table td {
+    border: 1px solid #e0eafd;
+}
+.quick-cart-content table td.total,
+.quick-cart-content table td.total-price {
+    background-color: #f1f6ff;
+}
+/* +++++++++++++++++  Image widget design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Login widget design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Navigation widget design +++++++++++++++++++++++++ */
+.horizontal .navigation-item.active > a {
+    color: #3b5998;
+}
+/*Vertical*/
+.vertical .navigation-item.active > a {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Gallery widget design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  News widget design +++++++++++++++++++++++++ */
+.widget-news .read-more a {
+    color: #3b5998;
+}
+/* +++++++++++++++++  Social Media Like widget design start +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Social Media Link widget design +++++++++++++++++++++++++ */
+
+/* +++++++++++++++++  Social Media Share widget design +++++++++++++++++++++++++ */
+/*Horizontal*/
+/*Vertical*/
+
+/* +++++++++++++++++  Product, category widget and category details page common design design +++++++++++++++++++++++++ */
+.product-view .header,
+.category-view .header,
+.entire-search .header,
+.product-search .header {
+    background-color: #f1f6ff;
+    border-bottom: 2px solid #d7deee;
+}
+.product-view .footer,
+.category-view .footer,
+.entire-search .footer,
+.product-search .footer {
+    background-color: #f1f6ff;
+    border: 1px solid #d7deee;
+}
+/* +++++++++++++++++  Product widget design +++++++++++++++++++++++++ */
+.price-n-cart .price {
+    color: #3b5998;
+}
+/*Image view*/
+.product-view.image-view .product-block,
+.product-view.scrollable-view .product-block {
+    border: 1px solid #e0eafd;
+}
+.product-view.image-view .product-name a,
+.product-view.scrollable-view .product-name a {
+    color: #3b5998;
+}
+/*Scrollable view*/
+
+/*List view*/
+.product-view.list-view tr {
+    border: 1px solid #e0eafd;
+}
+.product-view.list-view tr.odd {
+    background-color: #f1f6ff;
+}
+.product-view.list-view .product-name-link {
+    color: #3b5998;
+}
+/*Add to cart pop up box design*/
+
+/* +++++++++++++++++  Category widget design +++++++++++++++++++++++++ */
+.category-image-view.category {
+    border: 1px solid #e0eafd;
+}
+.category .category-name a {
+    color: #3b5998;
+}
+/* +++++++++++++++++  News letter widget design +++++++++++++++++++++++++ */
+
+/*********************************************************************************************** Widget design end ****************************************************************************/
+/* ++++++++++++++++++++++++++++ error message design start +++++++++++++++++++++++++++++++++++++++++++ */
+/*server message block*/
+/*message bolck*/
+/*error message for cell*/
+/*form validation error message*/
+
+/* ++++++++++++++++++++++++++++ error message design end +++++++++++++++++++++++++++++++++++++++++++ */
+
