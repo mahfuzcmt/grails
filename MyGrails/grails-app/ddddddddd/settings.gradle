@@ -1,7 +1,0 @@
-rootProject.name='ExtremeV3'
-include 'webcommander'
-if(new File("development-plugin.gradle").exists()) {
-    apply from: "development-plugin.gradle"
-    include includePlugins()
-    includePlugins().each { project(":" + it).projectDir = file("wc-plugins/" + it)}
-}

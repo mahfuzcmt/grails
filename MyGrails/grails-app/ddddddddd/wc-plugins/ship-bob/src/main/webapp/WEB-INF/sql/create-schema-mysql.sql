@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS `ship_bob_track` (  `id` bigint(20) NOT NULL AUTO_INCREMENT,  `payload` varchar(255) NOT NULL,  `order_id` bigint(20) NOT NULL,  PRIMARY KEY (`id`),  UNIQUE KEY `UK_g6mmxim8r20x8o424oqaw64dn` (`order_id`),  CONSTRAINT `FKlbv10xo6jgjqu86msxfl6skqr` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;

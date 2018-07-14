@@ -1,5 +1,0 @@
-dataSource:
-    host: localhost
-    name: webcommander
-    username: root
-    password: ""

@@ -1,2 +1,0 @@
-1. install ImageMagick (the one in this project - v7 will not work) without setting environment path.
-2. set a environment variable named IM4JAVA_TOOLPATH having installation folder path as value.

@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS `category_mapping` (  `id` bigint(20) NOT NULL AUTO_INCREMENT,  `google_category` varchar(255) NOT NULL,  `category_id` bigint(20) NOT NULL,  PRIMARY KEY (`id`),  UNIQUE KEY `UK_t6hdwp140coetv83rsmr1hpsy` (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;

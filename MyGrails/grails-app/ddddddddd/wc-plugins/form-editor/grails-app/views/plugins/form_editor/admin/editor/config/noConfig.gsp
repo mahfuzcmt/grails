@@ -1,1 +1,0 @@
-<div class="body">Configuration not available</div>

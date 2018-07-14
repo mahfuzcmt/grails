@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS `get_price_category_mapping`;

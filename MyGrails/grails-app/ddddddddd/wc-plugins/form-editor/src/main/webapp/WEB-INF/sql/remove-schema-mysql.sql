@@ -1,9 +1,0 @@
-DROP TABLE IF EXISTS `form_submission_data`;
-DROP TABLE IF EXISTS `form_submission`;
-DROP TABLE IF EXISTS `form_form_field`;
-DROP TABLE IF EXISTS `form_field_form_field`;
-DROP TABLE IF EXISTS `form_field_form_extra_prop`;
-DROP TABLE IF EXISTS `form_extra_prop`;
-DROP TABLE IF EXISTS `form`;
-DROP TABLE IF EXISTS `field_condition`;
-DROP TABLE IF EXISTS `form_field`;

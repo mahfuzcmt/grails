@@ -1,4 +1,0 @@
-include ":webcommander"
-project(":webcommander").projectDir = file("../../webcommander")
-include ":variation"
-project(":variation").projectDir = file("../variation")

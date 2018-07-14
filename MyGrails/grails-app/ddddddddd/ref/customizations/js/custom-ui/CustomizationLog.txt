@@ -1,5 +1,0 @@
-# Need to fix / add customized code after default js library / plugin update
-# Customized code added to:
-
-# custom-ui.js
-    - 'redactor-layer' class added for redactor textarea inner scroll when overflow      (Line:  115)

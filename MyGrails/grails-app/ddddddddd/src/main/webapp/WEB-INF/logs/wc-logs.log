@@ -1,4 +1,0 @@
-2018-07-09 14:48:50,123 TRACE WcCommonLogger  - 
-URL: nullapi/webCommander/getBackupList
-Request Data: siteName=db98796b.webcommander.biz
-Error: no protocol: nullapi/webCommander/getBackupList

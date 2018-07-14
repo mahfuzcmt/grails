@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS `svariation_details` (  `id` bigint(20) NOT NULL AUTO_INCREMENT,  `price_adjustable_type` varchar(2) NOT NULL,  `price` double NOT NULL,  `image_id` varchar(10) DEFAULT NULL,  PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
