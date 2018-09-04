@@ -1,0 +1,1492 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name": "Sajid",
+      "sql": [
+        {
+          "for": "Detach discount profile from product",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND CONSTRAINT_NAME = 'FK_fijwrcu898yeib3udd634q0wh'",
+          "isTrue": "ALTER TABLE `product` DROP FOREIGN KEY `FK_fijwrcu898yeib3udd634q0wh`",
+          "isFalse": ""
+        },
+        {
+          "for": "Detach discount profile from product",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND COLUMN_NAME = 'discount_profile_id'",
+          "isTrue": "ALTER TABLE `product` DROP COLUMN `discount_profile_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "Detach discount profile from category",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'category' AND CONSTRAINT_NAME = 'FK_dv8f24hlqb0lm0r9fxge0dgm2'",
+          "isTrue": "ALTER TABLE `category` DROP FOREIGN KEY `FK_dv8f24hlqb0lm0r9fxge0dgm2`",
+          "isFalse": ""
+        },
+        {
+          "for": "Detach discount profile from product",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'category' AND COLUMN_NAME = 'discount_profile_id'",
+          "isTrue": "ALTER TABLE `category` DROP COLUMN `discount_profile_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "Drop discount condition",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount_condition'",
+          "isTrue": "DROP TABLE `discount_condition`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount_customer'",
+          "isTrue": "DROP TABLE `discount_customer`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount_customer_group'",
+          "isTrue": "DROP TABLE `discount_customer_group`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount_profile_discount'",
+          "isTrue": "DROP TABLE `discount_profile_discount`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount'",
+          "isTrue": "DROP TABLE `discount`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'discount_profile'",
+          "isTrue": "DROP TABLE `discount_profile`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config  where `type` = 'discount'",
+          "isTrue": "delete from site_config where `type` = 'discount'",
+          "isFalse": ""
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_rule_zone'",
+          "isTrue": "",
+          "isFalse": "CREATE TABLE `shipping_rule_zone` ( `shipping_rule_zone_list_id` BIGINT(20) NULL DEFAULT NULL, `zone_id` BIGINT(20) NULL DEFAULT NULL, INDEX `FK_hyqr8qs1mpyj6edcr1l4aa1yf` (`zone_id`), INDEX `FK_dxnit7ggwnliglhr83fgvwdsx` (`shipping_rule_zone_list_id`),CONSTRAINT `FK_dxnit7ggwnliglhr83fgvwdsx` FOREIGN KEY (`shipping_rule_zone_list_id`) REFERENCES `shipping_rule` (`id`), CONSTRAINT `FK_hyqr8qs1mpyj6edcr1l4aa1yf` FOREIGN KEY (`zone_id`) REFERENCES `zone` (`id`))"
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_rule' AND COLUMN_NAME = 'zone_id'",
+          "isTrue": "insert into shipping_rule_zone  (shipping_rule_zone_list_id, zone_id) (select id, zone_id from shipping_rule)",
+          "isFalse": ""
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_rule' AND CONSTRAINT_NAME = 'FK_qfn1l6787ctrek91h24rw8ph9'",
+          "isTrue": "ALTER TABLE `shipping_rule` DROP FOREIGN KEY `FK_qfn1l6787ctrek91h24rw8ph9`",
+          "isFalse": ""
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_rule' AND COLUMN_NAME = 'zone_id'",
+          "isTrue": "ALTER TABLE `shipping_rule` DROP COLUMN `zone_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_class' AND CONSTRAINT_NAME = 'FK_f09tulcm6jpmifl3qdi1j992c'",
+          "isTrue": "ALTER TABLE `shipping_class` DROP FOREIGN KEY `FK_f09tulcm6jpmifl3qdi1j992c`",
+          "isFalse": ""
+        },
+        {
+          "for": "Shipping Migration",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipping_class' AND COLUMN_NAME = 'shipping_profile_id'",
+          "isTrue": "ALTER TABLE `shipping_class` DROP COLUMN `shipping_profile_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "Tax rule description set nullable",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule' AND COLUMN_NAME = 'description'",
+          "isTrue": "ALTER TABLE `tax_rule` CHANGE COLUMN `description` `description` VARCHAR(255) NULL",
+          "isFalse": ""
+        },
+        {
+          "for": "Tax code set nullable",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule' AND COLUMN_NAME = 'code_id'",
+          "isTrue": "ALTER TABLE `tax_rule`CHANGE COLUMN `code_id` `code_id` BIGINT(20) NULL ",
+          "isFalse": ""
+        },
+        {
+          "for": "TAX Migration",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule_zone'",
+          "isTrue": "",
+          "isFalse": "CREATE TABLE `tax_rule_zone` ( `tax_rule_zones_id` BIGINT(20) NULL DEFAULT NULL, `zone_id` BIGINT(20) NULL DEFAULT NULL, INDEX `FK_ipksxfhd3qwgafoptd0eo10t5` (`zone_id`), INDEX `FK_920xkso1u0l1i5e9im948wkb8` (`tax_rule_zones_id`), CONSTRAINT `FK_920xkso1u0l1i5e9im948wkb8` FOREIGN KEY (`tax_rule_zones_id`) REFERENCES `tax_rule` (`id`), CONSTRAINT `FK_ipksxfhd3qwgafoptd0eo10t5` FOREIGN KEY (`zone_id`) REFERENCES `zone` (`id`))"
+        },
+        {
+          "for": "TAX Migration",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule' AND COLUMN_NAME = 'zone_id'",
+          "isTrue": "insert into tax_rule_zone  (tax_rule_zones_id, zone_id) (select id, zone_id from tax_rule)",
+          "isFalse": ""
+        },
+        {
+          "for": "TAX Migration",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule' AND CONSTRAINT_NAME = 'FK_e8eoaysqlu70c1yf8jhrqr76q'",
+          "isTrue": "ALTER TABLE `tax_rule` DROP FOREIGN KEY `FK_e8eoaysqlu70c1yf8jhrqr76q`",
+          "isFalse": ""
+        },
+        {
+          "for": "TAX Migration",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tax_rule' AND COLUMN_NAME = 'zone_id'",
+          "isTrue": "ALTER TABLE `tax_rule` DROP COLUMN `zone_id`",
+          "isFalse": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from orders where delivery_type = ''",
+          "isFalse": "UPDATE orders set delivery_type = 'shipping' where delivery_type = ''"
+        },
+        {
+          "for": "add site_config for aws s3",
+          "condition": "select * from site_config where `config_key` = 'enabled' and `type` = 'aws_s3'",
+          "isFalse": "INSERT INTO `site_config` (`value`, `type`, `config_key`) VALUES ('false', 'aws_s3', 'enabled');",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for aws s3",
+          "condition": "select * from site_config where `config_key` = 'access_key' and `type` = 'aws_s3'",
+          "isFalse": "INSERT INTO `site_config` (`value`, `type`, `config_key`) VALUES ('', 'aws_s3', 'access_key');",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for aws s3",
+          "condition": "select * from site_config where `config_key` = 'secret_key' and `type` = 'aws_s3'",
+          "isFalse": "INSERT INTO `site_config` (`value`, `type`, `config_key`) VALUES ('', 'aws_s3', 'secret_key');",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for aws s3",
+          "condition": "select * from site_config where `config_key` = 'bucket_name' and `type` = 'aws_s3'",
+          "isFalse": "INSERT INTO `site_config` (`value`, `type`, `config_key`) VALUES ('', 'aws_s3', 'bucket_name');",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'enable_shipping' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_shipping', 'checkout_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'allow_sign_up' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('allow_sign_up', 'checkout_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'is_sign_up_required' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('is_sign_up_required', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_login' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_login', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'shipping_display_text' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_display_text', 'checkout_page', 'I want my products to be delivered')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'shipping_display_subtext' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_display_subtext', 'checkout_page', '')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'store_pickup_display_text' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_pickup_display_text', 'checkout_page', 'I want to pick my products from store')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'store_pickup_display_subtext' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_pickup_display_subtext', 'checkout_page', '')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'others_shipping_display_text' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('others_shipping_display_text', 'checkout_page', 'Others')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'others_shipping_display_subtext' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('others_shipping_display_subtext', 'checkout_page', '')",
+          "isTrue": ""
+        },
+        {
+          "for": "Cart page improvement",
+          "condition": "select * from site_config where `config_key` = 'show_product_total_with_discount' and `type` = 'cart_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_product_total_with_discount', 'cart_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Cart page improvement",
+          "condition": "select * from site_config where `config_key` = 'show_subtotal_with_discount' and `type` = 'cart_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_subtotal_with_discount', 'cart_page', 'false')",
+          "isTrue": ""
+        }
+      ]
+    },
+    {
+      "name":"Tariq Ahmed Khan",
+      "sql": [
+        {
+          "for": "add message_key for Read More",
+          "condition": "select * from message_source where `message_key` = 'read.more' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Read More', 'read.more', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "add message_key for Shipping Discount",
+          "condition": "select * from message_source where `message_key` = 'shipping.discount' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Shipping Discount', 'shipping.discount', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for show_shipping_discount_label",
+          "condition": "select * from site_config where `config_key` = 'show_shipping_discount_label' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_shipping_discount_label', 'checkout_page', 's:shipping.discount')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for tax",
+          "condition": "select * from site_config where `config_key` = 'configuration_type' and `type` = 'tax'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('configuration_type', 'tax', 'manual')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for tax",
+          "condition": "select * from site_config where `config_key` = 'default_country' and `type` = 'tax'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('default_country', 'tax', 'AU')",
+          "isTrue": ""
+        },
+        {
+          "for": "fix country code",
+          "condition": "select * from `country` where `code` = 'UK'",
+          "isFalse": "",
+          "isTrue": "UPDATE `country` SET `code` = 'GB' WHERE `code` = 'UK'"
+        },
+        {
+          "for": "fix currency code",
+          "condition": "select * from `currency` where `code` = 'GPB'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `code` = 'GBP' WHERE `code` = 'GPB'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'AUD' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'AU') WHERE `code` = 'AUD'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'USD' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'US') WHERE `code` = 'USD'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'NZD' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'NZ') WHERE `code` = 'NZD'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'CAD' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'CA') WHERE `code` = 'CAD'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'GBP' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'GB') WHERE `code` = 'GBP'"
+        },
+        {
+          "for": "add country code to currency",
+          "condition": "select * from currency where `code` = 'EUR' and `country_id` = '0'",
+          "isFalse": "",
+          "isTrue": "UPDATE `currency` SET `country_id` = (SELECT `id` FROM `country` WHERE `code` = 'EU') WHERE `code` = 'EUR'"
+        },
+        {
+          "for": "change shipping_policy_id default to null",
+          "condition": "SELECT `shipping_policy_id` FROM `shipping_rule`",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `shipping_rule` MODIFY `shipping_policy_id` BIGINT(20) NULL"
+        },
+        {
+          "for": "change navigation_id default to null",
+          "condition": "SELECT `navigation_id` FROM `navigation_item`",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `navigation_item` MODIFY `navigation_id` BIGINT(20) NULL"
+        },
+        {
+          "for": "change parent_id default to null",
+          "condition": "SELECT `navigation_id` FROM `navigation_item`",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `navigation_item` MODIFY `parent_id` BIGINT(20) NULL"
+        }
+      ]
+    },
+    {
+      "name": "Shahin",
+      "sql": [
+        {
+          "for": "Shipping class",
+          "condition": "select * from site_config where `config_key` = 'enable_shipping_class' and `type` = 'shipping'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_shipping_class', 'shipping', '')",
+          "isTrue": ""
+        },
+        {
+          "for": "Shipping class",
+          "condition": "select * from site_config where `config_key` = 'default_shipping_class' and `type` = 'shipping'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('default_shipping_class', 'shipping', '1')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'pending_order' and `type` = 'my_account_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('pending_order', 'my_account_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'completed_order' and `type` = 'my_account_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('completed_order', 'my_account_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'assigned_page' and `type` = 'my_account_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('assigned_page', 'my_account_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'wallet' and `type` = 'my_account_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('wallet', 'my_account_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'store_credit' and `type` = 'my_account_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_credit', 'my_account_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'overview_product_type' and `type` = 'customer_profile_page'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `site_config` WHERE  `type`='customer_profile_page' and `config_key`='overview_product_type'"
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'overview_product_per_page' and `type` = 'customer_profile_page'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `site_config` WHERE  `type`='customer_profile_page' and `config_key`='overview_product_per_page'"
+        },
+        {
+          "for": "My Account page",
+          "condition": "select * from site_config where `config_key` = 'overview_top_product' and `type` = 'customer_profile_page'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `site_config` WHERE  `type`='customer_profile_page' and `config_key`='overview_top_product'"
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_top_selling_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_top_selling_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_featured_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_onsale_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_onsale_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_new_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_new_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_last_viewed_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_viewed_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'overview_last_bought_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_bought_product', 'customer_profile_page', 'true')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_top_selling_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_top_selling_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_featured_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_featured_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_onsale_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_onsale_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_new_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_new_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_last_viewed_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_last_viewed_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer Profile page",
+          "condition": "select * from site_config where `config_key` = 'max_last_bought_product' and `type` = 'customer_profile_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('max_last_bought_product', 'customer_profile_page', '10')",
+          "isTrue": ""
+        },
+        {
+          "for": "",
+          "condition": "select * from site_config  where `type` = 'customer_profile_page' and `config_key`='add_to_compare'",
+          "isTrue": "delete from site_config where `type` = 'customer_profile_page' and `config_key`='add_to_compare'",
+          "isFalse": ""
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'SECUREPAY', NULL, 'select', 'f:Wallet Mode', 'walletMode', NULL, 'test')"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'SECUREPAY', NULL, 'text', 'f:Merchant Id[Wallet]', 'walletMerchantId', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'SECUREPAY', NULL, 'password', 'f:Transection Password[Wallet]', 'walletMerchantPassword', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "insert into payment_gateway_meta_option_label(payment_gateway_meta_id, option_label_string) values((select id from payment_gateway_meta where field_for = 'SECUREPAY' and name = 'walletMode'), 'test')"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "insert into payment_gateway_meta_option_label(payment_gateway_meta_id, option_label_string) values((select id from payment_gateway_meta where field_for = 'SECUREPAY' and name = 'walletMode'), 'live')"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "insert into payment_gateway_meta_option_value(payment_gateway_meta_id, option_value_string) values((select id from payment_gateway_meta where field_for = 'SECUREPAY' and name = 'walletMode'), 'test')"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "insert into payment_gateway_meta_option_value(payment_gateway_meta_id, option_value_string) values((select id from payment_gateway_meta where field_for = 'SECUREPAY' and name = 'walletMode'), 'live')"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'SECUREPAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES(NULL, 'toggle-target=\"enable-wallet\"', 'SECUREPAY', NULL, 'check_box', 'f:Enable Wallet Payment', 'enableWallet', NULL, NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'EWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'EWAY', NULL, 'password', 'f:Password[Wallet]', 'walletMerchantPassword', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'EWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'EWAY', NULL, 'text', 'f:API Key[Wallet]', 'walletMerchantApiKey', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'EWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES(NULL, 'toggle-target=\"enable-wallet\"', 'EWAY', NULL, 'check_box', 'f:Enable Wallet Payment', 'enableWallet', NULL, NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'PAYWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'PAYWAY', NULL, 'text', 'f:Private API Key[Wallet]', 'walletMerchantPrivateApiKey', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'PAYWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'PAYWAY', NULL, 'text', 'f:Public API Key[Wallet]', 'walletMerchantPublicApiKey', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'PAYWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES('enable-wallet', NULL, 'PAYWAY', NULL, 'text', 'f:Merchant Id[Wallet]', 'walletMerchantId', 'required', NULL)"
+        },
+        {
+          "for": "Credit card Wallet payment",
+          "condition": "select * from payment_gateway_meta  where `field_for` = 'PAYWAY' and `name`='enableWallet'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `payment_gateway_meta` ( `clazz`, `extra_attrs`, `field_for`, `field_id`, `html_type`, `label`, `name`, `validation`, `value`) VALUES(NULL, 'toggle-target=\"enable-wallet\"', 'PAYWAY', NULL, 'check_box', 'f:Enable Wallet Payment', 'enableWallet', NULL, NULL)"
+        },
+        {
+          "for": "add site_config for Currency key convert_additional_to_default",
+          "condition": "select * from site_config where `config_key` = 'convert_additional_to_default' and `type` = 'currency'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('convert_additional_to_default', 'currency', 'true')",
+          "isTrue": ""
+        }
+      ]
+    },
+    {
+      "name": "Imrul",
+      "sql" : [
+        {
+          "for": "add site_config for enable_store_pickup",
+          "condition": "select * from site_config where `config_key` = 'enable_store_pickup' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_store_pickup', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "add site_config for enable_others_shipping",
+          "condition": "select * from site_config where `config_key` = 'enable_others_shipping' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('enable_others_shipping', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_shipping_discount' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_shipping_discount', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_shipping_discount_label' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_shipping_discount_label', 'checkout_page', 's:shipping.discount')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_shipping_and_handling_subtext' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_shipping_and_handling_subtext', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'shipping_handling_subtext' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_handling_subtext', 'checkout_page', 's:shipping.and.handling.subtext')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_product_total_with_discount' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_product_total_with_discount', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_subtotal_with_discount' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_subtotal_with_discount', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "Checkout improvement",
+          "condition": "select * from site_config where `config_key` = 'show_shipping_and_handling_cost_separately' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('show_shipping_and_handling_cost_separately', 'checkout_page', 'false')",
+          "isTrue": ""
+        },
+        {
+          "for": "VariationProductImage baseUrl field constraints change",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'variation_product_image'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `variation_product_image` ALTER `base_url` DROP DEFAULT"
+        },
+        {
+          "for": "VariationProductImage baseUrl field constraints change",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'variation_product_image'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `variation_product_image` CHANGE COLUMN `base_url` `base_url` VARCHAR(255) NULL AFTER `alt_text`"
+        },
+        {
+          "for": "Product Brand foraign key remove",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND CONSTRAINT_NAME = 'FK89igr5j06uw5ps04djxgom0l1'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `product` DROP FOREIGN KEY `FK89igr5j06uw5ps04djxgom0l1`"
+        },
+        {
+          "for": "Product Manufacturer foraign key remove",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND CONSTRAINT_NAME = 'FKs6cydsualtsrprvlf2bb3lcam'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `product` DROP FOREIGN KEY `FKs6cydsualtsrprvlf2bb3lcam`"
+        },
+        {
+          "for": "AutogeneratedPage delete by name brand",
+          "condition": "SELECT * FROM `auto_generated_page` WHERE  `name`='brand'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `auto_generated_page` WHERE  `name`='brand'"
+        },
+        {
+          "for": "AutogeneratedPage delete by name manufacturer",
+          "condition": "SELECT * FROM `auto_generated_page` WHERE  `name`='manufacturer'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `auto_generated_page` WHERE  `name`='manufacturer'"
+        },
+        {
+          "for": "SiteConfig delete by type brand_manufacturer_page",
+          "condition": "SELECT * FROM `site_config` WHERE `type`='brand_manufacturer_page'",
+          "isFalse": "",
+          "isTrue": "DELETE FROM `site_config` WHERE `type`='brand_manufacturer_page'"
+        },
+        {
+          "for": "manufacturer_id COLUMN drop from Product",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND COLUMN_NAME = 'manufacturer_id'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `product` DROP COLUMN `manufacturer_id`"
+        },
+        {
+          "for": "manufacturer_part_number COLUMN drop from Product",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND COLUMN_NAME = 'manufacturer_part_number'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `product` DROP COLUMN `manufacturer_part_number`"
+        },
+        {
+          "for": "brand_id COLUMN drop from Product",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND COLUMN_NAME = 'brand_id'",
+          "isFalse": "",
+          "isTrue": "ALTER TABLE `product` DROP COLUMN `brand_id`"
+        },
+        {
+          "for": "brand table drop",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'brand'",
+          "isFalse": "",
+          "isTrue": "DROP TABLE `brand`"
+        },
+        {
+          "for": "brand_meta_tag table drop",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'brand_meta_tag'",
+          "isFalse": "",
+          "isTrue": "DROP TABLE `brand_meta_tag`"
+        },
+        {
+          "for": "manufacturer table drop",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'manufacturer'",
+          "isFalse": "",
+          "isTrue": "DROP TABLE `manufacturer`"
+        },
+        {
+          "for": "manufacturer_meta_tag table drop",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.`TABLES` WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'manufacturer_meta_tag'",
+          "isFalse": "",
+          "isTrue": "DROP TABLE `manufacturer_meta_tag`"
+        },
+        {
+          "for": "Site config ecommerce true",
+          "condition": "select * from site_config where `config_key` = 'ecommerce' and `type` = 'administration'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('ecommerce', 'administration', 'true')",
+          "isTrue": ""
+        }
+      ]
+    },
+    {
+      "name": "Sharif Ul Islam",
+      "sql" : [
+        {
+          "for": "Add site_config for default_tax_code",
+          "condition": "select * from site_config where `config_key` = 'default_tax_code' and `type` = 'tax'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('default_tax_code', 'tax', null)",
+          "isTrue": ""
+        },
+        {
+          "for": "Add default_tax_code field on customer table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'customer' AND COLUMN_NAME = 'default_tax_code'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `customer` ADD COLUMN `default_tax_code` VARCHAR(255) NULL"
+        },
+        {
+          "for": "Add default_tax_code field on customer_group table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'customer_group' AND COLUMN_NAME = 'default_tax_code'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `customer_group` ADD COLUMN `default_tax_code` VARCHAR(255) NULL"
+        },
+        {
+          "for": "Add site_config for base_price_rounding",
+          "condition": "select * from site_config where `config_key` = 'base_price_rounding' and `type` = 'tax'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('base_price_rounding', 'tax', null)",
+          "isTrue": ""
+        },
+        {
+          "for": "Add zone for rest of the world",
+          "condition": "select * from zone where `name` = 'REST_OF_THE_WORLD'",
+          "isFalse": "INSERT INTO zone (created, updated, is_system_generated, name, is_default) values (CURDATE(), CURDATE(), 1, 'REST_OF_THE_WORLD', 1)",
+          "isTrue": ""
+        },
+        {
+          "for": "Change variation_product_image base_url to allow null",
+          "condition": "SELECT * FROM information_schema.COLUMNS where TABLE_SCHEMA = DATABASE() and TABLE_NAME = 'variation_product_image' and COLUMN_NAME = 'base_url' and IS_NULLABLE='YES'",
+          "isFalse": "ALTER TABLE `variation_product_image` CHANGE COLUMN `base_url` `base_url` VARCHAR(255) NULL",
+          "isTrue": ""
+        },
+        {
+          "for": "Add discount_on_order field on orders table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'orders' AND COLUMN_NAME = 'discount_on_order'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `orders` ADD COLUMN `discount_on_order` DOUBLE DEFAULT 0 NOT NULL"
+        },
+        {
+          "for": "Add actual_tax field on orders table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'orders' AND COLUMN_NAME = 'actual_tax'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `orders` ADD COLUMN `actual_tax` DOUBLE DEFAULT 0 NOT NULL"
+        },
+        {
+          "for": "Add actual_price field on order_item table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'order_item' AND COLUMN_NAME = 'actual_price'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `order_item` ADD COLUMN `actual_price` DOUBLE DEFAULT 0 NOT NULL"
+        },
+        {
+          "for": "Add actual_discount field on order_item table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'order_item' AND COLUMN_NAME = 'actual_discount'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `order_item` ADD COLUMN `actual_discount` DOUBLE DEFAULT 0 NOT NULL"
+        },
+        {
+          "for": "Add tax_discount field on order_item table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'order_item' AND COLUMN_NAME = 'tax_discount'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `order_item` ADD COLUMN `tax_discount` DOUBLE DEFAULT 0 NOT NULL"
+        }
+      ]
+    },
+    {
+      "name": "Tanvirul",
+      "sql" : [
+        {
+          "for": "SEO Page meta description Limit",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'seo_config' AND `config_key` = 'meta_tag_name_limit'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('meta_tag_name_limit', 'seo_config', '100')"
+        },
+        {
+          "for": "SEO Page meta description Limit",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'seo_config' AND `config_key` = 'meta_tag_description_limit'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('meta_tag_description_limit', 'seo_config', '350')"
+        },
+        {
+          "for": "Add navigation item's image alt",
+          "condition": "SELECT * FROM information_schema.COLUMNS where TABLE_SCHEMA = DATABASE() and TABLE_NAME = 'navigation_item' and COLUMN_NAME = 'image_alt' and IS_NULLABLE='YES'",
+          "isFalse": "ALTER TABLE `navigation_item` ADD COLUMN `image_alt`  VARCHAR(255)  NULL",
+          "isTrue": ""
+        },
+        {
+          "for": "Newsletter subscribe",
+          "condition": "SELECT * FROM  site_config where `config_key` = 'subscribe_news_letter' and `type` = 'checkout_page'",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('subscribe_news_letter', 'checkout_page', 'I want to subscribe to newsletter')",
+          "isTrue": ""
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'welcome_message_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('meta_tag_description_limit', 'seo_config', '350')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'welcome_message_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('welcome_message_order', 'customer_profile_page', '1')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'welcome_message_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('welcome_message_label', 'customer_profile_page', 'Welcome Message')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'welcome_message_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('welcome_message_default_label', 'customer_profile_page', 'Welcome Message')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'welcome_message_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('welcome_message_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'overview_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_order', 'customer_profile_page', '2')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'overview_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_label', 'customer_profile_page', 'Overview')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'overview_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_default_label', 'customer_profile_page', 'Overview')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'overview_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'manage_my_account_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('manage_my_account_order', 'customer_profile_page', '3')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'manage_my_account_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('manage_my_account_label', 'customer_profile_page', 'Manage My Account')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'manage_my_account_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('manage_my_account_default_label', 'customer_profile_page', 'Manage My Account')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'manage_my_account_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('manage_my_account_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_eorders_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_eorders_order', 'customer_profile_page', '4')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_eorders_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_eorders_label', 'customer_profile_page', 'My Orders')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_eorders_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_eorders_default_label', 'customer_profile_page', 'My Orders')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_eorders_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_eorders_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_entitlements_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_entitlements_order', 'customer_profile_page', '7')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_entitlements_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_entitlements_label', 'customer_profile_page', 'My Entitlements')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_entitlements_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_entitlements_default_label', 'customer_profile_page', 'My Entitlements')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_entitlements_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_entitlements_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_wallet_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_wallet_order', 'customer_profile_page', '8')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_wallet_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_wallet_label', 'customer_profile_page', 'My Wallet')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_wallet_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_wallet_default_label', 'customer_profile_page', 'My Wallet')"
+        },
+        {
+          "for": "Customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_wallet_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_wallet_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Customer profile page's assigned pages",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'assigned_pages_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('assigned_pages_order', 'customer_profile_page', '9')"
+        },
+        {
+          "for": "Customer profile page's assigned pages",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'assigned_pages_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('assigned_pages_label', 'customer_profile_page', 'Assigned Pages')"
+        },
+        {
+          "for": "Customer profile page's assigned pages",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'assigned_pages_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('assigned_pages_default_label', 'customer_profile_page', 'Assigned Pages')"
+        },
+        {
+          "for": "Customer profile page's assigned pages",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'assigned_pages_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('assigned_pages_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_top_selling_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_top_selling_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_top_selling_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_top_selling_product_label', 'overview', 'Top Selling Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_top_selling_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_top_selling_product_default_label', 'overview', 'Top Selling Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_top_selling_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_top_selling_product_order', 'overview', '1')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_featured_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_featured_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product_label', 'overview', 'Featured Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_featured_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product_default_label', 'overview', 'Featured Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_featured_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product_default_label', 'overview', 'Featured Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_featured_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_featured_product_order', 'overview', '2')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_onsale_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_onsale_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_onsale_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_onsale_product_label', 'overview', 'On Sale Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_onsale_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_onsale_product_default_label', 'overview', 'On Sale Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_onsale_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_onsale_product_order', 'overview', '3')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_new_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_new_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_new_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_new_product_label', 'overview', 'New Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_new_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_new_product_default_label', 'overview', 'New Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_new_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_new_product_order', 'overview', '4')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_viewed_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_viewed_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_viewed_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_viewed_product_label', 'overview', 'Last Viewed Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_viewed_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_viewed_product_default_label', 'overview', 'Last Viewed Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_viewed_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_viewed_product_order', 'overview', '5')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_bought_product_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_bought_product_active', 'overview', 'true')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_bought_product_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_bought_product_label', 'overview', 'Last Bought Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_bought_product_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_bought_product_default_label', 'overview', 'Last Bought Product')"
+        },
+        {
+          "for": "Overview customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'overview_last_bought_product_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('overview_last_bought_product_order', 'overview', '6')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'account_information_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('account_information_order', 'manage_my_account', '1')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'account_information_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('account_information_label', 'manage_my_account', 'Account Information')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'account_information_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('account_information_default_label', 'manage_my_account', 'Account Information')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'account_information_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('account_information_active', 'manage_my_account', 'true')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'billing_address_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('billing_address_order', 'manage_my_account', '2')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'billing_address_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('billing_address_label', 'manage_my_account', 'Billing Address')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'billing_address_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('billing_address_default_label', 'manage_my_account', 'Billing Address')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'billing_address_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('billing_address_active', 'manage_my_account', 'true')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'shipping_address_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_address_order', 'manage_my_account', '3')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'shipping_address_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_address_label', 'manage_my_account', 'Shipping Address')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'shipping_address_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_address_default_label', 'manage_my_account', 'Shipping Address')"
+        },
+        {
+          "for": "Manage My Account customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'manage_my_account' AND `config_key` = 'shipping_address_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('shipping_address_active', 'manage_my_account', 'true')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'store_credit_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_credit_active', 'my_entitlements', 'true')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'store_credit_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_credit_label', 'my_entitlements', 'My Store Credit')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'store_credit_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_credit_default_label', 'my_entitlements', 'My Store Credit')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_entitlements' AND `config_key` = 'store_credit_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('store_credit_order', 'my_entitlements', '1')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'pending_order_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('pending_order_active', 'my_orders', 'true')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'pending_order_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('pending_order_label', 'my_orders', 'Pending Order')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'pending_order_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('pending_order_default_label', 'my_orders', 'Pending Order')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'pending_order_orderkey'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('pending_order_orderkey', 'my_orders', '1')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'completed_order_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('completed_order_active', 'my_orders', 'true')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'completed_order_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('completed_order_label', 'my_orders', 'Completed Order')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'completed_order_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('completed_order_default_label', 'my_orders', 'Completed Order')"
+        },
+        {
+          "for": "My Entitlements customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_orders' AND `config_key` = 'completed_order_orderkey'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('completed_order_orderkey', 'my_orders', '2')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'first_name_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('first_name_order', 'customer_account_information', '1')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'first_name_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('first_name_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'last_name_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('last_name_order', 'customer_account_information', '2')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'last_name_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('last_name_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'address_line_1_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('address_line_1_order', 'customer_account_information', '3')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'address_line_1_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('address_line_1_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'address_line_2_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('address_line_2_order', 'customer_account_information', '4')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'address_line_2_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('address_line_2_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'post_code_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('post_code_order', 'customer_account_information', '5')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'post_code_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('post_code_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'country_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('country_order', 'customer_account_information', '6')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'country_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('country_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'city_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('city_order', 'customer_account_information', '7')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'city_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('city_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'phone_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('phone_order', 'customer_account_information', '8')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'phone_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('phone_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'mobile_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('mobile_order', 'customer_account_information', '9')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'mobile_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('mobile_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'fax_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('fax_order', 'customer_account_information', '10')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'fax_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('fax_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'email_order'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('email_order', 'customer_account_information', '11')"
+        },
+        {
+          "for": "Account information customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_account_information' AND `config_key` = 'email_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('email_label', 'customer_account_information', '')"
+        },
+        {
+          "for": "",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND COLUMN_NAME = 'product_file_id'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `product` ADD COLUMN `product_file_id` BIGINT(20) NULL"
+        },
+        {
+          "for": "Virtual product variation product file",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'product' AND CONSTRAINT_NAME = 'FKkwbl3wtu9dwnl9wlwu4sgqawp'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `product`	ADD CONSTRAINT `FKkwbl3wtu9dwnl9wlwu4sgqawp` FOREIGN KEY (`product_file_id`) REFERENCES `resource` (`id`)"
+        },
+        {
+          "for": "customer profile page's overview",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'overview' AND `config_key` = 'add_to_cart'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('add_to_cart', 'overview', 'true')"
+        }
+      ]
+    },
+    {
+      "name":"Zamiur Rahman",
+      "sql": [
+        {
+          "for": "To add column tracking_info in table shipment_item",
+          "condition": "SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'shipment_item' AND COLUMN_NAME = 'tracking_info'",
+          "isFalse": "ALTER TABLE `shipment_item` ADD COLUMN `tracking_info` LONGTEXT NULL",
+          "isTrue": ""
+        },
+        {
+          "for": "Email template update",
+          "condition": "SELECT * FROM email_template WHERE `identifier` = 'low-stock-notification'",
+          "isFalse": "INSERT INTO `email_template`(`is_cc_to_admin_readonly`, `updated`, `is_active_readonly`, `active`, `type`, `content_type`, `label`, `cc_to_admin`, `identifier`, `subject`) VALUES ('0', NOW(), '1', '1', 'admin', 'html', 'low.stock.notification', '0', 'low-stock-notification', 'Your stock level is low')",
+          "isTrue": ""
+        },
+        {
+          "for": "Email template update",
+          "condition": "SELECT * FROM email_template WHERE `identifier` = 'out-of-stock-notification'",
+          "isFalse": "INSERT INTO `email_template`(`is_cc_to_admin_readonly`, `updated`, `is_active_readonly`, `active`, `type`, `content_type`, `label`, `cc_to_admin`, `identifier`, `subject`) VALUES ('0', NOW(), '1', '1', 'admin', 'html', 'out.of.stock.notification', '0', 'out-of-stock-notification', 'Your stock level is out of stock')",
+          "isTrue": ""
+        },
+        {
+          "for": "Email template update",
+          "condition": "SELECT * FROM email_template WHERE `identifier` = 'low-stock-report'",
+          "isFalse": "INSERT INTO `email_template`(`is_cc_to_admin_readonly`, `updated`, `is_active_readonly`, `active`, `type`, `content_type`, `label`, `cc_to_admin`, `identifier`, `subject`) VALUES ('0', NOW(), '1', '1', 'admin', 'html', 'low.stock.report', '0', 'low-stock-report', 'Low Stock Report')",
+          "isTrue": ""
+        },
+        {
+          "for": "Email template update",
+          "condition": "SELECT * FROM email_template WHERE `identifier` = 'out-of-stock-report'",
+          "isFalse": "INSERT INTO `email_template`(`is_cc_to_admin_readonly`, `updated`, `is_active_readonly`, `active`, `type`, `content_type`, `label`, `cc_to_admin`, `identifier`, `subject`) VALUES ('0', NOW(), '1', '1', 'admin', 'html', 'out.of.stock.report', '0', 'out-of-stock-report', 'Out of Stock Report')",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

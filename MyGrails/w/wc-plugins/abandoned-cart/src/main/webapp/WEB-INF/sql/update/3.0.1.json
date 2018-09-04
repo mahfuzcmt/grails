@@ -1,0 +1,48 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+
+    {
+      "name": "Tanvirul",
+      "sql" : [
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'abandoned_cart_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('abandoned_cart_active', 'my_carts', 'true')"
+        },
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'abandoned_cart_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('abandoned_cart_label', 'my_carts', 'Abandoned Cart')"
+        },
+        {
+          "for": "My carts customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'my_carts' AND `config_key` = 'abandoned_cart_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('abandoned_cart_default_label', 'my_carts', 'Abandoned Cart')"
+        },
+        {
+          "for": "My Lists customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_carts_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_carts_label', 'customer_profile_page', 'My Carts')"
+        },
+        {
+          "for": "My Lists customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_carts_active'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_carts_active', 'customer_profile_page', 'true')"
+        },
+        {
+          "for": "My Lists customer profile page",
+          "condition": "SELECT * FROM site_config  WHERE `type` = 'customer_profile_page' AND `config_key` = 'my_carts_default_label'",
+          "isTrue": "",
+          "isFalse": "INSERT INTO `site_config`(`config_key`, `type`, `value`) VALUES ('my_carts_default_label', 'customer_profile_page', 'My Carts')"
+        }
+      ]
+    }
+  ]
+}

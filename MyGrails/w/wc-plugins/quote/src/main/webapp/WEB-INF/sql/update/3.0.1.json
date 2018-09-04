@@ -1,0 +1,17 @@
+{
+  "fromVersion": "3.0.1",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name": "Imrul",
+      "sql" : [
+        {
+          "for": "Add store_id field on quote_item table",
+          "condition": "SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'quote_item' AND COLUMN_NAME = 'store_id'",
+          "isTrue": "",
+          "isFalse": "ALTER TABLE `quote_item` ADD COLUMN `store_id` BIGINT(20) NULL DEFAULT NULL"
+        }
+      ]
+    }
+  ]
+}

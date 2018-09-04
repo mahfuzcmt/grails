@@ -1,0 +1,29 @@
+{
+  "fromVersion": "3.0.0",
+  "releaseVersion": "3.0.1",
+  "developers":[
+    {
+      "name":"Tanvirul Islam",
+      "sql": [
+        {
+          "for": "add message_key for Gift Wrapper Name",
+          "condition": "select * from message_source where `message_key` = 'gift.wrapper.name' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Gift Wrapper Name', 'gift.wrapper.name', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "add message_key for Gift Wrapper Price",
+          "condition": "select * from message_source where `message_key` = 'gift.wrapper.price' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Price', 'gift.wrapper.price', NOW())",
+          "isTrue": ""
+        },
+        {
+          "for": "add message_key for Gift Wrapping",
+          "condition": "select * from message_source where `message_key` = 'gift.wrapping' and `locale` = 'all'",
+          "isFalse": "INSERT INTO `message_source`(`created`, `locale`, `message`, `message_key`, `updated`) VALUES (NOW(), 'all', 'Gift Wrapping', 'gift.wrapping', NOW())",
+          "isTrue": ""
+        }
+      ]
+    }
+  ]
+}

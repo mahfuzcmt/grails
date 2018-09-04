@@ -1,1 +1,0 @@
-(app.widget.compareProduct = function() {}).no_config = true
